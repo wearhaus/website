@@ -1,0 +1,532 @@
+/*!
+ * Raymond Kim 2015
+ *
+ * base.css
+ *
+ * Contents are organized by TAGS, CLASSES, IDS, and MEDIA QUERIES.
+ * Within each category they're sorted alphabetically.
+ *
+ * Doesn't include footer nor navbar CSS.
+ *
+ */
+
+
+/* TAGS */
+
+    a,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    header {
+        font-family: "Lato", arial, sans-serif;
+        font-weight: 300;
+        text-transform: uppercase;
+    }
+
+    a,
+    a:hover,
+    a:focus,
+    a:active,
+    a.active {
+        color: gray;
+        outline: 0;
+    }
+
+    body {
+        background-color: black;
+        font-family: "Lato", arial, sans-serif;
+        overflow-x: hidden;
+    }
+
+    form .row:first-child .floating-label-form-group {
+        border-top: 1px solid #eee;
+    }
+
+    h1 {
+        font-size: 96px;
+        font-weight: 700;
+    }
+
+    h3 {
+        font-size: 64px;
+        font-weight: 400;
+    }
+
+    h5 {
+        font-size: 30px;
+    }
+
+    header {
+        color: #fff;
+        padding: 30px 0px 280px 0px;
+    }
+
+        header .container {
+            padding-top: 100px;
+            padding-bottom: 50px;
+        }
+
+        header img {
+            display: block;
+            margin: 0 auto 20px;
+        }
+
+        header .intro-text .name {
+            display: block;
+            font-size: 2em;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+
+        header .intro-text .skills {
+            font-size: 1.25em;
+            font-weight: 300;
+        }
+
+    p {
+        font-size: 20px;
+    }
+
+        p.small {
+            font-size: 16px;
+        }
+
+    section h2 {
+        font-size: 3em;
+        margin: 0;
+    }
+
+    section.success {
+        background: #18bc9c;
+        color: #fff;
+    }
+
+    section.success a,
+    section.success a:hover,
+    section.success a:focus,
+    section.success a:active,
+    section.success a.active {
+        color: #2c3e50;
+        outline: 0;
+    }
+
+/* CLASSES */
+
+    .btn-outline {
+        background: 0 0;
+        border: solid 2px #fff;
+        color: #fff;
+        font-size: 20px;
+        margin-top: 15px;
+        transition: all .3s ease-in-out;
+    }
+
+        .btn-outline:hover,
+        .btn-outline:focus,
+        .btn-outline:active,
+        .btn-outline.active {
+            background: #fff;
+            border: solid 2px #fff;
+            color: #18bc9c;
+        }
+
+    .btn-social {
+        border-radius: 100%;
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        border: 2px solid #fff;
+        text-align: center;
+        font-size: 20px;
+        line-height: 45px;
+    }
+
+    .btn:focus,
+    .btn:active,
+    .btn.active {
+        outline: 0;
+    }
+
+    .img-centered {
+        margin: 0 auto;
+    }
+
+    .onfromtop_left, .onfrombottom_left, .offscreen_vert_left {
+        transition: all 500ms;
+        left: -50%;
+    }
+
+    .onfrombottomhalf_left, .onfromtophalf_left, .onfromtop_left, .overflowing_vert_left, .onscreen_vert_left {
+        transition: all 500ms;
+        left: 0px !important;
+    }
+
+    .onfromtop_right, .onfrombottom_right, .offscreen_vert_right {
+        transition: all 500ms;
+        right: -50%;
+    }
+
+    .onfrombottomhalf_right, .onfromtophalf_right, .onfromtop_right, .overflowing_vert_right, .onscreen_vert_right {
+        transition: all 500ms;
+        right: 0px !important;
+    }
+
+    .overlay {
+        position: absolute;
+        width: 100%;
+    }
+
+    .row {
+        margin-left: 0px; /* temp override bootstrap */
+        /*height: 800px; */
+    }
+
+    .scroll-top {
+        z-index: 1049;
+        position: fixed;
+        right: 2%;
+        bottom: 2%;
+        width: 50px;
+        height: 50px;
+    }
+
+        .scroll-top .btn {
+            width: 50px;
+            height: 50px;
+            border-radius: 100%;
+            font-size: 20px;
+            line-height: 28px;
+        }
+
+    .scroll-top .btn:focus {
+        outline: 0;
+    }
+
+    .slide-left, .slide-right {
+        background-color: rgba(255, 255, 255, 0.6);
+        height: 100%;
+        width: 50%;
+    }
+
+    .slide-left {
+        float: left;
+        position: absolute;
+    }
+
+    .slide-right {
+        float: right;
+    }
+
+    .slide-section {
+        height: 50%;
+        padding: 20px;
+    }
+
+        .slide-section h5 {
+            color: black;
+            font-weight: 700;
+        }
+
+        .slide-section p {
+            color: black;
+            font-weight: 300;
+        }
+
+    .tab {
+        height: 100%;
+        padding: 0px 0px 0px 0px;
+        width: 100%;
+    }
+
+    .tab-right, .tab-left {
+        background-color: rgba(255, 255, 255, 0.6);
+        margin: 400px 0px 0px 0px;
+        padding-left: 20px;
+        width: 412px
+    }
+
+        .tab-left h3, .tab-right h3 {
+            color: black;
+            font-weight: 700;
+        }
+
+        .tab-left p, .tab-right p {
+            color: white;
+        }
+
+    .tab-left {
+        border-bottom-right-radius: 20px;
+        box-shadow: 3px 3px 6px 0px rgba(31,31,31,0.35);
+        float: left;
+        margin-left: 50%;
+        position: relative;
+    }
+
+    .tab-left-responsive {
+        padding: 10px;
+    }
+
+    .tab-right {
+        border-bottom-left-radius: 20px;
+        box-shadow: -3px 3px 6px 0px rgba(31,31,31,0.35);
+        float: right;
+        position: relative;
+    }
+
+    .tab-right-responsive {
+        padding: 10px;
+    }
+
+    .tab-row {
+        height: 100%;
+    }
+
+    .tab-text-left, .tab-text-right {
+        height: 100%;
+        position: relative;
+        width: 100%;
+    }
+
+    .tab-text-left {
+        left: -50%; /* init off screen */
+    }
+
+    .tab-text-right {
+        float: right;
+        right: -50%; /* init off screen */
+    }
+
+    .video-container { /* make YouTube embed video responsive */
+        position: relative;
+        padding-bottom: 56.25%;
+        padding-top: 35px;
+        height: 0;
+        overflow: hidden;
+    }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+/* IDS */
+
+    #app {
+        background: black url('/static/img/dj.jpg') no-repeat;
+        background-size: cover;
+    }
+
+    #blog {
+        padding: 0;
+        margin: 0;
+    }
+
+        #blog .col-lg-3 {
+            padding: 0 0 0 0;
+            background-color: black;
+        }
+
+        #blog img {
+            width: 100%;
+        }
+
+    #blog-grid {
+        padding: 100px 0px 100px 0px;
+    }
+
+    #color {
+        background: url('/static/img/colorpic.jpg');
+        background-size: cover;
+    }
+
+    #slide-section-2-app {
+        background: black url('/static/img/black_arc_color.jpg') no-repeat center center scroll;
+    }
+
+    #slide-section-2-color {
+        background: black url('/static/img/black_arc_color.jpg') no-repeat center center scroll;
+    }
+
+    #slide-section-2-sync {
+        background: black url('/static/img/black_arc.jpg') no-repeat center center scroll;
+    }
+
+    #slide-section-2-touch {
+        background: black url('/static/img/black_arc.jpg') no-repeat center center scroll;
+    }
+
+    #sync {
+        background: black url('/static/img/syncpicresize.jpg') no-repeat; 
+        background-size: cover;
+    }
+
+    #title {
+        background: black url('/static/img/test.jpg');
+        background-size: cover;
+    }
+
+    #touch {
+        background: black url('/static/img/touchpic.jpg');
+        background-size: cover;
+    }
+
+    #title-text {
+        margin-left: -45px;
+    }
+
+/* MEDIA QUERIES */
+
+    /* smartphones */
+    @media(max-width:767px) {
+
+        h1 {
+            font-size: 72px;
+        }
+
+        h3 {
+            font-size: 36px;
+        }
+
+        h5 {
+            font-size: 24px;
+        }
+
+        header {
+            padding: 30px 0px 100px 0px;
+        }
+
+        section {
+            height: 497px;        
+        }
+
+            section.first {
+                padding-top: 75px;
+            }
+
+        .container-mobile {
+            color: white;
+            display: block;
+            height: 100%;
+            padding: 20% 10% 0% 10%;
+        }
+
+            .container-mobile p {
+                font-size: 16px;
+                font-weight: 300;
+            }
+
+        .section-mobile {
+            background-color: #00BCCC;
+            display: none;
+        }
+
+        .tab-text-left, .tab-text-right {
+            display: none;
+        }
+
+        #blog { /* override section CSS since blog responds differently */
+            height: 100%;
+        }
+
+            #blog .col-lg-3 {
+                width: 50%;
+                float: left;
+            }
+
+        #sync {
+            background-size: auto 497px;
+        }
+
+        #title-text {
+            margin: 0 auto;
+            text-align: center;
+        }
+
+    }
+
+    /* tablets */
+    @media(min-width:768px) {
+        h3 {
+            font-size: 32px;
+        }
+
+        header .intro-text .name {
+            font-size: 4.75em;
+        }
+
+        header .intro-text .skills {
+            font-size: 1.75em;
+        }
+
+        p {
+            font-size: 15px;
+        }
+
+        section {
+            height: 798px;
+        }
+
+        .navbar {
+            border-radius: 0px; /* override Bootstrap rounding corners of navbar */
+        }
+
+        .container-mobile, .section-mobile {
+            display: none;
+        }
+
+        .tab-left, .tab-right {
+            width: 275px; /* make 75% of regular width */
+        }
+
+        .tab-text-left, .tab-text-right {
+            display: block;
+        }
+
+        .video-container iframe {
+            height: 70%;
+            left: 60px;
+            width: 70%;
+        }
+
+        #blog {
+            height: 100%;
+            width: 100%;
+        }
+
+            #blog .col-lg-3 {
+                width: 50%;
+                float: left;
+            
+    }
+
+    /* tablets */
+    @media(min-width:992px) {
+        h3 {
+            font-size: 64px;
+        }
+
+        p {
+            font-size: 18px;
+        }
+
+        .tab-left, .tab-right {
+            width: 412px;
+        }
+
+        .video-container iframe {
+            height: 100%;
+            left: 0;
+            width: 100%;
+        }
+
+        #blog .col-lg-3 {
+            width: 25%;
+            float: left;
+        }
+    }

@@ -1,0 +1,63 @@
+/*!
+ * Raymond Kim 2015
+ *
+ * footer.css 
+ *
+ */
+
+   a:hover, a:focus  {
+      transition: color 0.2s ease;
+      color: #0bc;
+      outline: 0;
+      text-decoration: none;
+   }
+
+   footer {
+       color: black;
+   }
+       footer h3 {
+           margin-bottom: 30px;
+       }
+       footer .footer-above {
+           background-color: black;
+           padding: 150px 0px 100px 0px;
+       }
+       footer .footer-col {
+           margin-bottom: 50px;
+       }
+       footer .footer-below {
+           background-color: black;
+           padding: 25px 0;
+       }
+       footer a {
+           color: white;
+           font-weight: 300;
+           font-size: 20px;
+           padding: 0px 8px 0px 8px;
+       }
+
+       footer p {
+       	color: white;
+       	font-weight: 300;
+       	font-size: 12px;
+       }
+
+    #footer-logos {
+        padding: 30px 0px 50px 0px;
+    }
+
+/* smartphones */
+@media(max-width:767px) {
+    footer img { /* resize social media icons */
+        zoom: 50%;
+    }
+
+    footer a { /* resize links to other pages */
+    	font-size: 14px;
+    }
+
+@media(max-width: 480px) { /* portrait layout */
+  footer img {
+    zoom: 40%;
+  }
+}
