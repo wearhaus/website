@@ -94,24 +94,14 @@
             font-size: 16px;
         }
 
-    section h2 {
-        font-size: 3em;
-        margin: 0;
+    section {
+        height: 710px;
     }
 
-    section.success {
-        background: #18bc9c;
-        color: #fff;
-    }
-
-    section.success a,
-    section.success a:hover,
-    section.success a:focus,
-    section.success a:active,
-    section.success a.active {
-        color: #2c3e50;
-        outline: 0;
-    }
+        section h2 {
+            font-size: 3em;
+            margin: 0;
+        }
 
 /* CLASSES */
 
@@ -208,7 +198,7 @@
     .slide-left, .slide-right {
         background-color: rgba(255, 255, 255, 0.6);
         height: 100%;
-        width: 50%;
+        width: 670px;
     }
 
     .slide-left {
@@ -221,8 +211,6 @@
     }
 
     .slide-section {
-        height: 50%;
-        padding: 20px;
     }
 
         .slide-section h5 {
@@ -235,6 +223,15 @@
             font-weight: 300;
         }
 
+    .slide-section-text {
+        height: 47%;
+        padding: 20px;
+    }
+
+    .slide-section-vid {
+        height: auto;
+    }
+
     .tab {
         height: 100%;
         padding: 0px 0px 0px 0px;
@@ -243,7 +240,7 @@
 
     .tab-right, .tab-left {
         background-color: rgba(255, 255, 255, 0.6);
-        margin: 400px 0px 0px 0px;
+        margin: 334px 0px 0px 0px;
         padding-left: 20px;
         width: 412px
     }
@@ -261,7 +258,7 @@
         border-bottom-right-radius: 20px;
         box-shadow: 3px 3px 6px 0px rgba(31,31,31,0.35);
         float: left;
-        margin-left: 50%;
+        margin-left: 670px;
         position: relative;
     }
 
@@ -291,18 +288,17 @@
     }
 
     .tab-text-left {
-        left: -50%; /* init off screen */
+        left: -670px; /* init off screen */
     }
 
     .tab-text-right {
         float: right;
-        right: -50%; /* init off screen */
+        right: -670px; /* init off screen */
     }
 
     .video-container { /* make YouTube embed video responsive */
         position: relative;
         padding-bottom: 56.25%;
-        padding-top: 35px;
         height: 0;
         overflow: hidden;
     }
@@ -353,8 +349,8 @@
         background: black url('/static/img/black_arc_color.jpg') no-repeat center center scroll;
     }
 
-    #slide-section-2-sync {
-        background: black url('/static/img/black_arc.jpg') no-repeat center center scroll;
+    #slide-section-1-sync {
+        background: black url('/static/img/black_arc_color.jpg') no-repeat center center scroll;
     }
 
     #slide-section-2-touch {
@@ -452,9 +448,6 @@
 
     /* tablets */
     @media(min-width:768px) {
-        h3 {
-            font-size: 32px;
-        }
 
         header .intro-text .name {
             font-size: 4.75em;
@@ -464,34 +457,12 @@
             font-size: 1.75em;
         }
 
-        p {
-            font-size: 15px;
-        }
-
-        section {
-            height: 798px;
-        }
-
         .navbar {
             border-radius: 0px; /* override Bootstrap rounding corners of navbar */
         }
 
         .container-mobile, .section-mobile {
             display: none;
-        }
-
-        .tab-left, .tab-right {
-            width: 275px; /* make 75% of regular width */
-        }
-
-        .tab-text-left, .tab-text-right {
-            display: block;
-        }
-
-        .video-container iframe {
-            height: 70%;
-            left: 60px;
-            width: 70%;
         }
 
         #blog {
@@ -505,7 +476,6 @@
             
     }
 
-    /* tablets */
     @media(min-width:992px) {
         h3 {
             font-size: 64px;
@@ -528,5 +498,59 @@
         #blog .col-lg-3 {
             width: 25%;
             float: left;
+        }
+    }
+
+    /* tablets landscape */
+    @media(max-width:1024px) {
+
+        h3 {
+            font-size: 32px;
+        }
+
+        p {
+            font-size: 15px;
+        }
+
+        section {
+            height: 600px;
+        }
+
+        .slide-left, .slide-right {
+            width: 539px;
+        }
+
+        .slide-section-text {
+            height: 49.5%;
+        }
+
+        .tab-left {
+            margin: 297px 0px 0px 539px;
+        }
+
+        .tab-left, .tab-right {
+            width: 275px; /* make 75% of regular width */
+        }
+
+        .tab-text-left, .tab-text-right {
+            display: block;
+        }
+
+        .tab-text-left {
+            left: -539px; /* init off screen */
+        }
+
+        .tab-text-right {
+            right: -539px; /* init off screen */
+        }
+
+        #title-text {
+            margin-left: 0px;
+        }
+    }
+
+    @media(min-height:660px) {
+        #title {
+            height: 100vh; /* dynamically change height based on user browser height */
         }
     }
