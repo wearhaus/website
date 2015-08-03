@@ -84,6 +84,14 @@
     font-size: 14px;
   }
 
+  footer .row {
+    margin: -15px 0px -15px 0px;
+  }
+
+  .footer-col {
+    padding: 0px 0px 0px 0px;
+  }
+
   .footer-links-mobile {
     display: block;
     line-height: 30px;
