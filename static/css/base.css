@@ -170,8 +170,8 @@
     }
 
     .row {
-        margin-left: 0px; /* temp override bootstrap */
-        /*height: 800px; */
+        margin-left: 0px; /* override bootstrap */
+        margin-right: 0px;
     }
 
     .scroll-top {
