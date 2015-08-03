@@ -2,6 +2,7 @@
  * Raymond Kim 2015
  *
  * footer.css 
+ * Main website
  *
  */
 
@@ -34,30 +35,65 @@
            font-weight: 300;
            font-size: 20px;
            padding: 0px 8px 0px 8px;
+           white-space: nowrap;
        }
 
        footer p {
-       	color: white;
-       	font-weight: 300;
-       	font-size: 12px;
+        color: white;
+        font-weight: 300;
+        font-size: 12px;
        }
+
+    .footer-links-mobile {
+      display: none;
+    }
+
+    .site-footer {
+      padding-bottom: 0px;
+    }   
+
+    #footer-links {
+      line-height: 40px;
+    }
 
     #footer-logos {
         padding: 30px 0px 50px 0px;
     }
 
-/* smartphones */
-@media(max-width:767px) {
-    footer img { /* resize social media icons */
-        zoom: 50%;
+    #footer-logos-mobile {
+      display: none;
     }
 
-    footer a { /* resize links to other pages */
-    	font-size: 14px;
-    }
+/* smartphones */
+@media(min-width:768px) {
+
+  .footer-above .container {
+    width: 100%;
+  }
+
+}
 
 @media(max-width: 480px) { /* portrait layout */
-  footer img {
-    zoom: 40%;
+  footer a { /* resize links to other pages */
+    font-size: 14px;
+  }
+
+  .footer-links-mobile {
+    display: block;
+    line-height: 30px;
+    text-align: left;
+  }
+
+  #footer-links {
+    display: none;
+  }
+
+  #footer-logos {
+    display: none;
+  }
+
+  #footer-logos-mobile {
+    display: block;
+    padding-bottom: 20px;
   }
 }
