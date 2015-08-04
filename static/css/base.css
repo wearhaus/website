@@ -68,14 +68,18 @@
         padding: 30px 0px 280px 0px;
     }
 
-        header .container {
-            padding-top: 100px;
-            padding-bottom: 50px;
-        }
-
         header img {
             display: block;
             margin: 0 auto 20px;
+        }
+
+        header p {
+            text-transform: none; /* for the About Us page */
+        }
+
+        header .container {
+            padding-top: 100px;
+            padding-bottom: 50px;
         }
 
         header .intro-text .name {
@@ -506,7 +510,7 @@
     }
 
     /* tablets landscape */
-    @media(max-width:1024px) {
+    @media(max-width:1099px) {
 
         h3 {
             font-size: 32px;
@@ -534,6 +538,10 @@
 
         .tab-left, .tab-right {
             width: 275px; /* make 75% of regular width */
+        }
+
+        .tab-right h3 {
+            padding-right: 20px;
         }
 
         .tab-text-left, .tab-text-right {
