@@ -59,16 +59,12 @@
     }
 
     #footer-logos {
-        padding: 30px 40px 50px 40px;
+      padding: 30px 40px 50px 40px;
     }
 
     #footer-logos-mobile {
       display: none;
     }
-
-@media(max-width: 770px) {
-
-}
 
 /* smartphones */
 @media(min-width:768px) {
@@ -80,6 +76,7 @@
 }
 
 @media(max-width: 480px) { /* portrait layout */
+  
   footer a { /* resize links to other pages */
     font-size: 14px;
   }

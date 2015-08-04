@@ -1,12 +1,16 @@
-/*!
+/*
+ * base.css
  * Raymond Kim 2015
  *
- * base.css
+ * CSS for main Wearhaus site (excluding navbar and footer CSS)
+ * Note: this CSS is dependent on bootstrap.css 
  *
  * Contents are organized by TAGS, CLASSES, IDS, and MEDIA QUERIES.
- * Within each category they're sorted alphabetically.
+ * Selectors and attributes are ordered in alphabetical order.
  *
- * Doesn't include footer nor navbar CSS.
+ * Useful info: Wearhaus Teal = #0bc = (0, 188, 204);
+ * Useful keyboard shortcut: to sort selectors in alphabetical order, select selectors
+ * and press fn + F5 on mac
  *
  */
 
@@ -125,13 +129,13 @@
 
     .btn-social {
         border-radius: 100%;
-        display: inline-block;
-        width: 50px;
-        height: 50px;
         border: 2px solid #fff;
-        text-align: center;
+        display: inline-block;
         font-size: 20px;
+        height: 50px;
         line-height: 45px;
+        text-align: center;
+        width: 50px;
     }
 
     .btn:focus,
@@ -175,20 +179,20 @@
     }
 
     .scroll-top {
-        z-index: 1049;
+        bottom: 2%;
+        height: 50px;
         position: fixed;
         right: 2%;
-        bottom: 2%;
         width: 50px;
-        height: 50px;
+        z-index: 1049;
     }
 
         .scroll-top .btn {
-            width: 50px;
-            height: 50px;
             border-radius: 100%;
             font-size: 20px;
+            height: 50px;
             line-height: 28px;
+            width: 50px;
         }
 
     .scroll-top .btn:focus {
@@ -297,18 +301,18 @@
     }
 
     .video-container { /* make YouTube embed video responsive */
-        position: relative;
-        padding-bottom: 56.25%;
         height: 0;
         overflow: hidden;
+        padding-bottom: 56.25%;
+        position: relative;
     }
 
         .video-container iframe {
+            height: 100%;
+            left: 0;
             position: absolute;
             top: 0;
-            left: 0;
             width: 100%;
-            height: 100%;
         }
 
 /* IDS */
@@ -319,13 +323,13 @@
     }
 
     #blog {
-        padding: 0;
         margin: 0;
+        padding: 0;
     }
 
         #blog .col-lg-3 {
-            padding: 0 0 0 0;
             background-color: black;
+            padding: 0 0 0 0;
         }
 
         #blog img {
@@ -431,8 +435,8 @@
         }
 
             #blog .col-lg-3 {
-                width: 50%;
                 float: left;
+                width: 50%;
             }
 
         #sync {
@@ -471,8 +475,8 @@
         }
 
             #blog .col-lg-3 {
-                width: 50%;
                 float: left;
+                width: 50%;
             
     }
 
@@ -496,8 +500,8 @@
         }
 
         #blog .col-lg-3 {
-            width: 25%;
             float: left;
+            width: 25%;
         }
     }
 
