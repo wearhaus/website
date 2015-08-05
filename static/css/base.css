@@ -8,7 +8,7 @@
  * Contents are organized by TAGS, CLASSES, IDS, and MEDIA QUERIES.
  * Selectors and attributes are ordered in alphabetical order.
  *
- * Useful info: Wearhaus Teal = #0bc = (0, 188, 204);
+ * Useful info: Wearhaus Teal = #00bccc = (0, 188, 204);
  * Useful keyboard shortcut: to sort selectors in alphabetical order, select selectors
  * and press fn + F5 on mac
  *
@@ -52,6 +52,7 @@
     h1 {
         font-size: 96px;
         font-weight: 700;
+        margin-top: 0px;
     }
 
     h3 {
@@ -61,6 +62,7 @@
 
     h5 {
         font-size: 30px;
+        text-transform: none;
     }
 
     header {
@@ -146,6 +148,10 @@
     .btn:active,
     .btn.active {
         outline: 0;
+    }
+
+    .col-lg-6 {
+        margin-top: 70px;
     }
 
     .img-centered {
@@ -256,6 +262,7 @@
         .tab-left h3, .tab-right h3 {
             color: black;
             font-weight: 700;
+            margin-bottom: 20px;
         }
 
         .tab-left p, .tab-right p {
@@ -358,7 +365,7 @@
     }
 
     #slide-section-1-sync {
-        background: black url('/static/img/black_arc_color.jpg') no-repeat center center scroll;
+        background: #E6E6E6 url('/static/img/headphonegraphic.png') no-repeat center center scroll;
     }
 
     #slide-section-2-touch {

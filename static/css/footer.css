@@ -8,7 +8,7 @@
 
    a:hover, a:focus  {
       transition: color 0.2s ease;
-      color: #0bc;
+      color: #00bccc;
       outline: 0;
       text-decoration: none;
    }

@@ -2,11 +2,11 @@
  * Raymond Kim 2015
  *
  * navbar.css based on Bootstrap
- *
+ * main Wearhaus site
  */
 
 .navbar {
-        background: rgba(0, 0, 0, 0.7); /* make background translucent */
+        background: rgba(0, 0, 0, 0.8); /* make background translucent */
         font-family: "Lato", arial, sans-serif;
         font-weight: 700;
         margin-bottom: 0px;
@@ -34,10 +34,26 @@
 
 .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus  {
     transition: color 0.2s ease;
-    color: #0bc;
+    color: #00bccc;
     outline: 0;
  }
 
 .navbar-brand { /* CSS for Wearhaus logo */
     padding: 5px 15px;
 }
+
+#order_now {
+    padding-top: 5px;
+}
+
+#order_now_link {
+    background-color: #00bccc;
+    border-radius: 5px;
+    padding: 10px 15px 10px 15px;
+}
+
+    #order_now_link:hover, #order_now_link:focus {
+        transition: color 0.3s ease;
+        background-color: #33C9D6; /* make background lighter on hover/focus */
+        color: white;
+    }
