@@ -6,7 +6,7 @@ def main():
 	return render_template('index.html')
 
 @app.route('/ourstory')
-def about():
+def ourstory():
 	return render_template('ourstory.html')
 
 
