@@ -1,0 +1,155 @@
+/*
+ * about.css
+ * Raymond Kim 2015
+ *
+ * CSS for About page on main Wearhaus site (excluding navbar and footer CSS)
+ * Note: this CSS is dependent on bootstrap.css 
+ *
+ * Contents are organized by TAGS, CLASSES, IDS, and MEDIA QUERIES.
+ * Selectors and attributes are ordered in alphabetical order.
+ *
+ * Useful info: Wearhaus Teal = #00bccc = (0, 188, 204);
+ * Useful keyboard shortcut: to sort selectors in alphabetical order, select selectors
+ * and press fn + F5 on mac
+ *
+ */
+
+
+/* TAGS */
+
+
+/* CLASSES */
+
+    .about-section {
+        background: white;
+        height: 1350px;
+    }
+
+    .team-pic-grid-inner {
+    	background-color: #333;
+    	float: left;
+    	height: 350px;
+    	margin: 8px;
+    	position: relative;
+    	width: 209px;
+    }
+
+		.team-pic-grid-inner:before { /* slanted corner */
+			border-color: #333 #fff;
+			border-style: solid;
+			border-width: 50px 50px 0px 0px;
+			bottom: 0;
+			content: "";
+			display: block;
+			position: absolute;
+			right: 0;
+			width: 0;
+		}
+
+		.team-pic-grid-inner img {
+			background-color: white;
+			height: 70%;
+			width: 100%;
+		}
+
+	.team-pic-grid-inner-text {
+		height: 30%;
+		padding: 5px 15px 5px 15px;
+		width: 100%;
+	}
+
+		.team-pic-grid-inner-text h6 {
+			color: white;
+			font-size: 24px;
+			font-weight: 500;
+			margin-bottom: 0px;
+			text-transform: none;
+		}
+
+		.team-pic-grid-inner-text p {
+			color: white;
+		}
+
+/* IDS */
+
+    #team {
+
+    }
+
+        #team h3 {
+            color: #00bccc;
+            padding: 75px 0px 50px 0px;
+            margin: 0 auto;
+            width: 560px;
+        }
+
+    #team-pic-grid {
+    	margin: 0 auto;
+    	width: 900px;
+    }
+
+/* MEDIA QUERIES */
+
+@media(max-width: 1099px) {
+
+	#team h3 {
+		font-size: 64px;
+	}
+
+}
+
+@media(max-width: 968px) {
+
+	.about-section {
+		height: 1750px;
+	}
+
+	#team-pic-grid {
+		width: 675px;
+	}
+
+}
+
+@media(max-width: 770px) {
+
+	.about-section {
+		height: 2550px;
+	}
+
+	.team-pic-grid-inner {
+		margin: 16px;
+	}
+
+	#team h3 {
+		font-size: 48px;
+		width: 420px;
+	}
+
+	#team-pic-grid {
+		width: 482px;
+	}
+
+}
+
+@media(max-width: 530px) {
+
+	.about-section {
+		height: 4650px;
+	}
+
+	.team-pic-grid-inner {
+		float: none;
+		margin: 16px auto;
+		width: 209px;
+	}
+
+	#team h3 {
+		font-size: 32px;
+		width: 280px;
+	}
+
+	#team-pic-grid {
+		width: 100%;
+	}
+
+}
