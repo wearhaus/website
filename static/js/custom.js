@@ -4,45 +4,45 @@
 
 $(document).ready(function() {
 
-
-	// $('#sync .tab-left').click(function() {
-	// 	if ($('#sync .tab-text-left').css('left') == '0px') {
-	// 		$('#sync .tab-text-left').animate({left: '-670px'}, 400);
-	// 	}
-	// 	else {
-	// 		$('#sync .tab-text-left').animate({left: '0px'}, 400);
-	// 	}
-	// });
-
-
-	// $('#color .tab-right').click(function() {
-	// 	if ($('#color .tab-text-right').css('right') == '0px') {
-	// 		$('#color .tab-text-right').animate({right: '-670px'}, 400);
-	// 	}
-	// 	else {
-	// 		$('#color .tab-text-right').animate({right: '0px'}, 400);
-	// 	}
-	// });
-
-	// $('#touch .tab-left').click(function() {
-	// 	if ($('#touch .tab-text-left').css('left') == '0px') {
-	// 		$('#touch .tab-text-left').animate({left: '-670px'}, 400);
-	// 	}
-	// 	else {
-	// 		$('#touch .tab-text-left').animate({left: '0px'}, 400);
-	// 	}
-	// });
-
-	// $('#app .tab-right').click(function() {
-	// 	if ($('#app .tab-text-right').css('right') == '0px') {
-	// 		$('#app .tab-text-right').animate({right: '-670px'}, 400);
-	// 	}
-	// 	else {
-	// 		$('#app .tab-text-right').animate({right: '0px'}, 400);
-	// 	}
-	// });
+ 	// click functionality for tablets/smartphones
+	$('#sync .tab-left').click(function() {
+		if ($('#sync .tab-text-left').css('left') == '0px') {
+			$('#sync .tab-text-left').animate({left: '-670px'}, 400);
+		}
+		else {
+			$('#sync .tab-text-left').animate({left: '0px'}, 400);
+		}
+	});
 
 
+	$('#color .tab-right').click(function() {
+		if ($('#color .tab-text-right').css('right') == '0px') {
+			$('#color .tab-text-right').animate({right: '-670px'}, 400);
+		}
+		else {
+			$('#color .tab-text-right').animate({right: '0px'}, 400);
+		}
+	});
+
+	$('#touch .tab-left').click(function() {
+		if ($('#touch .tab-text-left').css('left') == '0px') {
+			$('#touch .tab-text-left').animate({left: '-670px'}, 400);
+		}
+		else {
+			$('#touch .tab-text-left').animate({left: '0px'}, 400);
+		}
+	});
+
+	$('#app .tab-right').click(function() {
+		if ($('#app .tab-text-right').css('right') == '0px') {
+			$('#app .tab-text-right').animate({right: '-670px'}, 400);
+		}
+		else {
+			$('#app .tab-text-right').animate({right: '0px'}, 400);
+		}
+	});
+
+	// hover functionality for desktops/laptops
 	$('#sync .tab-left').mouseenter(function() {
 		if ($(window).width() > 1099) { // desktop
 			if ($('#sync .tab-text-left').css('left') == '-670px') {
