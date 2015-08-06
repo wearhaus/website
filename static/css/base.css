@@ -166,6 +166,19 @@
         margin: 0 auto;
     }
 
+    .mobile-links {
+        height: 46px;
+        margin-bottom: 0px;
+    }
+
+        .mobile-links a {
+            margin: 0 10px;
+        }
+
+    .mobile-link-ios img, .mobile-link-android img {
+        height: 44px;
+    }
+
     .onfromtop_left, .onfrombottom_left, .offscreen_vert_left {
         transition: all 500ms;
         left: -50%;
@@ -368,6 +381,11 @@
         background-size: cover;
     }
 
+    #slide-section-1-app .mobile-links {
+        padding-left: 160px;
+        top: 40px;
+    }
+
     #slide-section-2-app {
         background: #E6E6E6 url('/static/img/black_arc_color.jpg') no-repeat center center scroll;
     }
@@ -551,6 +569,10 @@
             width: 539px;
         }
 
+        .slide-section-media {
+            height: 50.5%;
+        }
+
         .slide-section-text {
             height: 49.5%;
         }
@@ -577,6 +599,10 @@
 
         .tab-text-right {
             right: -539px; /* init off screen */
+        }
+
+        #slide-section-1-app .mobile-links {
+            padding-left: 90px;
         }
 
         #title-text {

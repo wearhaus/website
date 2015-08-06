@@ -87,12 +87,21 @@
 
   .footer-col {
     padding: 0px 0px 0px 0px;
+    overflow: auto;
   }
 
   .footer-links-mobile {
     display: block;
     line-height: 30px;
     text-align: left;
+  }
+
+  .mobile-links a {
+    margin: 0;
+  }
+
+  .mobile-link-ios img, .mobile-link-android img {
+      height: 38px;
   }
 
   #footer-links {
