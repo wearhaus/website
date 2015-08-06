@@ -319,7 +319,6 @@
 
     .tab-text-left, .tab-text-right {
         height: 100%;
-        overflow: hidden; /* to fix bug where on tablet user can scroll horizontally */
         position: relative;
         width: 100%;
     }
@@ -330,6 +329,7 @@
 
     .tab-text-right {
         float: right;
+        overflow-x: hidden;
         right: -670px; /* init off screen */
     }
 
