@@ -319,6 +319,7 @@
 
     .tab-text-left, .tab-text-right {
         height: 100%;
+        overflow: hidden; /* to fix bug where on tablet user can scroll horizontally */
         position: relative;
         width: 100%;
     }
@@ -594,11 +595,11 @@
         }
 
         .tab-text-left {
-            left: -539px; /* init off screen */
+            left: -539px !important; /* init off screen */
         }
 
         .tab-text-right {
-            right: -539px; /* init off screen */
+            right: -539px !important; /* init off screen */
         }
 
         #slide-section-1-app .mobile-links {
