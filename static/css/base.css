@@ -150,6 +150,14 @@
         outline: 0;
     }
 
+    .carousel-control {
+        width: 12%;
+    }
+
+    .carousel-control.right, .carousel-control.left {
+        background: transparent;
+    }
+
     .col-lg-6 {
         margin-top: 70px;
     }
@@ -242,8 +250,8 @@
         padding: 20px;
     }
 
-    .slide-section-vid {
-        height: auto;
+    .slide-section-media {
+        height: 53%;
     }
 
     .tab {
@@ -351,39 +359,47 @@
         padding: 100px 0px 100px 0px;
     }
 
+    #carousel-example-generic {
+        height: 100%;
+    }
+
     #color {
         background: url('/static/img/colorpic.jpg');
         background-size: cover;
     }
 
     #slide-section-2-app {
-        background: black url('/static/img/black_arc_color.jpg') no-repeat center center scroll;
+        background: #E6E6E6 url('/static/img/black_arc_color.jpg') no-repeat center center scroll;
     }
 
     #slide-section-2-color {
-        background: black url('/static/img/black_arc_color.jpg') no-repeat center center scroll;
+        background: #E6E6E6 url('/static/img/black_arc_color.jpg') no-repeat center center scroll;
     }
 
     #slide-section-1-sync {
         background: #E6E6E6 url('/static/img/headphonegraphic.png') no-repeat center center scroll;
     }
 
+    #slide-section-1-touch {
+        background: #E6E6E6 url('/static/img/touch-graphic.png');
+    }
+
     #slide-section-2-touch {
-        background: black url('/static/img/black_arc.jpg') no-repeat center center scroll;
+        background: #E6E6E6;
     }
 
     #sync {
-        background: black url('/static/img/syncpicresize.jpg') no-repeat; 
+        background: #E6E6E6 url('/static/img/syncpicresize.jpg') no-repeat; 
         background-size: cover;
     }
 
     #title {
-        background: black url('/static/img/test.jpg');
+        background: #E6E6E6 url('/static/img/test.jpg');
         background-size: cover;
     }
 
     #touch {
-        background: black url('/static/img/touchpic.jpg');
+        background: #E6E6E6 url('/static/img/touchpic.jpg');
         background-size: cover;
     }
 
