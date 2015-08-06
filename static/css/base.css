@@ -400,8 +400,13 @@
     }
 
     #slide-section-1-touch {
-        background: #E6E6E6 url('/static/img/touch-graphic.png');
+
     }
+
+        #slide-section-1-touch img {
+            padding-top: 30px;
+            width: 100%;
+        }
 
     #slide-section-2-touch {
         background: #E6E6E6;
@@ -595,11 +600,11 @@
         }
 
         .tab-text-left {
-            left: -539px !important; /* init off screen */
+            left: -539px; /* init off screen */
         }
 
         .tab-text-right {
-            right: -539px !important; /* init off screen */
+            right: -539px ; /* init off screen */
         }
 
         #slide-section-1-app .mobile-links {
