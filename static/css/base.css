@@ -329,7 +329,6 @@
 
     .tab-text-right {
         float: right;
-        overflow-x: hidden;
         right: -670px; /* init off screen */
     }
 
@@ -591,9 +590,13 @@
             width: 275px; /* make 75% of regular width */
         }
 
-        .tab-right h3 {
-            padding-right: 20px;
+        .tab-right {
+            margin-top: 297px;
         }
+
+            .tab-right h3 {
+                padding-right: 20px;
+            }
 
         .tab-text-left, .tab-text-right {
             display: block;
