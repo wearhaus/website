@@ -548,7 +548,7 @@
         }
     }
 
-    /* tablets landscape */
+    /* tablets portrait/landscape */
     @media(max-width:1099px) {
 
         h3 {
@@ -560,7 +560,7 @@
         }
 
         section {
-            height: 532px;
+            height: 533px;
         }
 
         .slide-left, .slide-right {
@@ -601,7 +601,8 @@
         }
 
         .tab-text-right {
-            right: -479px ; /* init off screen */
+            overflow-x: hidden;
+            right: -494px ; /* init off screen */
         }
 
         #slide-section-1-app .mobile-links {
