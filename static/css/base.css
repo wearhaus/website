@@ -560,11 +560,11 @@
         }
 
         section {
-            height: 600px;
+            height: 533px;
         }
 
         .slide-left, .slide-right {
-            width: 539px;
+            width: 479px;
         }
 
         .slide-section-media {
@@ -576,7 +576,7 @@
         }
 
         .tab-left {
-            margin: 297px 0px 0px 539px;
+            margin: 297px 0px 0px 479px;
         }
 
         .tab-left, .tab-right {
@@ -597,11 +597,11 @@
         }
 
         .tab-text-left {
-            left: -539px; /* init off screen */
+            left: -479px; /* init off screen */
         }
 
         .tab-text-right {
-            right: -539px ; /* init off screen */
+            right: -479px ; /* init off screen */
         }
 
         #slide-section-1-app .mobile-links {
