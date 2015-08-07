@@ -576,7 +576,7 @@
         }
 
         .tab-left {
-            margin: 297px 0px 0px 479px;
+            margin: 264px 0px 0px 479px;
         }
 
         .tab-left, .tab-right {
@@ -585,7 +585,7 @@
 
 
         .tab-right {
-            margin-top: 297px;
+            margin-top: 264px;
         }
 
             .tab-right h3 {
@@ -605,7 +605,8 @@
         }
 
         #slide-section-1-app .mobile-links {
-            padding-left: 90px;
+            padding-left: 60px;
+            top: 20px;
         }
 
         #title-text {
