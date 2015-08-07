@@ -61,7 +61,7 @@
     }
 
     h5 {
-        font-size: 30px;
+        font-size: 32px;
         text-transform: none;
     }
 
@@ -408,6 +408,16 @@
         background-size: cover;
     }
 
+    #title-text-arc {
+        font-size: 136px;
+    }
+
+    #title-text-wearhaus {
+        font-size: 40px;
+        font-weight: 300;
+        margin-bottom: 0px;
+    }
+
     #touch {
         background: #E6E6E6 url('/static/img/touchpic.jpg');
         background-size: cover;
@@ -489,6 +499,10 @@
         #title-text {
             margin: 0 auto;
             text-align: center;
+        }
+
+        #title-text-arc {
+            font-size: 80px;
         }
 
     }
@@ -612,6 +626,10 @@
 
         #title-text {
             margin-left: 0px;
+        }
+
+        #title-text-arc {
+            font-size: 72px !important;
         }
     }
 
