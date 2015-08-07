@@ -169,6 +169,7 @@
     .mobile-links {
         height: 46px;
         margin-bottom: 0px;
+        padding: 0px;
     }
 
         .mobile-links a {
@@ -431,6 +432,12 @@
     }
 
 /* MEDIA QUERIES */
+
+    @media(max-width: 480px) {
+        h1 {
+            font-size: 40px !important;
+        }
+    }
 
     /* smartphones */
     @media(max-width:767px) {
