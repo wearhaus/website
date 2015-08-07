@@ -4,7 +4,8 @@
 
 $(document).ready(function() {
 
- 	// click functionality for tablets/smartphones
+ 	// click functionality mainly for tablets/smartphones
+ 
 	$('#sync .tab-left').click(function() {
 		if ($('#sync .tab-text-left').css('left') == '0px') {
 			$('#sync .tab-text-left').animate({left: '-670px'}, 400);
@@ -42,7 +43,8 @@ $(document).ready(function() {
 		}
 	});
 
-	// hover functionality for desktops/laptops
+	// hover functionality mainly for desktops/laptops
+
 	$('#sync .tab-left').mouseenter(function() {
 		if ($(window).width() > 1099) { // desktop
 			if ($('#sync .tab-text-left').css('left') == '-670px') {
