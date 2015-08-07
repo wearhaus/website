@@ -50,6 +50,20 @@
       display: none;
     }
 
+    .mobile-links {
+        height: 46px;
+        margin-bottom: 0px;
+        padding: 0px;
+    }
+
+        .mobile-links a {
+            margin: 0 10px;
+        }
+
+    .mobile-link-ios img, .mobile-link-android img {
+        height: 44px;
+    }
+
     .site-footer {
       padding-bottom: 0px;
     }   

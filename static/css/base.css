@@ -166,20 +166,6 @@
         margin: 0 auto;
     }
 
-    .mobile-links {
-        height: 46px;
-        margin-bottom: 0px;
-        padding: 0px;
-    }
-
-        .mobile-links a {
-            margin: 0 10px;
-        }
-
-    .mobile-link-ios img, .mobile-link-android img {
-        height: 44px;
-    }
-
     .onfromtop_left, .onfrombottom_left, .offscreen_vert_left {
         transition: all 500ms;
         left: -50%;
@@ -300,7 +286,7 @@
     }
 
     .tab-left-responsive {
-        padding: 10px;
+
     }
 
     .tab-right {
@@ -388,11 +374,11 @@
     }
 
     #slide-section-2-app {
-        background: #E6E6E6 url('/static/img/black_arc_color.jpg') no-repeat center center scroll;
+        background: #E6E6E6;
     }
 
     #slide-section-2-color {
-        background: #E6E6E6 url('/static/img/black_arc_color.jpg') no-repeat center center scroll;
+        background: #E6E6E6;
     }
 
     #slide-section-1-sync {
