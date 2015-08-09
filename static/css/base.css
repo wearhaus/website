@@ -285,8 +285,8 @@
         position: relative;
     }
 
-    .tab-left-responsive {
-
+    .tab-left-responsive, .tab-right-responsive {
+        cursor: default;
     }
 
     .tab-right {
