@@ -17,6 +17,11 @@
 
 /* TAGS */
 
+	h3 { /* title text */
+		font-size: 64px;
+		margin-bottom: 20px;
+	}
+
 
 /* CLASSES */
 
@@ -91,6 +96,10 @@
 /* MEDIA QUERIES */
 
 @media(max-width: 1099px) {
+
+	p {
+		font-size: 18px;
+	}
 
 	#team h3 {
 		font-size: 64px;
