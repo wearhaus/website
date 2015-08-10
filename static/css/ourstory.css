@@ -93,6 +93,11 @@
     	width: 900px;
     }
 
+    #title-our-story {
+    	background: #E6E6E6 url('/static/img/ourstorybackgroundimg1.jpg');
+    	background-size: cover;
+    }
+
 /* MEDIA QUERIES */
 
 @media(max-width: 1099px) {

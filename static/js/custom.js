@@ -160,5 +160,10 @@ $(document).ready(function() {
 
 
 	});
+
+  /* stop YouTube vid on close */
+  $('#myModal').on('hidden.bs.modal', function () {
+    $('#myModal iframe').removeAttr('src');
+  })
 	
 });

@@ -454,6 +454,17 @@
         margin-left: -45px;
     }
 
+    #title-vid-icon {
+        height: 120px;
+        margin: 0 auto;
+        width: 120px;
+    }
+
+    #title-vid-white-btn {
+        width: 100%;
+    }
+
+
 /* MEDIA QUERIES */
 
     @media(max-width: 480px) {
@@ -530,6 +541,12 @@
 
         #title-text-arc {
             font-size: 80px;
+        }
+
+        #title-vid-icon {
+            height: 60px;
+            margin: 0 auto;
+            width: 60px;
         }
 
     }
@@ -670,9 +687,11 @@
         }
     }
 
-   /* @media(min-height:660px) {
+    @media(min-height:660px) {
         #title {
             height: 100vh;
         }
     }
-    */
+
+
+    
