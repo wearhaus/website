@@ -635,8 +635,7 @@
         }
 
         .tab-text-right {
-            overflow-x: hidden;
-            right: -494px ; /* init off screen */
+            right: -479px ; /* init off screen */
         }
 
         #slide-section-1-app .mobile-links {
