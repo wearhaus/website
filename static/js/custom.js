@@ -8,7 +8,7 @@ $(document).ready(function() {
 
 	$('#sync .tab-left').click(function() {
 		if ($('#sync .tab-text-left').css('left') == '0px') {
-			$('#sync .tab-text-left').animate({left: '-494px'}, 400);
+			$('#sync .tab-text-left').animate({left: '-479px'}, 400);
 		}
 		else {
 			$('#sync .tab-text-left').animate({left: '0px'}, 400);
@@ -18,7 +18,7 @@ $(document).ready(function() {
 
 	$('#color .tab-right').click(function() {
 		if ($('#color .tab-text-right').css('right') == '0px') {
-			$('#color .tab-text-right').animate({right: '-494px'}, 400);
+			$('#color .tab-text-right').animate({right: '-479px'}, 400);
 		}
 		else {
 			$('#color .tab-text-right').animate({right: '0px'}, 400);
@@ -27,7 +27,7 @@ $(document).ready(function() {
 
 	$('#touch .tab-left').click(function() {
 		if ($('#touch .tab-text-left').css('left') == '0px') {
-			$('#touch .tab-text-left').animate({left: '-494px'}, 400);
+			$('#touch .tab-text-left').animate({left: '-479px'}, 400);
 		}
 		else {
 			$('#touch .tab-text-left').animate({left: '0px'}, 400);
@@ -36,7 +36,7 @@ $(document).ready(function() {
 
 	$('#app .tab-right').click(function() {
 		if ($('#app .tab-text-right').css('right') == '0px') {
-			$('#app .tab-text-right').animate({right: '-494px'}, 400);
+			$('#app .tab-text-right').animate({right: '-479px'}, 400);
 		}
 		else {
 			$('#app .tab-text-right').animate({right: '0px'}, 400);
@@ -52,7 +52,7 @@ $(document).ready(function() {
 			}
 		}
 		else { // tablet
-			if ($('#sync .tab-text-left').css('left') == '-494px') {
+			if ($('#sync .tab-text-left').css('left') == '-479px') {
 				$('#sync .tab-text-left').animate({left: '0px'}, 400);
 			}
 		}
@@ -67,7 +67,7 @@ $(document).ready(function() {
 		}
 		else {
 			if ($('#sync .tab-text-left').css('left') == '0px') {
-				$('#sync .tab-text-left').animate({left: '-494px'}, 400);
+				$('#sync .tab-text-left').animate({left: '-479px'}, 400);
 			}			
 		}
 
@@ -81,7 +81,7 @@ $(document).ready(function() {
 			}
 		}
 		else {
-			if ($('#color .tab-text-right').css('right') == '-494px') {
+			if ($('#color .tab-text-right').css('right') == '-479px') {
 				$('#color .tab-text-right').animate({right: '0px'}, 400);
 			}
 		}
@@ -96,7 +96,7 @@ $(document).ready(function() {
 		}
 		else {
 			if ($('#color .tab-text-right').css('right') == '0px') {
-				$('#color .tab-text-right').animate({right: '-494px'}, 400);
+				$('#color .tab-text-right').animate({right: '-479px'}, 400);
 			}
 		}
 
@@ -110,7 +110,7 @@ $(document).ready(function() {
 			}
 		}
 		else {
-			if ($('#touch .tab-text-left').css('left') == '-494px') {
+			if ($('#touch .tab-text-left').css('left') == '-479px') {
 				$('#touch .tab-text-left').animate({left: '0px'}, 400);
 			}
 		}
@@ -125,7 +125,7 @@ $(document).ready(function() {
 		}
 		else {
 			if ($('#touch .tab-text-left').css('left') == '0px') {
-				$('#touch .tab-text-left').animate({left: '-494px'}, 400);
+				$('#touch .tab-text-left').animate({left: '-479px'}, 400);
 			}
 		}
 
@@ -139,7 +139,7 @@ $(document).ready(function() {
 			}
 		}
 		else {
-			if ($('#app .tab-text-right').css('right') == '-494px') {
+			if ($('#app .tab-text-right').css('right') == '-479px') {
 				$('#app .tab-text-right').animate({right: '0px'}, 400);
 			}
 		}
@@ -154,7 +154,7 @@ $(document).ready(function() {
 		}
 		else {
 			if ($('#app .tab-text-right').css('right') == '0px') {
-				$('#app .tab-text-right').animate({right: '-494px'}, 400);
+				$('#app .tab-text-right').animate({right: '-479px'}, 400);
 			}
 		}
 

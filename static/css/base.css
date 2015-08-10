@@ -260,6 +260,12 @@
         width: 100%;
     }
 
+    .tab-arrow {
+        height: 25px;
+        margin-top: 77px;
+        margin-right: 17px;
+    }
+
     .tab-right, .tab-left {
         background-color: rgba(255, 255, 255, 0.6);
         margin: 334px 0px 0px 0px;
@@ -288,6 +294,11 @@
     .tab-left-responsive, .tab-right-responsive {
         cursor: default;
     }
+
+        .tab-left-responsive h3 {
+            float: left;
+            width: 350px;
+        }
 
     .tab-right {
         border-bottom-left-radius: 20px;
@@ -589,12 +600,21 @@
             height: 49.5%;
         }
 
+        .tab-arrow {
+            margin-top: 44px;
+            margin-right: 0px;
+        }
+
         .tab-left {
             margin: 264px 0px 0px 479px;
         }
 
         .tab-left, .tab-right {
             width: 275px; /* make 75% of regular width */
+        }
+
+        .tab-left-responsive h3 {
+            width: 210px;
         }
 
 
@@ -626,10 +646,6 @@
 
         #title-text {
             margin-left: 0px;
-        }
-
-        #title-text-arc {
-            font-size: 72px !important;
         }
     }
 
