@@ -162,8 +162,8 @@ $(document).ready(function() {
 	});
 
   /* stop YouTube vid on close */
-  $('#myModal').on('hidden.bs.modal', function () {
-    $('#myModal iframe').removeAttr('src');
-  })
+  $('#myModal').on('hidden.bs.modal', function (e) {
+    $('#myModal iframe').attr('src', $('#myModal iframe').attr('src'));
+  });
 	
 });
