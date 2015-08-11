@@ -30,6 +30,11 @@
         height: 1350px;
     }
 
+    .col-md-6 {
+    	background-color: rgba(82, 82, 82, 0.7);
+    	padding: 10px 30px 30px 30px;
+    }
+
     .team-pic-grid-inner {
     	background-color: #333;
     	float: left;
