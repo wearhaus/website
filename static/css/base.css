@@ -386,6 +386,14 @@
             font-size: 60px;
         } 
 
+        #app .container-mobile {
+            padding-top: 10%;
+        }
+
+        #app .mobile-links {
+            margin-top: 50px;
+        }
+
     #blog {
         margin: 0;
         padding: 0;
@@ -499,9 +507,13 @@
 
 /* MEDIA QUERIES */
 
-    @media(max-width: 480px) {
+    @media(max-width: 480px) { /* smartphone portrait */
         h1 {
             font-size: 40px !important;
+        }
+
+        #app .mobile-links {
+            margin-top: 30px;
         }
     }
 
