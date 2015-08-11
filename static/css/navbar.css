@@ -5,6 +5,7 @@
  * main Wearhaus site
  */
 
+
 .navbar {
         background: rgba(0, 0, 0, 0.8); /* make background translucent */
         font-family: "Lato", arial, sans-serif;
@@ -40,6 +41,10 @@
 
 .navbar-brand { /* CSS for Wearhaus logo */
     padding: 5px 15px;
+}
+
+#mailingListModal .modal-body {
+    height: 420px; 
 }
 
 #order_now {
