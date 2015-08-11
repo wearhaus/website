@@ -200,6 +200,10 @@
         right: 0px !important;
     }
 
+    .overflow {
+        overflow: hidden; /* fix tablet horizontal scrolling issue */
+    }
+
     .overlay {
         position: absolute;
         width: 100%;
