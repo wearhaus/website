@@ -378,7 +378,7 @@
 /* IDS */
 
     #app {
-        background: black url('/static/img/dj.jpg') no-repeat;
+        background: black url('/static/img/mobile.jpg') no-repeat;
         background-size: cover;
     }
 
@@ -405,7 +405,7 @@
     }
 
     #color {
-        background: url('/static/img/colorpic.jpg');
+        background: url('/static/img/color.jpg');
         background-size: cover;
     }
 
@@ -445,12 +445,12 @@
     }
 
     #sync {
-        background: #E6E6E6 url('/static/img/syncpicresize.jpg') no-repeat; 
+        background: #E6E6E6 url('/static/img/sync.jpg') no-repeat; 
         background-size: cover;
     }
 
     #title {
-        background: #E6E6E6 url('/static/img/test.jpg');
+        background: #E6E6E6 url('/static/img/subway-pink.jpg');
         background-size: cover;
     }
 
@@ -465,7 +465,7 @@
     }
 
     #touch {
-        background: #E6E6E6 url('/static/img/touchpic.jpg');
+        background: #E6E6E6 url('/static/img/touch.jpg');
         background-size: cover;
     }
 
@@ -474,13 +474,19 @@
     }
 
     #title-vid-icon {
-        height: 120px;
         margin: 0 auto;
-        width: 120px;
+        width: 300px;
     }
 
+        #title-vid-icon h5 {
+            color: white;
+            float: left;
+        }
+
     #title-vid-white-btn {
-        width: 100%;
+        display: inline;
+        height: 60px;
+        margin-left: 15px;
     }
 
 
