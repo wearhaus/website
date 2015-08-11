@@ -382,6 +382,10 @@
         background-size: cover;
     }
 
+        #app .tab-right h3 { /* for correct spacing */
+            font-size: 60px;
+        } 
+
     #blog {
         margin: 0;
         padding: 0;
@@ -420,7 +424,7 @@
     }
 
     #slide-section-1-sync {
-        background: #E6E6E6 url('/static/img/headphonegraphic.png') no-repeat center center scroll;
+        background: url('/static/img/headphonegraphic.png') no-repeat center center scroll;
     }
 
     #slide-section-1-touch {
@@ -433,11 +437,11 @@
         }
 
     #slide-section-2-app {
-        background: #E6E6E6;
+        /*background: #E6E6E6;*/
     }
 
     #slide-section-2-color {
-        background: #E6E6E6;
+        /*background: #E6E6E6;*/
     }
 
     #slide-section-2-touch {
@@ -445,7 +449,7 @@
     }
 
     #sync {
-        background: #E6E6E6 url('/static/img/sync.jpg') no-repeat; 
+        background: url('/static/img/sync.jpg') no-repeat; 
         background-size: cover;
     }
 
@@ -489,6 +493,9 @@
         margin-left: 15px;
     }
 
+    #touch .tab-left-responsive {
+        padding: 10px;
+    }
 
 /* MEDIA QUERIES */
 
@@ -637,7 +644,7 @@
     @media(max-width:1099px) {
 
         h3 {
-            font-size: 32px;
+            font-size: 32px !important;
         }
 
         p {
@@ -677,7 +684,6 @@
             width: 210px;
         }
 
-
         .tab-right {
             margin-top: 264px;
         }
@@ -712,6 +718,10 @@
 
         #title-text {
             margin-left: 0px;
+        }
+
+        #touch .tab-left-responsive {
+            height: 95px;
         }
     }
 
