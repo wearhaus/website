@@ -417,7 +417,7 @@
     }
 
     #color {
-        background: url('/static/img/color.jpg');
+        background: url('/static/img/color2.jpg');
         background-size: cover;
     }
 
@@ -486,7 +486,7 @@
     }
 
     #title-vid-icon {
-        margin: 0 auto;
+        margin: 40px auto;
         width: 300px;
     }
 
@@ -494,6 +494,11 @@
             color: white;
             float: left;
         }
+
+            #title-vid-icon h5:hover {
+                color: #00bccc;
+                transition: color 0.2s ease;
+            }
 
     #title-vid-white-btn {
         display: inline;
