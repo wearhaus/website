@@ -6,6 +6,10 @@
  */
 
 
+.nav>li {
+    text-align: center;
+}
+
 .navbar {
         background: rgba(0, 0, 0, 0.8); /* make background translucent */
         font-family: "Lato", arial, sans-serif;
@@ -56,6 +60,7 @@
     background-color: #00bccc;
     border-radius: 5px;
     padding: 10px 15px 10px 15px;
+    width: 126px;
 }
 
     #order_now_link:hover, #order_now_link:focus {
