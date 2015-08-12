@@ -239,8 +239,11 @@
         outline: 0;
     }
 
-    .slide-left, .slide-right {
+    .slide-left, .slide-right, .tab-left, .tab-right {
         background-color: rgba(255, 255, 255, 0.7);
+    }
+
+    .slide-left, .slide-right {
         height: 100%;
         width: 670px;
     }
@@ -289,7 +292,6 @@
     }
 
     .tab-right, .tab-left {
-        background-color: rgba(255, 255, 255, 0.6);
         margin: 334px 0px 0px 0px;
         padding-left: 20px;
         width: 412px
@@ -307,7 +309,7 @@
 
     .tab-left {
         border-bottom-right-radius: 20px;
-        box-shadow: 3px 3px 6px 0px rgba(31,31,31,0.35);
+        box-shadow: 3px 3px 6px 0px rgba(31,31,31,0.2);
         float: left;
         margin-left: 670px;
         position: relative;
@@ -336,7 +338,7 @@
 
     .tab-right {
         border-bottom-left-radius: 20px;
-        box-shadow: -3px 3px 6px 0px rgba(31,31,31,0.35);
+        box-shadow: -3px 3px 6px 0px rgba(31,31,31,0.2);
         float: right;
         position: relative;
     }
@@ -386,12 +388,39 @@
         background-size: cover;
     }
 
+        #app a {
+            margin: 0;
+        }
+
         #app .tab-right h3 { /* for correct spacing */
             font-size: 60px;
         } 
 
+        #app video {
+            padding: 80px 0px 0px 20px;
+            width: 85%;
+        }
+
+        #app .app-container {
+            padding: 20px 0px 0px 0px;
+        }
+
+        #app .col-md-6 {
+            float: left;
+            position: relative;
+        }
+
         #app .container-mobile {
             padding-top: 10%;
+        }
+
+        #app #iphone-screen {
+            height: 550px;
+            position: absolute;
+        }
+
+        #app .slide-section {
+            height: 100%;
         }
 
     #blog {
@@ -422,8 +451,9 @@
     }
 
     #slide-section-1-app .mobile-links {
-        padding-left: 160px;
-        top: 40px;
+        padding: 250px 0px 0px 12px;
+        position: absolute;
+        width: 300px;
     }
 
     #slide-section-1-color img { /* light ring gif */
@@ -443,14 +473,6 @@
             padding-top: 30px;
             width: 100%;
         }
-
-    #slide-section-2-app {
-        /*background: #E6E6E6;*/
-    }
-
-    #slide-section-2-color {
-        /*background: #E6E6E6;*/
-    }
 
     #slide-section-2-touch {
         background: #E6E6E6;
@@ -657,6 +679,14 @@
         }
     }
 
+    @media(max-width:991px) {
+        #app .col-md-6 {
+            width: 50%; /* override bootstrap responsiveness */
+        }
+
+
+    }
+
     /* tablets portrait/landscape */
     @media(max-width:1099px) {
 
@@ -721,10 +751,23 @@
             right: -479px ; /* init off screen */
         }
 
-        #slide-section-1-app .mobile-links {
-            padding-left: 70px;
-            top: 20px;
+        #app video {
+            padding: 44px 0px 0px 40px;
         }
+
+        #app #iphone-screen {
+            height: 300px;
+            padding-left: 28px;
+        }
+
+        #slide-section-1-app .mobile-links {
+            padding: 350px 0px 0px 70px;
+            width: 100%;
+        }
+
+            #slide-section-1-app .mobile-links a {
+                padding-right: 20px;
+            }
 
         #slide-section-1-color img {
             display: block;
