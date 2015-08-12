@@ -733,6 +733,11 @@
             width: 340px;
         }
 
+        #slide-section-1-sync {
+            background-position: bottom center;
+            background-size: 100%;
+        }
+
         #title-text {
             margin-left: 0px;
         }
