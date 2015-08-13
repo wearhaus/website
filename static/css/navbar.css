@@ -37,7 +37,7 @@
     color: white;
 }
 
-.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus  {
+.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
     transition: color 0.2s ease;
     color: #00bccc;
     outline: 0;
@@ -63,8 +63,32 @@
     width: 126px;
 }
 
-    #order_now_link:hover, #order_now_link:focus {
+    #order_now_link:hover, #order_now_link:focus,
+    #order_now_link_mobile:hover, #order_now_link_mobile:focus {
         transition: color 0.3s ease;
         background-color: #33C9D6; /* make background lighter on hover/focus */
         color: white;
     }
+
+#order_now_link_mobile {
+    display: none;
+}
+
+@media(max-width: 767px) {
+    #order_now_link_mobile {
+        background-color: #00bccc;
+        border-radius: 5px;
+        color: white;
+        display: block;
+        height: 34px;
+        line-height: 24px;
+        margin: 8px auto;
+        padding: 5px 15px 5px 15px;
+        text-align: center;
+        width: 117px;
+    }
+
+    #order_now {
+        display: none;
+    }
+}
