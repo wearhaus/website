@@ -392,10 +392,6 @@
             margin: 0;
         }
 
-        #app .tab-right h3 { /* for correct spacing */
-            font-size: 60px;
-        } 
-
         #app video {
             padding: 80px 0px 0px 20px;
             width: 85%;
@@ -656,7 +652,7 @@
 
     @media(min-width:992px) {
         h3 {
-            font-size: 64px;
+            font-size: 46px;
         }
 
         p {
