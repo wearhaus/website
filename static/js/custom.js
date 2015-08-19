@@ -207,4 +207,22 @@ $(document).ready(function() {
 	    $('#myModal iframe').attr('src', $('#myModal iframe').attr('src'));
 	  });
 	
+
+	/* get JSON object for loading images for blog section */
+	var featured_blog_posts_url = "http://biog.wearhaus.com/?page_id=911";
+	$.getJSON( featured_blog_posts_url, {})
+		.done(function(data) {
+			var count = 1;
+			$.each(data, function(i, item) {
+				if (i == 'featured-' + count) { // render images in blog section
+					$('#blog_a_'+count).attr('href', item.url)
+					$('#blog_img_'+count).attr('src', item.img_url).attr('alt', item.title);
+				}
+
+				count++;
+			});
+		})
+		.fail(function() {console.log("error");
+		});
+
 });
