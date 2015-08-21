@@ -7,7 +7,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def main():
-    featured_posts_url_response = urllib.urlopen("http://biog.wearhaus.com/featured-images/")
+    featured_posts_url_response = urllib.urlopen("http://biog.wearhaus.com/featured-posts/")
     featured_posts = json.loads(featured_posts_url_response.read())
     return render_template('index.html', featured_posts = featured_posts)
 
