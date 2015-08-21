@@ -209,7 +209,7 @@ $(document).ready(function() {
 	
 
 	/* get JSON object for loading images for blog section */
-	var featured_blog_posts_url = "http://biog.wearhaus.com/?page_id=911";
+	var featured_blog_posts_url = "http://biog.wearhaus.com/featured-images";
 	$.getJSON( featured_blog_posts_url, {})
 		.done(function(data) {
 			var count = 1;
