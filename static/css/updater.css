@@ -1,0 +1,183 @@
+/* line 9, ../../compass/sass/updater.scss */
+html {
+  font-size: 93.75%;
+}
+
+/* line 17, ../../compass/sass/updater.scss */
+.flex-1 {
+  width: 8.33333%;
+}
+
+/* line 17, ../../compass/sass/updater.scss */
+.flex-2 {
+  width: 16.66667%;
+}
+
+/* line 17, ../../compass/sass/updater.scss */
+.flex-3 {
+  width: 25%;
+}
+
+/* line 17, ../../compass/sass/updater.scss */
+.flex-4 {
+  width: 33.33333%;
+}
+
+/* line 17, ../../compass/sass/updater.scss */
+.flex-5 {
+  width: 41.66667%;
+}
+
+/* line 17, ../../compass/sass/updater.scss */
+.flex-6 {
+  width: 50%;
+}
+
+/* line 17, ../../compass/sass/updater.scss */
+.flex-7 {
+  width: 58.33333%;
+}
+
+/* line 17, ../../compass/sass/updater.scss */
+.flex-8 {
+  width: 66.66667%;
+}
+
+/* line 17, ../../compass/sass/updater.scss */
+.flex-9 {
+  width: 75%;
+}
+
+/* line 17, ../../compass/sass/updater.scss */
+.flex-10 {
+  width: 83.33333%;
+}
+
+/* line 17, ../../compass/sass/updater.scss */
+.flex-11 {
+  width: 91.66667%;
+}
+
+/* line 17, ../../compass/sass/updater.scss */
+.flex-12 {
+  width: 100%;
+}
+
+/* line 26, ../../compass/sass/updater.scss */
+.flex-grid {
+  display: table;
+  table-layout: fixed;
+  border-spacing: 1em;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+/* line 33, ../../compass/sass/updater.scss */
+.flex-grid [class*="flex"] {
+  display: table-cell;
+  margin: 1em 0;
+  padding: 1em;
+  vertical-align: top;
+  word-wrap: break-word;
+}
+
+@media (max-width: 480px) {
+  /* line 43, ../../compass/sass/updater.scss */
+  html {
+    font-size: 87.5%;
+  }
+
+  /* line 47, ../../compass/sass/updater.scss */
+  body {
+    margin: 0 1em;
+  }
+
+  /* line 51, ../../compass/sass/updater.scss */
+  [class*="flex"] {
+    display: block !important;
+    width: auto !important;
+  }
+}
+/* line 58, ../../compass/sass/updater.scss */
+h1:first-child, h2:first-child, h3:first-child, h4:first-child, h5:first-child, h6:first-child, p:first-child, ul:first-child, ol:first-child, li:first-child {
+  margin-top: 0;
+}
+/* line 61, ../../compass/sass/updater.scss */
+h1:last-child, h2:last-child, h3:last-child, h4:last-child, h5:last-child, h6:last-child, p:last-child, ul:last-child, ol:last-child, li:last-child {
+  margin-bottom: 0;
+}
+
+/* line 66, ../../compass/sass/updater.scss */
+p {
+  margin: 1em 0;
+}
+
+/* line 72, ../../compass/sass/updater.scss */
+section {
+  padding: 13em;
+}
+/* line 74, ../../compass/sass/updater.scss */
+section.gray {
+  background-color: #f2f2f2;
+}
+/* line 75, ../../compass/sass/updater.scss */
+section.white {
+  background-color: white;
+}
+@media screen and (max-width: 1099px) {
+  /* line 72, ../../compass/sass/updater.scss */
+  section {
+    padding: 8em;
+    height: auto;
+  }
+}
+@media screen and (max-width: 767px) {
+  /* line 72, ../../compass/sass/updater.scss */
+  section {
+    padding: 4em 1em;
+    height: auto;
+  }
+}
+
+/* line 86, ../../compass/sass/updater.scss */
+button {
+  font-size: 1.5em;
+  padding: .3em 2em;
+  color: white;
+  background-color: #00bccc;
+  border: 0;
+  cursor: pointer;
+  -moz-border-radius: 0.33333em;
+  -webkit-border-radius: 0.33333em;
+  border-radius: 0.33333em;
+}
+/* line 94, ../../compass/sass/updater.scss */
+button p {
+  font-size: .5em;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 101, ../../compass/sass/updater.scss */
+  #updater-image {
+    display: none !important;
+  }
+}
+@media screen and (max-width: 767px) {
+  /* line 106, ../../compass/sass/updater.scss */
+  .download {
+    text-align: center;
+  }
+}
+
+/* line 111, ../../compass/sass/updater.scss */
+.step h1 {
+  margin: 0;
+}
+/* line 114, ../../compass/sass/updater.scss */
+.step span {
+  color: gray;
+}
+
+/* line 119, ../../compass/sass/updater.scss */
+a {
+  text-transform: none;
+}
