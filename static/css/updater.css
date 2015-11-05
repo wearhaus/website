@@ -135,7 +135,7 @@ section.white {
 @media screen and (max-width: 767px) {
   /* line 72, ../../compass/sass/updater.scss */
   section {
-    padding: 4em 1em;
+    padding: 4em 1em !important;
     height: auto;
   }
 }
@@ -182,9 +182,11 @@ button p {
 .step img {
   width: 100%;
   height: auto;
+  box-shadow: 2px 2px 8px;
+  margin: 0.5em 0;
 }
 
-/* line 129, ../../compass/sass/updater.scss */
+/* line 131, ../../compass/sass/updater.scss */
 a {
   text-transform: none;
 }
