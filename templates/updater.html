@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Wearhaus</title>
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="../static/img/favicon.ico" type="image/x-icon">
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body id="page-top" class="index">
+
+    {% include 'navbar.html' %}
+
+    <!-- Header -->
+    <section class="gray">
+        <div class="flex-grid">
+            <div class="flex-9">
+              <h2>Firmware Updater</h2>
+              <p>This is a tool that will allow you to download new firmware updates directly to your Wearhaus Arc. These updates refresh your Arc with new features and ensure that your headphones are working smoothly. Use the step-by-step directions below to get started!</p>
+              <div class="download flex-2">
+                <a class="show-for-mac" href="../downloads/WearhausUpdater.dmg"><button href="#">Download<p>Firmware v1.0</p></button></a>
+                <a class="show-for-win" href="#"><button href="#">Download<p>Firmware v1.0</p></button></a>
+                <a class="show-for-android" href="https://play.google.com/store/apps/details?id=com.wearhaus.frontend&hl=en"><button href="#">Download<p>On Google Play</p></button></a>
+              </div>
+              <div class="download flex-10 show-for-mac" style="vertical-align: middle;">For Mac OS X 10.5 or later</div>
+              <div class="download flex-10 show-for-win" style="vertical-align: middle;">For Windows 10 or later</div>
+              <div class="download flex-10 show-for-android" style="vertical-align: middle;">For Android 4.0 and up</div>
+              <p class="show-for-mac">Not using a Mac?</p>
+              <p class="show-for-win">Not using Windows?</p>
+              <p class="show-for-android">Not using Android? </p>
+              <a href="#" id="download-for-mac"><i class="fa fa-apple fa-2x"></i></a>
+              <a href="#" id="download-for-win"><i class="fa fa-windows fa-2x"></i></a>
+              <a href="#" id="download-for-android"><i class="fa fa-android fa-2x"></i></a>
+              <p>Questions? Email <a href="mailto:support@wearhaus.com">support@wearhaus.com</a></p>
+            </div>
+            <div class="flex-3" id="updater-image"><img src="../static/img/arc-updater-right.png" style="width: 130px; height: auto;"></div>
+          </div>
+        </section>
+
+        <section class="white">
+          <div class="step flex-grid">
+            <div class="flex-1">
+              <h2>Step 1</h2>
+              <span class="show-for-mac">Control click and Open</span>
+              <span class="show-for-win">Connect Arc in Bluetooth Settings</span>
+              <span class="show-for-android">Open Android App</span>
+              <img class="show-for-mac" src="../static/img/arc-updater-osx-screen_01.png">
+              <img class="show-for-win" src="../static/img/arc-updater-win-screen_01.png">
+            </div>
+            <div class="step flex-1">
+              <h2>Step 2</h2>
+              <span class="show-for-mac">Connect Arc</span>
+              <span class="show-for-win">Allow Access to Arc</span>
+              <span class="show-for-android">Go to Settings</span>
+              <img class="show-for-mac" src="../static/img/arc-updater-osx-screen_02.png">
+              <img class="show-for-win" src="../static/img/arc-updater-win-screen_02.png">
+            </div>
+            <div class="step flex-1">
+              <h2>Step 3</h2>
+              <span class="show-for-mac">Start Update</span>
+              <span class="show-for-win">Start Update</span>
+              <span class="show-for-android">Start Update</span>
+              <img class="show-for-mac" src="../static/img/arc-updater-osx-screen_03.png">
+              <img class="show-for-win" src="../static/img/arc-updater-win-screen_03.png">
+            </div>
+          </div>
+        </section>
+
+    {% include 'footer.html' %}
+    {% include 'includes.html' %}
+
+    <link href="../static/css/updater.css" rel="stylesheet">
+
+</body>
+
+</html>

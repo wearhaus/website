@@ -202,11 +202,55 @@ $(document).ready(function() {
 
 	});
 
-	  /* stop YouTube vid on close */
-	  $('#myModal').on('hidden.bs.modal', function (e) {
-	    $('#myModal iframe').attr('src', $('#myModal iframe').attr('src'));
-	  });
-	
+	/* stop YouTube vid on close */
+	$('#myModal').on('hidden.bs.modal', function (e) {
+		$('#myModal iframe').attr('src', $('#myModal iframe').attr('src'));
+	});
+
+
+	/* hide Mac/Windows only elements on page */
+	if (navigator.appVersion.indexOf("Mac") > -1) {
+	    showForMac();
+	} else {
+		showForWin();
+	}
+
+	/* add click event for Mac/Windows toggle */
+	$('#download-for-mac').on("click", function(e) {
+		e.preventDefault();
+		showForMac();
+	});
+	$('#download-for-win').on("click", function(e) {
+		e.preventDefault();
+		showForWin();
+	});
+	$('#download-for-android').on("click", function(e) {
+		e.preventDefault();
+		showForAndroid();
+	});
+
+	/* functions that handle the hiding/showing of Mac/Windows objects */
+	function showForWin() {
+		console.log("Showing for Windows");
+	    $('.show-for-win').show();
+	    $('.show-for-mac').hide();
+	    $('.show-for-android').hide();
+	}
+
+	function showForMac() {
+		console.log("Showing for Mac");
+	    $('.show-for-win').hide();
+	    $('.show-for-mac').show();
+	    $('.show-for-android').hide();
+	}
+
+	function showForAndroid() {
+		console.log("Showing for Android");
+	    $('.show-for-win').hide();
+	    $('.show-for-mac').hide();
+	    $('.show-for-android').show();
+	}
+
 
 	/* get JSON object for loading images for blog section */
 	/*
