@@ -154,7 +154,7 @@ button {
 }
 /* line 100, ../../compass/sass/updater.scss */
 button p {
-  font-size: .5em;
+  font-size: .6em;
 }
 
 @media screen and (max-width: 767px) {
