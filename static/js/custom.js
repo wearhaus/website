@@ -209,11 +209,14 @@ $(document).ready(function() {
 
 
 	/* hide Mac/Windows only elements on page */
+    /* Commenting this out until Mac updated is available */
+    /*
 	if (navigator.appVersion.indexOf("Mac") > -1) {
 	    showForMac();
 	} else {
 		showForWin();
-	}
+	}*/
+    showForAndroid();
 
 	/* add click event for Mac/Windows toggle */
 	$('#download-for-mac').on("click", function(e) {
@@ -235,7 +238,6 @@ $(document).ready(function() {
 
 	/* functions that handle the hiding/showing of Mac/Windows objects */
 	function showForWin() {
-		console.log("Showing for Windows");
 	    $('.show-for-win').show();
 	    $('.show-for-mac').hide();
 	    $('.show-for-android').hide();
@@ -243,7 +245,6 @@ $(document).ready(function() {
 	}
 
 	function showForMac() {
-		console.log("Showing for Mac");
 	    $('.show-for-win').hide();
 	    $('.show-for-mac').show();
 	    $('.show-for-android').hide();
@@ -251,7 +252,6 @@ $(document).ready(function() {
 	}
 
 	function showForAndroid() {
-		console.log("Showing for Android");
 	    $('.show-for-win').hide();
 	    $('.show-for-mac').hide();
 	    $('.show-for-android').show();
@@ -259,7 +259,6 @@ $(document).ready(function() {
 	}
 
 	function showForWinPhone() {
-		console.log("Showing for Windows Phone");
 	    $('.show-for-win').hide();
 	    $('.show-for-mac').hide();
 	    $('.show-for-android').hide();
