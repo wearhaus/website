@@ -148,37 +148,38 @@ button {
   background-color: #00bccc;
   border: 0;
   cursor: pointer;
+  width: 200px;
   -moz-border-radius: 0.33333em;
   -webkit-border-radius: 0.33333em;
   border-radius: 0.33333em;
 }
-/* line 100, ../../compass/sass/updater.scss */
+/* line 101, ../../compass/sass/updater.scss */
 button p {
   font-size: .55em;
 }
 
 @media screen and (max-width: 767px) {
-  /* line 107, ../../compass/sass/updater.scss */
+  /* line 108, ../../compass/sass/updater.scss */
   #updater-image {
     display: none !important;
   }
 }
 @media screen and (max-width: 767px) {
-  /* line 112, ../../compass/sass/updater.scss */
+  /* line 113, ../../compass/sass/updater.scss */
   .download {
     text-align: center;
   }
 }
 
-/* line 117, ../../compass/sass/updater.scss */
+/* line 118, ../../compass/sass/updater.scss */
 .step h1 {
   margin: 0;
 }
-/* line 120, ../../compass/sass/updater.scss */
+/* line 121, ../../compass/sass/updater.scss */
 .step span {
   color: gray;
 }
-/* line 123, ../../compass/sass/updater.scss */
+/* line 124, ../../compass/sass/updater.scss */
 .step img {
   width: 100%;
   height: auto;
@@ -186,7 +187,7 @@ button p {
   margin: 0.5em 0;
 }
 
-/* line 131, ../../compass/sass/updater.scss */
+/* line 132, ../../compass/sass/updater.scss */
 a {
   text-transform: none;
 }
