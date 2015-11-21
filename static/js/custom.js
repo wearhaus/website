@@ -228,6 +228,10 @@ $(document).ready(function() {
 		e.preventDefault();
 		showForAndroid();
 	});
+	$('#download-for-winphone').on("click", function(e) {
+		e.preventDefault();
+		showForWinPhone();
+	});
 
 	/* functions that handle the hiding/showing of Mac/Windows objects */
 	function showForWin() {
@@ -235,6 +239,7 @@ $(document).ready(function() {
 	    $('.show-for-win').show();
 	    $('.show-for-mac').hide();
 	    $('.show-for-android').hide();
+	    $('.show-for-winphone').hide();
 	}
 
 	function showForMac() {
@@ -242,6 +247,7 @@ $(document).ready(function() {
 	    $('.show-for-win').hide();
 	    $('.show-for-mac').show();
 	    $('.show-for-android').hide();
+	    $('.show-for-winphone').hide();
 	}
 
 	function showForAndroid() {
@@ -249,6 +255,15 @@ $(document).ready(function() {
 	    $('.show-for-win').hide();
 	    $('.show-for-mac').hide();
 	    $('.show-for-android').show();
+	    $('.show-for-winphone').hide();
+	}
+
+	function showForWinPhone() {
+		console.log("Showing for Windows Phone");
+	    $('.show-for-win').hide();
+	    $('.show-for-mac').hide();
+	    $('.show-for-android').hide();
+	    $('.show-for-winphone').show();
 	}
 
 
