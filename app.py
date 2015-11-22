@@ -20,7 +20,7 @@ def updater():
     return render_template('updater.html')
 
 @app.route('/update')
-def updater():
+def update():
     return render_template('updater.html')
 
 # @app.route('/arc/updater/windows')
