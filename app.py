@@ -19,6 +19,10 @@ def ourstory():
 def updater():
     return render_template('updater.html')
 
+@app.route('/update')
+def updater():
+    return render_template('updater.html')
+
 # @app.route('/arc/updater/windows')
 # def ourstory():
 #     return render_template('updater-windows.html')
