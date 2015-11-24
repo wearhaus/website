@@ -220,6 +220,10 @@ $(document).ready(function() {
 		e.preventDefault();
 		showForMac();
 	});
+	$('#download-for-ios').on("click", function(e) {
+		e.preventDefault();
+		showForiOS();
+	});
 	$('#download-for-win').on("click", function(e) {
 		e.preventDefault();
 		showForWin();
@@ -237,6 +241,7 @@ $(document).ready(function() {
 	function showForWin() {
 	    $('.show-for-win').show();
 	    $('.show-for-mac').hide();
+	    $('.show-for-ios').hide();
 	    $('.show-for-android').hide();
 	    $('.show-for-winphone').hide();
 	}
@@ -244,6 +249,15 @@ $(document).ready(function() {
 	function showForMac() {
 	    $('.show-for-win').hide();
 	    $('.show-for-mac').show();
+	    $('.show-for-ios').hide();
+	    $('.show-for-android').hide();
+	    $('.show-for-winphone').hide();
+	}
+
+	function showForiOS() {
+	    $('.show-for-win').hide();
+	    $('.show-for-mac').hide();
+	    $('.show-for-ios').show();
 	    $('.show-for-android').hide();
 	    $('.show-for-winphone').hide();
 	}
@@ -251,6 +265,7 @@ $(document).ready(function() {
 	function showForAndroid() {
 	    $('.show-for-win').hide();
 	    $('.show-for-mac').hide();
+	    $('.show-for-ios').hide();
 	    $('.show-for-android').show();
 	    $('.show-for-winphone').hide();
 	}
@@ -258,6 +273,7 @@ $(document).ready(function() {
 	function showForWinPhone() {
 	    $('.show-for-win').hide();
 	    $('.show-for-mac').hide();
+	    $('.show-for-ios').hide();
 	    $('.show-for-android').hide();
 	    $('.show-for-winphone').show();
 	}
