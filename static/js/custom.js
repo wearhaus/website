@@ -208,15 +208,12 @@ $(document).ready(function() {
 	});
 
 
-	/* hide Mac/Windows only elements on page */
-    /* Commenting this out until Mac updated is available */
-    /*
+	/* hide Mac/Windows only elements on page */    
 	if (navigator.appVersion.indexOf("Mac") > -1) {
 	    showForMac();
 	} else {
 		showForWin();
-	}*/
-    showForAndroid();
+	}
 
 	/* add click event for Mac/Windows toggle */
 	$('#download-for-mac').on("click", function(e) {

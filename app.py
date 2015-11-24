@@ -23,10 +23,6 @@ def updater():
 def update():
     return render_template('updater.html')
 
-# @app.route('/arc/updater/windows')
-# def ourstory():
-#     return render_template('updater-windows.html')
-
 if __name__ == '__main__':
     app.debug = False
     app.run()
