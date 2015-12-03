@@ -12,15 +12,13 @@ def main():
     return render_template('index.html', featured_posts = featured_posts)
 
 @app.route('/ourstory')
+@app.route('/team')
 def ourstory():
     return render_template('ourstory.html')
 
 @app.route('/updater')
-def updater():
-    return render_template('updater.html')
-
 @app.route('/update')
-def update():
+def updater():
     return render_template('updater.html')
 
 if __name__ == '__main__':
