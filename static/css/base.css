@@ -479,9 +479,17 @@
         background-size: cover;
     }
 
-    #title {
+    #title:before {
+        content: "";
+        position: absolute;
         background: #E6E6E6 url('/static/img/subway-pink.jpg');
         background-size: cover;
+        background-position: center top;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0.85;
+        z-index: -1;
     }
 
     #title-text-arc {
@@ -528,6 +536,15 @@
         padding: 10px;
     }
 
+    iframe[name='player'] {
+        display: none;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+    }
+
 /* MEDIA QUERIES */
 
     @media(max-width: 480px) { /* smartphone portrait */
@@ -548,11 +565,11 @@
         }
 
         h3 {
-            font-size: 36px;
+            font-size: 42px;
         }
 
         h5 {
-            font-size: 24px;
+            font-size: 32px;
         }
 
         header {
@@ -614,9 +631,9 @@
             font-size: 80px;
         }
 
-        #title-vid-icon {
+        /*#title-vid-icon {
             display: none;
-        }
+        }*/
 
     }
 

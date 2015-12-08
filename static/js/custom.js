@@ -202,10 +202,26 @@ $(document).ready(function() {
 
 	});
 
-	/* stop YouTube vid on close */
-	$('#myModal').on('hidden.bs.modal', function (e) {
-		$('#myModal iframe').attr('src', $('#myModal iframe').attr('src'));
+
+	/* Video player setup */
+	$('#title-vid-link').on("click", function(e) {
+		$('iframe[name="player"]').fadeIn('slow');
 	});
+
+	$('#title-vid-link').on("blur", function(e) {
+		hideVideoPlayer();
+	});
+
+	$(document).keyup(function(e) {
+		if (e.keyCode == 27) // escape key
+			hideVideoPlayer();
+	});
+
+
+	function hideVideoPlayer() {
+		$('iframe[name="player"]').fadeOut('slow');
+		$('iframe[name="player"]').attr('src', $('iframe[name="player"]').attr('src'));
+	}
 
 
 	/* hide Mac/Windows only elements on page */    
@@ -236,6 +252,7 @@ $(document).ready(function() {
 		e.preventDefault();
 		showForWinPhone();
 	});
+
 
 	/* functions that handle the hiding/showing of Mac/Windows objects */
 	function showForWin() {
