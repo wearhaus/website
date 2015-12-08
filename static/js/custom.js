@@ -207,11 +207,7 @@ $(document).ready(function() {
 	$('#title-vid-link').on("click", function(e) {
 		if (window.innerWidth <= 480)
 			e.preventDefault();
-		$('iframe[name="player"]').fadeIn('slow');
-	});
-
-	$('#title-vid-link').on("blur", function(e) {
-		hideVideoPlayer();
+		$('.player-container').fadeIn('slow');
 	});
 
 	$(document).keyup(function(e) {
@@ -221,7 +217,7 @@ $(document).ready(function() {
 
 
 	function hideVideoPlayer() {
-		$('iframe[name="player"]').fadeOut('slow');
+		$('.player-container').fadeOut('slow');
 		$('iframe[name="player"]').attr('src', $('iframe[name="player"]').attr('src'));
 	}
 
