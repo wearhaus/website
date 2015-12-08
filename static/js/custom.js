@@ -205,6 +205,8 @@ $(document).ready(function() {
 
 	/* Video player setup */
 	$('#title-vid-link').on("click", function(e) {
+		if (window.innerWidth <= 480)
+			e.preventDefault();
 		$('iframe[name="player"]').fadeIn('slow');
 	});
 
