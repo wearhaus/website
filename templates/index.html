@@ -269,24 +269,43 @@
     <section id="blog">
         <div class="container" id="blog">
             <div class="row">
-                <div class="col-lg-3">
-                    <div class="overlay">
-                       <img src="../static/img/blog_background_generic.jpg">
-                    </div>
-                    <div class="overlay" id="overlay-text">
-                        <a href="http://blog.wearhaus.com"><img src="../static/img/wearhaus-blog-overlay.png"></a>
-                    </div>
+                <div class="carousel slide" id="myCarousel">
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <div class="col-lg-3">
+                                <div class="overlay">
+                                   <img src="../static/img/blog_background_generic.jpg">
+                                </div>
+                                <div class="overlay" id="overlay-text">
+                                    <a href="http://blog.wearhaus.com"><img src="../static/img/wearhaus-blog-overlay.png"></a>
+                                </div>
 
-                </div>
-                <div class="col-lg-3">
-                    <a href={{ featured_posts.featured_1.url }} id="blog_a_1"><img src={{ featured_posts.featured_1.img_url }} id="blog_img_1"></a>
-                </div>
-                <div class="col-lg-3">
-                    <a href={{ featured_posts.featured_2.url }} id="blog_a_2"><img src={{ featured_posts.featured_2.img_url }} id="blog_img_2"></a>
-                </div>
-                <div class="col-lg-3">
-                    <a href={{ featured_posts.featured_3.url }} id="blog_a_3"><img src={{ featured_posts.featured_3.img_url }} id="blog_img_3"></a>
-                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <a href={{ featured_posts.featured_1.url }} id="blog_a_1"><img src={{ featured_posts.featured_1.img_url }} id="blog_img_1"></a>
+                            </div>
+                            <div class="col-lg-3">
+                                <a href={{ featured_posts.featured_2.url }} id="blog_a_2"><img src={{ featured_posts.featured_2.img_url }} id="blog_img_2"></a>
+                            </div>
+                            <div class="col-lg-3">
+                                <a href={{ featured_posts.featured_3.url }} id="blog_a_3"><img src={{ featured_posts.featured_3.img_url }} id="blog_img_3"></a>
+                            </div>
+                        </div><!-- /Slide1 --> 
+                        <div class="item">
+                            <div class="col-lg-3">
+                                <a href={{ featured_posts.featured_4.url }} id="blog_a_1"><img src={{ featured_posts.featured_4.img_url }} id="blog_img_1"></a>
+                            </div>
+                            <div class="col-lg-3">
+                                <a href={{ featured_posts.featured_5.url }} id="blog_a_2"><img src={{ featured_posts.featured_5.img_url }} id="blog_img_2"></a>
+                            </div>
+                            <div class="col-lg-3">
+                                <a href={{ featured_posts.featured_6.url }} id="blog_a_3"><img src={{ featured_posts.featured_6.img_url }} id="blog_img_3"></a>
+                            </div>
+                            <div class="col-lg-3">
+                                <a href={{ featured_posts.featured_7.url }} id="blog_a_3"><img src={{ featured_posts.featured_7.img_url }} id="blog_img_3"></a>
+                            </div>
+                        </div><!-- /Slide2 --> 
+                    </div>
             </div>
         </div>
     </section>

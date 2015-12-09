@@ -252,6 +252,12 @@ $(document).ready(function() {
 	});
 
 
+	// Carousel Auto-Cycle
+	$('.carousel').carousel({
+      interval: 6000
+    })
+
+
 	/* functions that handle the hiding/showing of Mac/Windows objects */
 	function showForWin() {
 	    $('.show-for-win').show();
