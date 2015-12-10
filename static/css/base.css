@@ -189,6 +189,9 @@
 
     .carousel-control.right, .carousel-control.left {
         background: transparent;
+        height: 50px;
+        margin-top: -25px;
+        top: 50%;
     }
 
     .col-lg-6 {
