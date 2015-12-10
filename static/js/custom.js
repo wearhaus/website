@@ -208,6 +208,7 @@ $(document).ready(function() {
 		if (window.innerWidth <= 480)
 			e.preventDefault();
 		$('.player-container').fadeIn('slow');
+		$('.player-container iframe').delay(500).fadeIn('slow');
 	});
 
 	$(document).keyup(function(e) {
@@ -217,7 +218,9 @@ $(document).ready(function() {
 
 
 	function hideVideoPlayer() {
-		$('.player-container').fadeOut('slow');
+		$('.player-container').fadeOut('slow', function() {
+			$('.player-container iframe').hide();
+		});
 		$('iframe[name="player"]').attr('src', $('iframe[name="player"]').attr('src'));
 	}
 
@@ -250,6 +253,12 @@ $(document).ready(function() {
 		e.preventDefault();
 		showForWinPhone();
 	});
+
+
+	// Carousel Auto-Cycle
+	$('.carousel').carousel({
+      interval: 6000
+    })
 
 
 	/* functions that handle the hiding/showing of Mac/Windows objects */
