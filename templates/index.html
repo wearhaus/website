@@ -269,18 +269,15 @@
     <section id="blog">
         <div class="container" id="blog">
             <div class="row">
+                <div class="overlay">
+                   <img src="../static/img/blog_background_generic.jpg">
+                </div>
+                <div class="overlay" id="overlay-text">
+                    <a href="http://blog.wearhaus.com"><img src="../static/img/wearhaus-blog-overlay.png"></a>
+                </div>
                 <div class="carousel slide" id="myCarousel">
                     <div class="carousel-inner">
                         <div class="item active">
-                            <div class="col-lg-3">
-                                <div class="overlay">
-                                   <img src="../static/img/blog_background_generic.jpg">
-                                </div>
-                                <div class="overlay" id="overlay-text">
-                                    <a href="http://blog.wearhaus.com"><img src="../static/img/wearhaus-blog-overlay.png"></a>
-                                </div>
-
-                            </div>
                             <div class="col-lg-3">
                                 <a href={{ featured_posts.featured_1.url }} id="blog_a_1" data-caption="{{ featured_posts.featured_1.title }}">
                                     <img src={{ featured_posts.featured_1.img_url }} id="blog_img_1">
@@ -309,9 +306,6 @@
                             <div class="col-lg-3">
                                 <a href={{ featured_posts.featured_6.url }} id="blog_a_6" data-caption="{{ featured_posts.featured_6.title }}"><img src={{ featured_posts.featured_6.img_url }} id="blog_img_3"></a>
                             </div>
-                            <div class="col-lg-3">
-                                <a href={{ featured_posts.featured_7.url }} id="blog_a_7" data-caption="{{ featured_posts.featured_7.title }}"><img src={{ featured_posts.featured_7.img_url }} id="blog_img_3"></a>
-                            </div>
                         </div><!-- /Slide2 --> 
                         <div class="control-box">                            
                             <div class="carousel-control left">
@@ -326,6 +320,7 @@
                             </div>
                         </div><!-- /.control-box -->
                     </div><!-- /Carousel -->
+                </div><!-- /carousel slide -->
             </div>
         </div>
     </section>

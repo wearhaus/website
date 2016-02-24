@@ -179,6 +179,10 @@
     opacity: 1;
   }
 
+  .carousel-inner {
+    width: 75%;
+  }
+
     .carousel-control {
         width: 6%;
     }
@@ -245,8 +249,14 @@
     }
 
     .overlay {
+        float: left;
+        width: 25%;
+    }
+
+    .overlay#overlay-text {
         position: absolute;
-        width: 100%;
+        float: left;
+        width: 25%;
     }
 
     .row {
@@ -670,7 +680,7 @@
 
             #blog .col-lg-3 {
                 float: left;
-                width: 50%;
+                width: 33.3%;
             }
 
         #myModal {
@@ -722,9 +732,8 @@
 
             #blog .col-lg-3 {
                 float: left;
-                width: 50%;
-            
-    }
+                width: 33.3%;
+            }
 
     @media(min-width:992px) {
         h3 {
@@ -747,7 +756,7 @@
 
         #blog .col-lg-3 {
             float: left;
-            width: 25%;
+            width: 33.3%;
         }
     }
 
