@@ -257,6 +257,7 @@
         position: absolute;
         float: left;
         width: 25%;
+        z-index: 1;
     }
 
     .row {
