@@ -11,7 +11,7 @@
 }
 
 .navbar {
-        background: rgba(0, 0, 0, 0.8); /* make background translucent */
+        background-color: transparent; /* make background translucent */
         font-family: "Lato", arial, sans-serif;
         font-weight: 700;
         margin-bottom: 0px;
@@ -27,6 +27,11 @@
         .navbar .navbar-nav {
             letter-spacing: 1px;
         }
+
+.static {
+    background-color: rgba(255,255,255,0.5);
+    transition: background-color 1s ease 0s;
+}
 
 .navbar-default,
 .navbar-inverse {
