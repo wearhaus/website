@@ -202,6 +202,13 @@ $(document).ready(function() {
 
 	});
 
+	$(window).scroll(function() {
+		if ($(this).scrollTop() == 0) {
+			$('.navbar').removeClass('static');
+		} else {
+			$('.navbar').addClass('static');
+		}
+	});
 
 	/* Video player setup */
 	$('#title-vid-link').on("click", function(e) {
