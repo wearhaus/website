@@ -20,7 +20,7 @@
     }
 
         .navbar a {
-            font-weight: 300;
+            font-weight: 500;
             text-transform: uppercase;
         }
 
@@ -63,9 +63,10 @@
 
 #order_now_link {
     background-color: #00bccc;
-    border-radius: 5px;
     padding: 10px 15px 10px 15px;
-    width: 126px;
+    width: 130px;
+    -webkit-clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
+    clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
 }
 
     #order_now_link:hover, #order_now_link:focus,

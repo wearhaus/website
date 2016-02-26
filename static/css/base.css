@@ -529,7 +529,7 @@
     #title:before {
         content: "";
         position: absolute;
-        background: #E6E6E6 url('/static/img/subway-pink.jpg');
+        background: #E6E6E6 url('/static/img/Gym.jpg');
         background-size: cover;
         background-position: center top;
         top: 0;
@@ -538,15 +538,12 @@
         opacity: 0.85;
         z-index: -1;
     }
+    #title:before #topright {
+        width: 0; 
+        height: 0; 
+        border-top: 100px solid gray; 
+        border-right: 100px solid transparent;
 
-    #title-text-arc {
-        font-size: 136px;
-    }
-
-    #title-text-wearhaus {
-        font-size: 40px;
-        font-weight: 300;
-        margin-bottom: 0px;
     }
 
     #touch {
@@ -554,30 +551,29 @@
         background-size: cover;
     }
 
-    #title-text {
-        margin-left: -45px;
+    .title-content {
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
     }
 
-    #title-vid-icon {
+    #title-name {
+        font-weight: 500;
+        font-size: 18px;
+    }
+
+    #title-sub {
+        margin: -5px;
+        font-weight: 900;
+        font-size: 30px;
+    }
+/*    #title-vid-icon {
         margin: 40px auto;
         width: 300px;
-    }
+    }*/
 
-        #title-vid-icon h5 {
-            color: white;
-            float: left;
-        }
-
-            #title-vid-icon h5:hover {
-                color: #00bccc;
-                transition: color 0.2s ease;
-            }
-
-    #title-vid-white-btn {
-        display: inline;
-        height: 60px;
-        margin-left: 15px;
-    }
 
     #touch .tab-left-responsive {
         padding: 10px;
