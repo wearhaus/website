@@ -39,12 +39,120 @@
         outline: 0;
     }
 
+    section {
+        margin: 20px 0px;
+    }
     body {
-        background-color: black;
+        background-color: white;
         font-family: "Lato", arial, sans-serif;
         overflow-x: hidden;
     }
 
+    .main-container {
+        margin: 15px 30px;
+    }
+
+    #mail {
+        position: relative;
+        background-color: #ccc;
+        height: 80px;
+    }
+
+    .forms {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        width: 620px;
+    }
+
+    *:focus {
+        outline: none;
+    }
+    .main_info {
+        width: 100%;
+    }
+
+    .box {
+        background: url('/static/img/place.png');
+        width: 32%;
+        height: 0;
+        padding-bottom: 32%;
+        float: left;
+        position: relative;
+    }
+
+    .touch, .light {
+        margin-right: 2%;
+    }
+
+/*    .g_block {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+    }*/
+
+    .g_block {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: black;
+        opacity: 0.5;
+        display: none;
+    }
+
+    .box_title {
+        z-index: 10;
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 30px;
+        position: absolute;
+        height: 30px;
+        width: auto;
+        background-color: white;
+        padding-left: 10px;
+        padding-right: 20px;
+        bottom: 20px;
+        left: 0px;
+        background-color: rgba(255,255,255,0.5);
+        -webkit-clip-path: polygon(0% 0%, 90% 0%, 100% 100%, 0% 100%);
+        clip-path: polygon(0% 0%, 90% 0%, 100% 100%, 0% 100%);
+        color: #2f4f4f;
+    }
+
+
+    .box:hover > .g_block {
+        display: block;
+/*        background-color: black;
+        opacity: 0.5;*/
+/*        transition: background-color .5s ease-in-out;*/
+    }
+
+
+    #email_text {
+        float: left;
+        width: 500px;
+        height: 40px;
+        background: none;
+        border: 1px solid #fff;
+        padding-left: 40px;
+        color: #fff;
+        font-size: 24px;
+        font-weight: 300;
+    }
+
+    #email_submit {
+        float: right;
+        height: 40px;
+        font-size: 24px;
+        font-weight: 300;
+        background-color: #fff;
+        color: #ccc;
+        border: none;
+    }
+
+    
     form .row:first-child .floating-label-form-group {
         border-top: 1px solid #eee;
     }
@@ -489,7 +597,6 @@
     }
 
     #color {
-        background: url('/static/img/color2.jpg');
         background-size: cover;
     }
 
@@ -522,7 +629,6 @@
     }
 
     #sync {
-        background: url('/static/img/sync.jpg') no-repeat; 
         background-size: cover;
     }
 
@@ -547,7 +653,7 @@
     }
 
     #touch {
-        background: #E6E6E6 url('/static/img/touch.jpg');
+
         background-size: cover;
     }
 
