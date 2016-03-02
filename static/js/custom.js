@@ -142,7 +142,7 @@ $(document).ready(function() {
 	            var pixel = imageData.data;
 
 	            // update preview color
-	            var pixelColor = "rgb("+pixel[0]+", "+pixel[1]+", "+pixel[2]+")";
+	            var pixelColor = "rgba("+pixel[0]+", "+pixel[1]+", "+pixel[2]+", 0.7)";
 	            $('.preview').css('backgroundColor', pixelColor);
 
 	            // update controls
@@ -153,10 +153,14 @@ $(document).ready(function() {
 
 	            var dColor = pixel[2] + 256 * pixel[1] + 65536 * pixel[0];
 	            $('#hexVal').val('#' + ('0000' + dColor.toString(16)).substr(-6));
-	            if (pixelColor == 'rgb(0, 0, 0)') {
+	            if (pixelColor == 'rgba(0, 0, 0, 0.7)') {
 	            	$('.color-preview').css('backgroundColor', '#fff');
+	            	newColor = 'rgba(255, 255, 255, 0.4)';
+	            	draw();
 	            } else {
 	            	$('.color-preview').css('backgroundColor', pixelColor);
+	            	newColor = pixelColor;
+	            	draw();
 	            }
 	    });
 	});
@@ -370,7 +374,93 @@ $(document).ready(function() {
 	    $('.show-for-winphone').show();
 	}
 
+var canvas = document.getElementById("canvas");
+var ctx = canvas.getContext("2d");
 
+var truck, logo, overlay, grass;
+var newColor = "red";
+
+var imageURLs = [];
+var imagesOK = 0;
+var imgs = [];
+imageURLs.push("http://i.imgur.com/OdZSSCY.png");
+imageURLs.push("http://i.imgur.com/GbeRAPi.png");
+
+loadAllImages();
+
+function loadAllImages() {
+    for (var i = 0; i < imageURLs.length; i++) {
+        var img = new Image();
+        imgs.push(img);
+        img.onload = function () {
+            imagesOK++;
+            imagesAllLoaded();
+        };
+        img.src = imageURLs[i];
+    }
+}
+
+var imagesAllLoaded = function () {
+    if (imagesOK >= imageURLs.length) {
+        // all images are fully loaded an ready to use
+        truck = imgs[0];
+        overlay = imgs[1];
+        draw();
+    }
+};
+
+
+function draw() {
+
+    // clear the canvas
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+    // save the context state
+    ctx.save();
+
+    // draw the overlay
+    ctx.drawImage(overlay, 0, 0);
+
+    // change composite mode to source-in
+    // any new drawing will only overwrite existing pixels
+    ctx.globalCompositeOperation = "source-in";
+
+    // draw a purple rectangle the size of the canvas
+    // Only the overlay will become purple
+    ctx.fillStyle = newColor;
+    ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+    // change the composite mode to destination-atop
+    // any new drawing will not overwrite any existing pixels
+    ctx.globalCompositeOperation = "destination-atop";
+
+    // draw the full logo
+    // This will NOT overwrite any existing purple overlay pixels
+
+
+    // draw the truck
+    // This will NOT replace any existing pixels
+    // The purple overlay will not be overwritten
+    // The blue logo will not be overwritten
+    ctx.drawImage(truck, 0, 0);
+
+    // restore the context to it's original state
+    ctx.restore();
+
+}
+function rgbToHex(R,G,B) {return toHex(R)+toHex(G)+toHex(B)}
+function toHex(n) {
+	n = parseInt(n,10);
+	if (isNaN(n)) 
+		return "00";
+ 	n = Math.max(0,Math.min(n,255));
+ 	return "0123456789ABCDEF".charAt((n-n%16)/16) + "0123456789ABCDEF".charAt(n%16);
+}
+// // listen for clicks and then recolor/redraw
+// $("#canvas").click(function () {
+//     newColor = '#' + Math.floor(Math.random() * 16777215).toString(16);
+//     draw();
+// });
 	/* get JSON object for loading images for blog section */
 	/*
 	var featured_blog_posts_url = "http://biog.wearhaus.com/featured-images";
