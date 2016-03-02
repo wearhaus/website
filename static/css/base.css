@@ -127,6 +127,13 @@
         margin-right: 2%;
     }
 
+    .headphone {
+        position: absolute;
+        top: 0;
+        right: 0;
+
+    }
+
 /*    .g_block {
         position: absolute;
         height: 100%;
