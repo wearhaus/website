@@ -142,7 +142,7 @@ $(document).ready(function() {
 	            var pixel = imageData.data;
 
 	            // update preview color
-	            var pixelColor = "rgba("+pixel[0]+", "+pixel[1]+", "+pixel[2]+", 0.7)";
+	            var pixelColor = "rgba("+pixel[0]+", "+pixel[1]+", "+pixel[2]+", 0.6)";
 	            $('.preview').css('backgroundColor', pixelColor);
 
 	            // update controls
@@ -153,7 +153,7 @@ $(document).ready(function() {
 
 	            var dColor = pixel[2] + 256 * pixel[1] + 65536 * pixel[0];
 	            $('#hexVal').val('#' + ('0000' + dColor.toString(16)).substr(-6));
-	            if (pixelColor == 'rgba(0, 0, 0, 0.7)') {
+	            if (pixelColor == 'rgba(0, 0, 0, 0.6)') {
 	            	$('.color-preview').css('backgroundColor', '#fff');
 	            	newColor = 'rgba(255, 255, 255, 0.4)';
 	            	draw();
@@ -378,17 +378,31 @@ var canvas = document.getElementById("canvas");
 var ctx = canvas.getContext("2d");
 
 var truck, logo, overlay, grass;
-var newColor = "red";
+var newColor = "rgba(255,255,255,.5)";
 
 var imageURLs = [];
 var imagesOK = 0;
 var imgs = [];
-imageURLs.push("http://i.imgur.com/OdZSSCY.png");
-imageURLs.push("http://i.imgur.com/GbeRAPi.png");
+var whichHeadphone = 'black';
+pushImages();
 
-loadAllImages();
+function pushImages() {
+	imageURLs = [];
+	if (whichHeadphone == 'black') {
+		imageURLs.push("http://i.imgur.com/OdZSSCY.png");
+	} else {
+		imageURLs.push("http://i.imgur.com/zt8S8x4.png");
+	}
+	imageURLs.push("http://i.imgur.com/GbeRAPi.png");
+	loadAllImages();
+}
+// imageURLs.push("http://i.imgur.com/OdZSSCY.png");
+// imageURLs.push("http://i.imgur.com/GbeRAPi.png");
+
 
 function loadAllImages() {
+	imgs = [];
+	imagesOK= 0;
     for (var i = 0; i < imageURLs.length; i++) {
         var img = new Image();
         imgs.push(img);
@@ -456,6 +470,17 @@ function toHex(n) {
  	n = Math.max(0,Math.min(n,255));
  	return "0123456789ABCDEF".charAt((n-n%16)/16) + "0123456789ABCDEF".charAt(n%16);
 }
+
+$(".black").click(function() {
+	whichHeadphone = 'black';
+	pushImages();
+
+});
+
+$(".white").click(function() {
+	whichHeadphone = 'white';
+	pushImages();
+});
 // // listen for clicks and then recolor/redraw
 // $("#canvas").click(function () {
 //     newColor = '#' + Math.floor(Math.random() * 16777215).toString(16);

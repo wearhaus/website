@@ -53,13 +53,14 @@
     }
 
     #pick_container {
-        background-color: #ccc;
+        margin-top: 50px;
+        background-color: #fff;
         height: 500px;
         position: relative;
     }
 
     .main-container {
-        margin: 15px 30px;
+        margin: 15px 50px;
     }
 
     #mail {
@@ -68,7 +69,13 @@
         height: 80px;
     }
 
-    
+    #fluff_container {
+        background-image: url(/static/img/gurl.jpg);
+        background-size: cover;
+        background-position: center top;
+        height: 800px;
+        position: relative;
+    }
     .forms {
         position: absolute;
         top: 50%;
@@ -82,6 +89,31 @@
     }
     .main_info {
         width: 100%;
+    }
+
+    .customize {
+        position: relative;
+        float: left;
+        width: auto;
+    }
+
+    .customize .title {
+        font-weight: 700;
+        font-size: 28px;
+        letter-spacing: 2px;
+        color: #00bccc;
+    }
+
+    .customize ul {
+        list-style: inside url("/static/img/bullet.png");
+        margin-left: 0px;
+        padding-left: 0px;
+    }
+
+    .customize li {
+        margin-top: 10px;
+        font-size: 18px;
+        font-weight: 300;
     }
 
     #main_blurb {
@@ -106,6 +138,17 @@
         text-align: center;
         padding: 50px 150px;
     }
+    .phone {
+        position: relative;
+        width: 400px;
+        height: 250px;
+        float: right;
+    }
+    #phone_mock {
+        position: absolute;
+        height: 500px;
+        top: 0px;
+    }
 
     .company_title {
         font-size: 20px;
@@ -128,9 +171,8 @@
     }
 
     .headphone {
-        position: absolute;
-        top: 0;
-        right: 0;
+        position: relative;
+        float: right;
 
     }
 
@@ -406,7 +448,7 @@
 
     .overlay {
         float: left;
-        width: 25%;
+        width: 50%;
     }
 
     .overlay#overlay-text {
@@ -633,7 +675,7 @@
         }
 
         #blog img {
-            width: 100%;
+            width: 50%;
         }
 
     #blog-grid {
@@ -771,16 +813,19 @@
 .color {
     height: auto;
     position: absolute;
-    bottom: 10px;
+    top: 150px;
+    left: 67px;
 }
 /* colorpicker styles */
 .colorpicker {
     width: auto;
+    z-index: 10;
+
 }
 #picker {
     cursor: crosshair;
     margin: 10px;
-    height: 300px;
+    height: 130px;
 }
 /*.controls {
     float: right;
@@ -808,15 +853,131 @@
     width: 75px;
 }*/
 .controls .color-preview {
-    height: 100px;
-    width: 100px;
-    border-radius: 50px;
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
     background-color: #fff;
     z-index: 10;
     position: absolute;
-    top: 50%;
-    left: 51%;
+    top: 49%;
+    left: 50.5%;
     transform: translateX(-50%) translateY(-50%);
 }
+
+.bw_pick {
+    text-align: center;
+    margin: 10px 0px;
+}
+
+.arc_color .title {
+    font-weight: 300;
+    font-size: 22px;
+    margin-top: 15px;
+}
+.circle {
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    border-radius: 10px;
+    border-color: #ccc;
+    border-width: 1px;
+    border-style: solid;
+    margin: 0px 5px;
+    cursor: pointer;
+    background-color: #ccc;
+}
+
+.white {
+    background-color: #fff
+
+}
+
+.black {
+    background-color: #000;
+}
+
+.girl_container .title {
+    font-weight: 700;
+    font-size: 28px;
+    letter-spacing: 2px;
+    color: #00bccc;
+    margin-left: 10px;
+}
+
+.girl_container {
+    width: 550px;
+    margin: 40px;
+    padding-top: 20px;
+    position: absolute;
+    top: 30px;
+}
+
+.grid_container {
+    margin-top: 20px;
+    width: auto;
+}
+
+.grid {
+    width: 200px;
+    margin: 10px 40px 20px 10px;
+    display: inline-block;
+}
+
+.subtitle {
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+}
+
+#specs {
+    background-color: #fff;
+    height: 600px;
+    padding-top: 40px;
+}
+
+.spec_container .title {
+    font-weight: 700;
+    font-size: 28px;
+    letter-spacing: 2px;
+    color: #00bccc;
+    margin-bottom: 30px;
+}
+
+.spec_container .content {
+    width: 50%;
+    float: left;
+    font-weight: 500;
+    color: #00bccc;
+    font-size: 16px;
+    padding-left: 40px;
+}
+.spec_container .images {
+    width: 50%;
+    float: right;
+}
+.freq {
+    height: 300px;
+    margin-bottom: 20px;
+}
+
+.dim {
+    height: 200px;
+}
+
+.content ul {
+    font-weight: 300;
+    color: #333;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.slide {
+    float: right;
+    width: 50%;
+}
+
 
     
