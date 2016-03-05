@@ -92,7 +92,8 @@
 
     #order_now_link_mobile {
         background-color: #00bccc;
-        border-radius: 5px;
+        -webkit-clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
+        clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
         color: white;
         display: block;
         height: 34px;
