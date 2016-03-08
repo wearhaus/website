@@ -481,6 +481,19 @@ $(".white").click(function() {
 	whichHeadphone = 'white';
 	pushImages();
 });
+
+$(".blog_pre").mouseenter(function() {
+	var caption = this.getAttribute('data-caption');
+	$(".caption").text(caption);
+	$(".blog_lol").css("visibility", "hidden");
+	$(".caption_overlay").css({opacity: 0, visibility: "visible"}).animate({opacity: 0.7}, 200);
+});
+
+$(".blog_pre").mouseleave(function() {
+	$(".caption_overlay").css("visibility", "hidden");
+	$(".blog_lol").css("visibility", "visible");
+});
+
 // // listen for clicks and then recolor/redraw
 // $("#canvas").click(function () {
 //     newColor = '#' + Math.floor(Math.random() * 16777215).toString(16);
