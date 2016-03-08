@@ -14,7 +14,7 @@
    }
 
    footer {
-       color: black;
+       color: #ccc;
        font-family: "Lato", arial, sans-serif;
    }
        footer h3 {
@@ -37,14 +37,14 @@
        }
 
        footer .footer-above {
-           background-color: black;
+           background-color: #ccc;
            padding: 150px 0px 100px 0px;
        }
        footer .footer-col {
            margin-bottom: 50px;
        }
        footer .footer-below {
-           background-color: black;
+           background-color: #ccc;
            padding: 25px 0;
        }
 

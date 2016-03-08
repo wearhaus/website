@@ -64,7 +64,7 @@
 #order_now_link {
     background-color: #00bccc;
     padding: 10px 15px 10px 15px;
-    width: 130px;
+    width: 140px;
     -webkit-clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
     clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
 }
@@ -92,8 +92,6 @@
 
     #order_now_link_mobile {
         background-color: #00bccc;
-        -webkit-clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
-        clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
         color: white;
         display: block;
         height: 34px;
@@ -102,6 +100,9 @@
         padding: 5px 15px 5px 15px;
         text-align: center;
         width: 117px;
+        height: 55px;
+        -webkit-clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
+        clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
     }
 
     #order_now {
