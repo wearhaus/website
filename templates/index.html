@@ -250,64 +250,41 @@
             </div>
         </section>
         <!-- Blog Section -->
-            <section id="blog">
-        <div class="container" id="blog">
-            <div class="row">
-                <div class="aa overlay">
-                   <img class="exp" src="../static/img/blog_background_generic.jpg">
+        <section id="blog">
+            <div class="blog_container">
+                <div class="blog blog_static">
+                    <a class="blog_link" href="http://blog.wearhaus.com">
+                        <img class="blog_bg" src="../static/img/blog_background_generic.jpg">
+                        <img class="blog_lol" src="../static/img/wearhaus-blog-overlay.png">
+                        <div class="caption_overlay">
+                            <div class="caption">
+                            </div>
+                        </div>
+                    </a>
                 </div>
-                <div class="overlay" id="overlay-text">
-                    <a href="http://blog.wearhaus.com"><img src="../static/img/wearhaus-blog-overlay.png"></a>
+                <div class="posts blog_grid">
+                    <a class="blog_pre" href={{ featured_posts.featured_1.url }} id="blog_a_1" data-caption="{{ featured_posts.featured_1.title }}">
+                        <img class="blog_img" src={{ featured_posts.featured_1.img_url }} id="blog_img_1">
+                    </a>
+                    <a class="blog_pre" href={{ featured_posts.featured_2.url }} id="blog_a_2" data-caption="{{ featured_posts.featured_2.title }}">
+                        <img class="blog_img" src={{ featured_posts.featured_2.img_url }} id="blog_img_2">
+                    </a>
+                    <a class="blog_pre" href={{ featured_posts.featured_3.url }} id="blog_a_3" data-caption="{{ featured_posts.featured_3.title }}">
+                        <img class="blog_img" src={{ featured_posts.featured_3.img_url }} id="blog_img_3">
+                    </a>
+                    <a class="blog_pre" href={{ featured_posts.featured_4.url }} id="blog_a_4" data-caption="{{ featured_posts.featured_4.title }}">
+                        <img class="blog_img" src={{ featured_posts.featured_4.img_url }} id="blog_img_4">
+                    </a>
+                    <a class="blog_pre" href={{ featured_posts.featured_5.url }} id="blog_a_5" data-caption="{{ featured_posts.featured_5.title }}">
+                        <img class="blog_img" src={{ featured_posts.featured_5.img_url }} id="blog_img_5">
+                    </a>
+                    <a class="blog_pre" href={{ featured_posts.featured_6.url }} id="blog_a_6" data-caption="{{ featured_posts.featured_6.title }}">
+                        <img class="blog_img" src={{ featured_posts.featured_6.img_url }} id="blog_img_6">
+                    </a>
                 </div>
-                <div class="aa carousel slide" id="myCarousel">
-                    <div class="carousel-inner">
-                        <div class="item active">
-                            <div class="col-lg-3">
-                                <a href={{ featured_posts.featured_1.url }} id="blog_a_1" data-caption="{{ featured_posts.featured_1.title }}">
-                                    <img src={{ featured_posts.featured_1.img_url }} id="blog_img_1">
-                                </a>
-                            </div>
-                            <div class="col-lg-3">
-                                <a href={{ featured_posts.featured_2.url }} id="blog_a_2" data-caption="{{ featured_posts.featured_2.title }}">
-                                    <img src={{ featured_posts.featured_2.img_url }} id="blog_img_2">
-                                </a>
-                            </div>
-                            <div class="col-lg-3">
-                                <a href={{ featured_posts.featured_3.url }} id="blog_a_3" data-caption="{{ featured_posts.featured_3.title }}">
-                                    <img src={{ featured_posts.featured_3.img_url }} id="blog_img_3">
-                                </a>
-                            </div>
-                        </div><!-- /Slide1 --> 
-                        <div class="item">
-                            <div class="col-lg-3">
-                                <a href={{ featured_posts.featured_4.url }} id="blog_a_4" data-caption="{{ featured_posts.featured_4.title }}">
-                                    <img src={{ featured_posts.featured_4.img_url }} id="blog_img_1">
-                                </a>
-                            </div>
-                            <div class="col-lg-3">
-                                <a href={{ featured_posts.featured_5.url }} id="blog_a_5" data-caption="{{ featured_posts.featured_5.title }}"><img src={{ featured_posts.featured_5.img_url }} id="blog_img_2"></a>
-                            </div>
-                            <div class="col-lg-3">
-                                <a href={{ featured_posts.featured_6.url }} id="blog_a_6" data-caption="{{ featured_posts.featured_6.title }}"><img src={{ featured_posts.featured_6.img_url }} id="blog_img_3"></a>
-                            </div>
-                        </div><!-- /Slide2 --> 
-                        <div class="control-box">                            
-                            <div class="carousel-control left">
-                                <a data-slide="prev" href="#myCarousel">
-                                    <span class="glyphicon glyphicon-chevron-left"></span>
-                                </a>
-                            </div>
-                            <div class="carousel-control right">
-                                <a data-slide="next" href="#myCarousel">
-                                    <span class="glyphicon glyphicon-chevron-right"></span>
-                                </a>
-                            </div>
-                        </div><!-- /.control-box -->
-                    </div><!-- /Carousel -->
-                </div><!-- /carousel slide -->
             </div>
-        </div>
-    </section>
+        </section>
+            
     </div>
     {% include 'footer.html' %}
 
