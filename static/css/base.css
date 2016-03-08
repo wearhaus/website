@@ -50,6 +50,8 @@
         background-color: white;
         font-family: "Lato", arial, sans-serif;
         overflow-x: hidden;
+        font-size: 16px;
+        font-weight: 300;
     }
 
     .caption_overlay {
@@ -65,7 +67,7 @@
     }
 
     .caption {
-        font-size: 40px;
+        font-size: 30px;
         font-weight: 700;
         color: #fff;
         padding: 30px 0px;
@@ -283,7 +285,7 @@
         top: 50%;
         left: 50%;
         width: 80%;
-        font-size: 14px;
+        font-size: 16px;
         transform: translateX(-50%) translateY(-50%);
     }
 
@@ -315,7 +317,7 @@
     }
 
 
-    #email_text {
+    .email_text {
         float: left;
         width: 500px;
         height: 40px;
@@ -327,7 +329,7 @@
         font-weight: 300;
     }
 
-    #email_submit {
+    .email_submit {
         float: right;
         height: 40px;
         font-size: 24px;
@@ -850,14 +852,18 @@
     }
 
     #title-name {
+        padding: 0px 10px;
         font-weight: 500;
         font-size: 18px;
+
     }
 
     #title-sub {
+        padding: 0px 10px;
         margin: -5px;
         font-weight: 900;
         font-size: 30px;
+        line-height: 35px;
     }
 /*    #title-vid-icon {
         margin: 40px auto;
@@ -999,7 +1005,7 @@
 }
 
 .girl_container {
-    width: 550px;
+    width: 650px;
     margin: 40px;
     padding-top: 20px;
     position: absolute;
@@ -1012,9 +1018,11 @@
 }
 
 .grid {
-    width: 200px;
+    width: 250px;
+    height: 200px;
     margin: 10px 40px 20px 10px;
     display: inline-block;
+    vertical-align: top;
 }
 
 .subtitle {
@@ -1053,6 +1061,8 @@
 .spec_container .images {
     width: 35%;
     display: inline-block;
+    vertical-align: top;
+    margin-left: 10px;
 /*    float: right;*/
 }
 .freq {
@@ -1107,17 +1117,35 @@
     
     /* smartphones */
     @media(max-width:767px) {
+        .girl_container {
+            width: 300px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translateX(-50%) translateY(-50%);
+            margin: 0px;
+            margin-bottom: 100px;
+        }
+        #fluff_container {
+            text-align: center;
+            height: 1100px;
+
+        }
+
+        .grid {
+            margin: 20px;
+        }
         .forms {
             text-align: center;
             width: 100%;
         }
-        #email_text {
+        .email_text {
             width: 50%;
             float: none;
             font-size: 18px;
             padding-left: 10px;
         }
-        #email_submit {
+        .email_submit {
             float: none;
             font-size: 18px;
         }
@@ -1225,10 +1253,14 @@
         }*/
 
     }
-
+    @media(max-width: 820px) {
+        .phone {
+            display: none;
+        }
+    }
     /* tablets */
     @media(min-width:768px) {
-
+        
         header .intro-text .name {
             font-size: 4.75em;
         }
