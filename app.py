@@ -2,6 +2,7 @@ import urllib2
 import json
 import HTMLParser
 
+from gettext import gettext as _
 from flask import Flask, render_template, request, jsonify, Response
 
 app = Flask(__name__)
@@ -20,7 +21,7 @@ def main():
     except (urllib2.HTTPError, urllib2.URLError):
         featured_posts = backup_featured
         pass
-    return render_template('index.html', featured_posts = featured_posts)
+    return render_template('index.html', featured_posts = featured_posts, _ = _)
 
 @app.route('/ourstory')
 @app.route('/team')
