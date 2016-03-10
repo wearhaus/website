@@ -64,7 +64,7 @@
 #order_now_link {
     background-color: #00bccc;
     padding: 10px 15px 10px 15px;
-    width: 140px;
+    width: 180px;
     -webkit-clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
     clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
 }
@@ -99,8 +99,8 @@
         margin: 8px auto;
         padding: 5px 15px 5px 15px;
         text-align: center;
-        width: 117px;
-        height: 55px;
+        width: 180px;
+/*        height: 55px;*/
         -webkit-clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
         clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
     }
