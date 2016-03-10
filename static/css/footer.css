@@ -83,12 +83,22 @@
     }
 
 /* smartphones */
-@media(min-width:768px) {
+@media(min-width:703px) {
 
   .footer-above .container {
     width: 100%;
   }
+  
+  
+}
 
+@media(max-width: 703px) {
+  #footer-logos {
+    display: none;
+  }
+  #footer-logos-mobile {
+    display: block;
+  }
 }
 
 @media(max-width: 480px) { /* portrait layout */
@@ -109,7 +119,6 @@
   .footer-links-mobile {
     display: block;
     line-height: 30px;
-    text-align: left;
   }
 
   .mobile-links a {
@@ -129,7 +138,7 @@
   }
 
   #footer-logos-mobile {
-    display: block;
+    visibility: visible;
     padding-bottom: 20px;
   }
 }

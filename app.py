@@ -33,5 +33,5 @@ def updater():
     return render_template('updater.html')
 
 if __name__ == '__main__':
-    app.debug = True
+    app.debug = False
     app.run()

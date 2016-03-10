@@ -486,12 +486,18 @@ $(".blog_pre").mouseenter(function() {
 	var caption = this.getAttribute('data-caption');
 	$(".caption").text(caption);
 	$(".blog_lol").css("visibility", "hidden");
-	$(".caption_overlay").css({opacity: 0, visibility: "visible"}).animate({opacity: 0.7}, 200);
+	$(".caption_overlay").css({opacity: 0, visibility: "visible"}).animate({opacity: 1.0}, 200);
+	$(".blog_pre").not(this).each(function() {
+		$(this).children('img').css("opacity", "0.5");
+	});
 });
 
 $(".blog_pre").mouseleave(function() {
 	$(".caption_overlay").css("visibility", "hidden");
 	$(".blog_lol").css("visibility", "visible");
+	$(".blog_pre").not(this).each(function() {
+		$(this).children('img').css("opacity", "1.0");
+	});
 });
 
 // // listen for clicks and then recolor/redraw
