@@ -10,6 +10,7 @@
     text-align: center;
 }
 
+
 .navbar {
         background-color: transparent; /* make background translucent */
         font-family: "Lato", arial, sans-serif;
@@ -81,7 +82,21 @@
 }
 
 @media(max-width: 767px) {
-
+    .navbar-nav {
+    margin: 0px;
+    width: 100%;
+    }
+    .navbar {
+    background-color: rgba(0,0,0,0.5);
+    }
+    .navbar-nav>ul {
+        padding: 0px;
+    }
+    .navbar-collapse {
+        border-style: none;
+        width: 100vw;
+        padding: 0px;
+    }
     .navbar-brand {
         padding: 10px 15px;
     }
