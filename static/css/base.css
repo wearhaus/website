@@ -1126,7 +1126,16 @@
         h1 {
             font-size: 40px !important;
         }
+        #title {
+            height: 400px;
+        }
+        #title:before {
+            height: 400px;
+        }
 
+        .title-content {
+            height: 400px;
+        }
 
         #app .mobile-links {
             margin-top: 30px;
