@@ -473,12 +473,17 @@ function toHex(n) {
 
 $(".black").click(function() {
 	whichHeadphone = 'black';
+	$(this).css("border-color", "#00bccc");
+	$(".white").css("border-color", "#ccc");
 	pushImages();
 
 });
 
 $(".white").click(function() {
 	whichHeadphone = 'white';
+
+	$(this).css("border-color", "#00bccc");
+	$(".black").css("border-color", "#000");
 	pushImages();
 });
 
@@ -495,6 +500,7 @@ $(".blog_pre").mouseenter(function() {
 $(".blog_pre").mouseleave(function() {
 	$(".caption_overlay").css("visibility", "hidden");
 	$(".blog_lol").css("visibility", "visible");
+	
 	$(".blog_pre").not(this).each(function() {
 		$(this).children('img').css("opacity", "1.0");
 	});
