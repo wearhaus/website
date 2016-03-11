@@ -1142,10 +1142,10 @@
         .img_hack {
             visibility: visible;
             opacity: 0.8;
-            width: 96%;
+            width: 98%;
     /*        padding-bottom: 32%;*/
             position: absolute;
-            top: 50%;
+            top: 50.5%;
             left: 50%;
             transform: translateX(-50%) translateY(-50.5%);
         }
@@ -1168,10 +1168,10 @@
         }
 
         .blog_bg {
-            width: 96%;
+            width: 98%;
     /*        padding-bottom: 32%;*/
             position: absolute;
-            top: 50%;
+            top: 50.5%;
             left: 50%;
             transform: translateX(-50%) translateY(-50.5%);
         }
