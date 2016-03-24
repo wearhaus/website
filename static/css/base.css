@@ -1060,6 +1060,7 @@
     padding-top: 40px;
     margin: 0px auto;
     text-align: center;
+    margin-bottom: 50px;
 }
 
 .spec_container .title {
@@ -1071,7 +1072,7 @@
 }
 
 .spec_container .content {
-    width: 35%;
+/*    width: 35%;*/
 /*    float: left;*/
     text-align: left;
     font-weight: 500;
@@ -1088,14 +1089,14 @@
 /*    float: right;*/
 }
 .freq {
-    max-width: 100%;
-    max-height: 100%;
+    max-width: 80%;
+    max-height: 80%;
     margin-bottom: 20px;
 }
 
 .dim {
-    max-width: 100%;
-    max-height: 100%;
+    max-width: 80%;
+    max-height: 80%;
 }
 
 .content ul {
