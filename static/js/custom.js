@@ -1,7 +1,3 @@
-// $(function() {
-// 	$.scrolltracker('.tab-text-left, .tab-text-right');
-// });
-
 $(document).ready(function() {
 
 	var tablet_offset = '-479px';
@@ -22,21 +18,7 @@ $(document).ready(function() {
 	    }
 
 	    // select desired colorwheel
-	    var imageSrc = 'images/colorwheel1.png';
-	    switch ($(canvas).attr('var')) {
-	        case '2':
-	            imageSrc = 'images/colorwheel2.png';
-	            break;
-	        case '3':
-	            imageSrc = 'images/colorwheel3.png';
-	            break;
-	        case '4':
-	            imageSrc = 'images/colorwheel4.png';
-	            break;
-	        case '5':
-	            imageSrc = '../static/img/colorwheel1.png';
-	            break;
-	    }
+	    var imageSrc = '../static/img/colorwheel1.png';
 	    image.src = imageSrc;
 
 	    $('#picker').mousemove(function(e) { // mouse move handler
@@ -134,12 +116,6 @@ $(document).ready(function() {
 	});
 
 
-	// Carousel Auto-Cycle
-	$('.carousel').carousel({
-      interval: 6000
-    })
-
-
 	/* functions that handle the hiding/showing of Mac/Windows objects */
 	function showForWin() {
 	    $('.show-for-win').show();
@@ -203,8 +179,6 @@ function pushImages() {
 	imageURLs.push("http://i.imgur.com/GbeRAPi.png");
 	loadAllImages();
 }
-// imageURLs.push("http://i.imgur.com/OdZSSCY.png");
-// imageURLs.push("http://i.imgur.com/GbeRAPi.png");
 
 
 function loadAllImages() {
@@ -269,14 +243,6 @@ function draw() {
     ctx.restore();
 
 }
-function rgbToHex(R,G,B) {return toHex(R)+toHex(G)+toHex(B)}
-function toHex(n) {
-	n = parseInt(n,10);
-	if (isNaN(n)) 
-		return "00";
- 	n = Math.max(0,Math.min(n,255));
- 	return "0123456789ABCDEF".charAt((n-n%16)/16) + "0123456789ABCDEF".charAt(n%16);
-}
 
 $(".black").click(function() {
 	whichHeadphone = 'black';
@@ -313,28 +279,5 @@ $(".blog_pre").mouseleave(function() {
 	});
 });
 
-// // listen for clicks and then recolor/redraw
-// $("#canvas").click(function () {
-//     newColor = '#' + Math.floor(Math.random() * 16777215).toString(16);
-//     draw();
-// });
-	/* get JSON object for loading images for blog section */
-	/*
-	var featured_blog_posts_url = "http://biog.wearhaus.com/featured-images";
-	$.getJSON( featured_blog_posts_url, {})
-		.done(function(data) {
-			var count = 1;
-			$.each(data, function(i, item) {
-				if (i == 'featured-' + count) { // render images in blog section
-					$('#blog_a_'+count).attr('href', item.url)
-					$('#blog_img_'+count).attr('src', item.img_url).attr('alt', item.title);
-				}
-
-				count++;
-			});
-		})
-		.fail(function() {console.log("error");
-		});
-		*/
 
 });
