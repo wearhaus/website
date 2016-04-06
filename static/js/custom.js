@@ -1,105 +1,9 @@
-// $(function() {
-// 	$.scrolltracker('.tab-text-left, .tab-text-right');
-// });
-
 $(document).ready(function() {
 
 	var tablet_offset = '-479px';
 	var desktop_offset = '-670px';
 
- 	// tab section click functionality
- 	if ($(window).width() < 1099) { // for tablets
-		$('#sync .tab-left').click(function() {
-			if ($('#sync .tab-text-left').css('left') == '0px') {
-				$('#sync .tab-text-left').animate({left: tablet_offset}, 400);
-			}
-			else {
-				$('#sync .tab-text-left').animate({left: '0px'}, 400);
-			}
-		});
-
-
-		$('#color .tab-right').click(function() {
-			if ($('#color .tab-text-right').css('right') == '0px') {
-				$('#color .tab-text-right').animate({right: tablet_offset}, 400);
-			}
-			else {
-				$('#color .tab-text-right').animate({right: '0px'}, 400);
-			}
-		});
-
-		$('#touch .tab-left').click(function() {
-			if ($('#touch .tab-text-left').css('left') == '0px') {
-				$('#touch .tab-text-left').animate({left: tablet_offset}, 400);
-			}
-			else {
-				$('#touch .tab-text-left').animate({left: '0px'}, 400);
-			}
-		});
-
-		$('#app .tab-right').click(function() {
-			if ($('#app .tab-text-right').css('right') == '0px') {
-				$('#app .tab-text-right').animate({right: tablet_offset}, 400);
-			}
-			else {
-				$('#app .tab-text-right').animate({right: '0px'}, 400);
-			}
-		});
-	}
-	else { // for laptops/desktops
-		$('#sync .tab-left').click(function() {
-			if ($('#sync .tab-text-left').css('left') == '0px') {
-				$('#sync .tab-text-left').animate({left: desktop_offset}, 400);
-			}
-			else {
-				$('#sync .tab-text-left').animate({left: '0px'}, 400);
-			}
-		});
-
-
-		$('#color .tab-right').click(function() {
-			if ($('#color .tab-text-right').css('right') == '0px') {
-				$('#color .tab-text-right').animate({right: desktop_offset}, 400);
-			}
-			else {
-				$('#color .tab-text-right').animate({right: '0px'}, 400);
-			}
-		});
-
-		$('#touch .tab-left').click(function() {
-			if ($('#touch .tab-text-left').css('left') == '0px') {
-				$('#touch .tab-text-left').animate({left: desktop_offset}, 400);
-			}
-			else {
-				$('#touch .tab-text-left').animate({left: '0px'}, 400);
-			}
-		});
-
-		$('#app .tab-right').click(function() {
-			if ($('#app .tab-text-right').css('right') == '0px') {
-				$('#app .tab-text-right').animate({right: desktop_offset}, 400);
-			}
-			else {
-				$('#app .tab-text-right').animate({right: '0px'}, 400);
-			}
-		});		
-	}
-
-	// tab section hover functionality
-	$('#sync .tab-left').mouseenter(function() {
-		if ($(window).width() > 1099) { // desktop
-			if ($('#sync .tab-text-left').css('left') == desktop_offset) {
-				$('#sync .tab-text-left').animate({left: '0px'}, 400);
-			}
-		}
-		else { // tablet
-			if ($('#sync .tab-text-left').css('left') == tablet_offset) {
-				$('#sync .tab-text-left').animate({left: '0px'}, 400);
-			}
-		}
-
-	});
-
+ 	
 	$(function(){
 	    var bCanPreview = true; // can preview
 
@@ -114,21 +18,7 @@ $(document).ready(function() {
 	    }
 
 	    // select desired colorwheel
-	    var imageSrc = 'images/colorwheel1.png';
-	    switch ($(canvas).attr('var')) {
-	        case '2':
-	            imageSrc = 'images/colorwheel2.png';
-	            break;
-	        case '3':
-	            imageSrc = 'images/colorwheel3.png';
-	            break;
-	        case '4':
-	            imageSrc = 'images/colorwheel4.png';
-	            break;
-	        case '5':
-	            imageSrc = '../static/img/colorwheel1.png';
-	            break;
-	    }
+	    var imageSrc = '../static/img/colorwheel1.png';
 	    image.src = imageSrc;
 
 	    $('#picker').mousemove(function(e) { // mouse move handler
@@ -165,107 +55,6 @@ $(document).ready(function() {
 	    });
 	});
 
-	$('#sync .slide-left').mouseleave(function() {
-		if ($(window).width() > 1099) {
-			if ($('#sync .tab-text-left').css('left') == '0px') {
-				$('#sync .tab-text-left').animate({left: desktop_offset}, 400);
-			}
-		}
-		else {
-			if ($('#sync .tab-text-left').css('left') == '0px') {
-				$('#sync .tab-text-left').animate({left: tablet_offset}, 400);
-			}			
-		}
-
-
-	});
-
-	$('#color .tab-right').mouseenter(function() {
-		if ($(window).width() > 1099) {
-			if ($('#color .tab-text-right').css('right') == desktop_offset) {
-				$('#color .tab-text-right').animate({right: '0px'}, 400);
-			}
-		}
-		else {
-			if ($('#color .tab-text-right').css('right') == tablet_offset) {
-				$('#color .tab-text-right').animate({right: '0px'}, 400);
-			}
-		}
-
-	});
-
-	$('#color .slide-right').mouseleave(function() {
-		if ($(window).width() > 1099) {
-			if ($('#color .tab-text-right').css('right') == '0px') {
-				$('#color .tab-text-right').animate({right: desktop_offset}, 400);
-			}			
-		}
-		else {
-			if ($('#color .tab-text-right').css('right') == '0px') {
-				$('#color .tab-text-right').animate({right: tablet_offset}, 400);
-			}
-		}
-
-
-	});
-
-	$('#touch .tab-left').mouseenter(function() {
-		if ($(window).width() > 1099) {
-			if ($('#touch .tab-text-left').css('left') == desktop_offset) {
-				$('#touch .tab-text-left').animate({left: '0px'}, 400);
-			}
-		}
-		else {
-			if ($('#touch .tab-text-left').css('left') == tablet_offset) {
-				$('#touch .tab-text-left').animate({left: '0px'}, 400);
-			}
-		}
-
-	});
-
-	$('#touch .slide-left').mouseleave(function() {
-		if ($(window).width() > 1099) {
-			if ($('#touch .tab-text-left').css('left') == '0px') {
-				$('#touch .tab-text-left').animate({left: desktop_offset}, 400);
-			}
-		}
-		else {
-			if ($('#touch .tab-text-left').css('left') == '0px') {
-				$('#touch .tab-text-left').animate({left: tablet_offset}, 400);
-			}
-		}
-
-
-	});
-
-	$('#app .tab-right').mouseenter(function() {
-		if ($(window).width() > 1099) {
-			if ($('#app .tab-text-right').css('right') == desktop_offset) {
-				$('#app .tab-text-right').animate({right: '0px'}, 400);
-			}
-		}
-		else {
-			if ($('#app .tab-text-right').css('right') == tablet_offset) {
-				$('#app .tab-text-right').animate({right: '0px'}, 400);
-			}
-		}
-
-	});
-
-	$('#app .slide-right').mouseleave(function() {
-		if ($(window).width() > 1099) {
-			if ($('#app .tab-text-right').css('right') == '0px') {
-				$('#app .tab-text-right').animate({right: desktop_offset}, 400);
-			}
-		}
-		else {
-			if ($('#app .tab-text-right').css('right') == '0px') {
-				$('#app .tab-text-right').animate({right: tablet_offset}, 400);
-			}
-		}
-
-
-	});
 
 	$(window).scroll(function() {
 		if ($(this).scrollTop() == 0) {
@@ -325,12 +114,6 @@ $(document).ready(function() {
 		e.preventDefault();
 		showForWinPhone();
 	});
-
-
-	// Carousel Auto-Cycle
-	$('.carousel').carousel({
-      interval: 6000
-    })
 
 
 	/* functions that handle the hiding/showing of Mac/Windows objects */
@@ -396,8 +179,6 @@ function pushImages() {
 	imageURLs.push("http://i.imgur.com/GbeRAPi.png");
 	loadAllImages();
 }
-// imageURLs.push("http://i.imgur.com/OdZSSCY.png");
-// imageURLs.push("http://i.imgur.com/GbeRAPi.png");
 
 
 function loadAllImages() {
@@ -462,14 +243,6 @@ function draw() {
     ctx.restore();
 
 }
-function rgbToHex(R,G,B) {return toHex(R)+toHex(G)+toHex(B)}
-function toHex(n) {
-	n = parseInt(n,10);
-	if (isNaN(n)) 
-		return "00";
- 	n = Math.max(0,Math.min(n,255));
- 	return "0123456789ABCDEF".charAt((n-n%16)/16) + "0123456789ABCDEF".charAt(n%16);
-}
 
 $(".black").click(function() {
 	whichHeadphone = 'black';
@@ -506,28 +279,5 @@ $(".blog_pre").mouseleave(function() {
 	});
 });
 
-// // listen for clicks and then recolor/redraw
-// $("#canvas").click(function () {
-//     newColor = '#' + Math.floor(Math.random() * 16777215).toString(16);
-//     draw();
-// });
-	/* get JSON object for loading images for blog section */
-	/*
-	var featured_blog_posts_url = "http://biog.wearhaus.com/featured-images";
-	$.getJSON( featured_blog_posts_url, {})
-		.done(function(data) {
-			var count = 1;
-			$.each(data, function(i, item) {
-				if (i == 'featured-' + count) { // render images in blog section
-					$('#blog_a_'+count).attr('href', item.url)
-					$('#blog_img_'+count).attr('src', item.img_url).attr('alt', item.title);
-				}
-
-				count++;
-			});
-		})
-		.fail(function() {console.log("error");
-		});
-		*/
 
 });
