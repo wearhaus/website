@@ -26,15 +26,23 @@ def main():
         pass
     return render_template('index.html', featured_posts = featured_posts, _ = _)
 
+
 @app.route('/ourstory')
 @app.route('/team')
 def ourstory():
-    return render_template('ourstory.html')
+    # temporarily hard coded to set language to Chinese
+    zh = gettext.translation('ourstory', './locale', languages=['zh'])
+    _ = zh.ugettext
+    return render_template('ourstory.html', _ = _)
+
 
 @app.route('/updater')
 @app.route('/update')
 def updater():
-    return render_template('updater.html')
+    # temporarily hard coded to set language to Chinese
+    zh = gettext.translation('updater', './locale', languages=['zh'])
+    _ = zh.ugettext
+    return render_template('updater.html', _ = _)
 
 if __name__ == '__main__':
     app.debug = False
