@@ -31,9 +31,9 @@ def main():
 @app.route('/team')
 def ourstory():
     # temporarily hard coded to set language to Chinese
-    # zh = gettext.translation('ourstory', './locale', languages=['zh'])
-    # _ = zh.ugettext
-    return render_template('ourstory.html')
+    zh = gettext.translation('ourstory', './locale', languages=['zh'])
+    _ = zh.ugettext
+    return render_template('ourstory.html', _ = _)
 
 
 @app.route('/updater')
