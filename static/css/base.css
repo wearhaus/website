@@ -126,7 +126,7 @@
     #fluff_container {
         background-image: url(/static/img/gurl.jpg);
         background-size: cover;
-        background-position: top left;
+        background-position: center right;
         height: 100vh;
         position: relative;
     }
@@ -226,22 +226,22 @@
     section#main_info {
         margin: 15px 20px;
     }
-    #main_info .touch {
-        background-image: url('/static/img/social.jpg');
+    #main_info .social {
+        background-image: url('/static/img/Social-Sharing.jpg');
         background-size: contain;
     }
 
     .light {
-        background-image: url('/static/img/headphone.jpg');
+        background-image: url('/static/img/Color.jpg');
         background-size: contain;
     }
 
-    #main_info .social {
+    #main_info .touch {
         background-image: url('/static/img/touch_box.jpg');
         background-size: contain;
     }
 
-    .touch, .light {
+    .light, .social {
         margin-right: 2%;
     }
 
@@ -292,8 +292,7 @@
         bottom: 20px;
         left: 0px;
         background-color: rgba(255,255,255,0.5);
-        -webkit-clip-path: polygon(0% 0%, 90% 0%, 100% 100%, 0% 100%);
-        clip-path: polygon(0% 0%, 90% 0%, 100% 100%, 0% 100%);
+        border-radius: 5px;
         color: #2f4f4f;
     }
 
@@ -310,14 +309,13 @@
         float: left;
         width: 500px;
         height: 40px;
-        background: #ddd;
+        background-color: #eee;
         border: none;
         padding-left: 40px;
         color: #fff;
         font-size: 18px;
         font-weight: 300;
-        -webkit-clip-path: polygon(2.4% 0%, 100% 0%, 97.6% 100%, 0% 100%);
-        clip-path: polygon(2.4% 0%, 100% 0%, 97.6% 100%, 0% 100%);
+        border-radius: 5px;
     }
 
     .email_submit {
@@ -329,8 +327,7 @@
         background-color: #ddd;
         color: #fff;
         border: none;
-        -webkit-clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
-        clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
+        border-radius: 5px;
     }
 
     
@@ -503,7 +500,7 @@
 #title:before {
     content: "";
     position: absolute;
-    background: #E6E6E6 url('/static/img/Gym.jpg');
+    background: #E6E6E6 url('/static/img/Main-Header.jpg');
     background-size: cover;
     background-position: center top;
     top: 0;
@@ -627,7 +624,7 @@
     margin: 40px;
     padding-top: 20px;
     position: absolute;
-    top: 30px;
+    top: 22%;
 }
 
 .grid_container {
@@ -872,15 +869,13 @@
             float: none;
             font-size: 18px;
             padding-left: 10px;
-            -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
-            clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+            border-radius: 5px;
         }
 
         .email_submit {
             float: none;
             font-size: 18px;
-            -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
-            clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+            border-radius: 5px;
         }
 
         .box {
@@ -976,6 +971,14 @@
 
         p {
             font-size: 15px;
+        }
+
+        #fluff_container {
+            background-image: url(/static/img/gurl.jpg);
+            background-size: cover;
+            background-position: center left;
+            height: 100vh;
+            position: relative;
         }
     }
 
