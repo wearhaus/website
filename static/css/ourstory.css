@@ -18,7 +18,7 @@
 /* TAGS */
 
 	h3 { /* title text */
-		font-size: 64px;
+		font-size: 48px;
 		font-weight: 900;
 		margin-bottom: 20px;
 	}
@@ -94,6 +94,7 @@
             padding: 75px 0px 50px 0px;
             margin: 0 auto;
             width: 580px;
+            text-align: center;
         }
 
     #team-pic-grid {

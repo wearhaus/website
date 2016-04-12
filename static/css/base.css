@@ -366,7 +366,7 @@
         }
 
         header .container {
-            padding-top: 15em;
+            padding-top: 15%;
             padding-bottom: 50px;
         }
 
@@ -913,10 +913,6 @@
             font-size: 72px;
         }
 
-        h3 {
-            font-size: 42px;
-        }
-
         h5 {
             font-size: 32px;
         }
@@ -947,10 +943,13 @@
             height: 100%;
             width: 100%;
         }
+        h3 {
+            font-size: 26px;
+        }
     }
     @media(min-width:992px) {
         h3 {
-            font-size: 46px;
+            font-size: 32px;
         }
 
         p {
@@ -960,6 +959,10 @@
             height: 100%;
             left: 0;
             width: 100%;
+        }
+
+        header .container {
+            padding-top: 10%;
         }
     }
 
