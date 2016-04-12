@@ -1,0 +1,137 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR ORGANIZATION
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2016-04-06 15:10-0700\n"
+"PO-Revision-Date: 2016-04-06 17:33-0700\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: pygettext.py 1.5\n"
+"X-Generator: Poedit 1.8.7\n"
+"Last-Translator: \n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Language: zh\n"
+
+#: templates/updater.html:12
+msgid "Wearhaus"
+msgstr ""
+
+#: templates/updater.html:37
+msgid "Firmware Updater"
+msgstr "固件升级程序"
+
+#: templates/updater.html:38
+msgid ""
+"This is a tool that will allow you to download new firmware updates directly "
+"to your Wearhaus Arc. These updates refresh your Arc with new features and "
+"ensure that your headphones are working smoothly. Use the step-by-step "
+"directions below to get started!"
+msgstr ""
+
+#: templates/updater.html:40 templates/updater.html:43
+#: templates/updater.html:44
+msgid "Download"
+msgstr "下载"
+
+#: templates/updater.html:41
+msgid "Coming Soon"
+msgstr "即将推出"
+
+#: templates/updater.html:42
+msgid "Sign Up"
+msgstr "立即注册"
+
+#: templates/updater.html:42
+msgid "for beta testing"
+msgstr "Beta测试"
+
+#: templates/updater.html:46
+msgid "For Mac OS X 10.10.1 or later"
+msgstr ""
+
+#: templates/updater.html:47
+msgid "For iOS 8.0 or later"
+msgstr ""
+
+#: templates/updater.html:48
+msgid "For Android 4.0 and up"
+msgstr ""
+
+#: templates/updater.html:49
+msgid "For Windows 10 or later"
+msgstr ""
+
+#: templates/updater.html:50
+msgid "For Windows Phone 8 and 8.1"
+msgstr ""
+
+#: templates/updater.html:51
+msgid "Not using a Mac?"
+msgstr ""
+
+#: templates/updater.html:52
+msgid "Not using iOS?"
+msgstr ""
+
+#: templates/updater.html:53
+msgid "Not using Android? "
+msgstr ""
+
+#: templates/updater.html:54
+msgid "Not using Windows?"
+msgstr ""
+
+#: templates/updater.html:55
+msgid "Not using Windows Phone? "
+msgstr ""
+
+#: templates/updater.html:68
+msgid "Step 1"
+msgstr "第1个"
+
+#: templates/updater.html:69
+msgid "Control click and Open"
+msgstr ""
+
+#: templates/updater.html:70 templates/updater.html:71
+msgid "App will notify you of a firmware update"
+msgstr ""
+
+#: templates/updater.html:72
+msgid "Connect Arc in Bluetooth Settings"
+msgstr ""
+
+#: templates/updater.html:73
+msgid "Go to Bluetooth Settings"
+msgstr "转到蓝牙设置"
+
+#: templates/updater.html:80
+msgid "Step 2"
+msgstr "第2个"
+
+#: templates/updater.html:81 templates/updater.html:85
+msgid "Connect Arc"
+msgstr ""
+
+#: templates/updater.html:82 templates/updater.html:83
+msgid "Go to Settings"
+msgstr ""
+
+#: templates/updater.html:84
+msgid "Allow Access to Arc"
+msgstr ""
+
+#: templates/updater.html:92
+msgid "Step 3"
+msgstr "第3步"
+
+#: templates/updater.html:93 templates/updater.html:94
+#: templates/updater.html:95 templates/updater.html:96
+#: templates/updater.html:97
+msgid "Start Update"
+msgstr "开始更新"
