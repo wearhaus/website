@@ -135,3 +135,28 @@ msgstr ""
 #: templates/updater.html:97
 msgid "Start Update"
 msgstr ""
+
+
+
+######################
+# Navbar             #
+######################
+#: templates/navbar.html:27
+msgid "Our Story"
+msgstr ""
+
+#: templates/navbar.html:30
+msgid "Blog"
+msgstr ""
+
+#: templates/navbar.html:33
+msgid "Support"
+msgstr ""
+
+#: templates/navbar.html:36
+msgid "Updater"
+msgstr ""
+
+#: templates/navbar.html:39
+msgid "Pre-order Now"
+msgstr ""
