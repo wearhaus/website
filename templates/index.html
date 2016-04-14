@@ -194,18 +194,11 @@
         <!-- Blog Section -->
         <section id="blog">
             <div class="blog_container">
-                <div class="blog blog_static">
-                    <a class="blog_link" href="http://blog.wearhaus.com">
-                        <img class="blog_bg" src="../static/img/blog_background_generic.jpg">
-                        <img class="blog_lol" src="../static/img/wearhaus-blog-overlay.png">
-                        <img class="img_hack" src="../static/img/wearhaus-blog-overlay.png">
-                        <div class="caption_overlay">
-                            <div class="caption">
-                            </div>
-                        </div>
-                    </a>
-                </div>
                 <div class="posts blog_grid">
+                    <a class="blog_pre" href="http://blog.wearhaus.com">
+                        <img class="blog_img" src="../static/img/blog_background_generic.jpg">
+                        <img class="img_hack" src="../static/img/wearhaus-blog-overlay.png">
+                    </a>
                     <a class="blog_pre" href={{ featured_posts.posts[0].url }} id="blog_a_1" data-caption="{{ featured_posts.posts[0].title }}">
                         <img class="blog_img" src={{ featured_posts.posts[0].thumbnail_images.medium.url }} id="blog_img_1">
                     </a>
@@ -223,6 +216,9 @@
                     </a>
                     <a class="blog_pre" href={{ featured_posts.posts[5].url }} id="blog_a_6" data-caption="{{ featured_posts.posts[5].title }}">
                         <img class="blog_img" src={{ featured_posts.posts[5].thumbnail_images.medium.url }} id="blog_img_6">
+                    </a>
+                    <a class="blog_pre" href={{ featured_posts.posts[6].url }} id="blog_a_6" data-caption="{{ featured_posts.posts[6].title }}">
+                        <img class="blog_img" src={{ featured_posts.posts[6].thumbnail_images.medium.url }} id="blog_img_7">
                     </a>
                 </div>
             </div>

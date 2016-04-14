@@ -157,127 +157,107 @@ $(document).ready(function() {
 	    $('.show-for-winphone').show();
 	}
 
-var canvas = document.getElementById("canvas");
-var ctx = canvas.getContext("2d");
+	var canvas = document.getElementById("canvas");
+	var ctx = canvas.getContext("2d");
 
-var truck, logo, overlay, grass;
-var newColor = "rgba(255,255,255,.5)";
+	var truck, logo, overlay, grass;
+	var newColor = "rgba(255,255,255,.5)";
 
-var imageURLs = [];
-var imagesOK = 0;
-var imgs = [];
-var whichHeadphone = 'black';
-pushImages();
+	var imageURLs = [];
+	var imagesOK = 0;
+	var imgs = [];
+	var whichHeadphone = 'black';
+	pushImages();
 
-function pushImages() {
-	imageURLs = [];
-	if (whichHeadphone == 'black') {
-		imageURLs.push("http://i.imgur.com/OdZSSCY.png");
-	} else {
-		imageURLs.push("http://i.imgur.com/zt8S8x4.png");
+	function pushImages() {
+		imageURLs = [];
+		if (whichHeadphone == 'black') {
+			imageURLs.push("http://i.imgur.com/OdZSSCY.png");
+		} else {
+			imageURLs.push("http://i.imgur.com/zt8S8x4.png");
+		}
+		imageURLs.push("http://i.imgur.com/GbeRAPi.png");
+		loadAllImages();
 	}
-	imageURLs.push("http://i.imgur.com/GbeRAPi.png");
-	loadAllImages();
-}
 
 
-function loadAllImages() {
-	imgs = [];
-	imagesOK= 0;
-    for (var i = 0; i < imageURLs.length; i++) {
-        var img = new Image();
-        imgs.push(img);
-        img.onload = function () {
-            imagesOK++;
-            imagesAllLoaded();
-        };
-        img.src = imageURLs[i];
-    }
-}
+	function loadAllImages() {
+		imgs = [];
+		imagesOK= 0;
+	    for (var i = 0; i < imageURLs.length; i++) {
+	        var img = new Image();
+	        imgs.push(img);
+	        img.onload = function () {
+	            imagesOK++;
+	            imagesAllLoaded();
+	        };
+	        img.src = imageURLs[i];
+	    }
+	}
 
-var imagesAllLoaded = function () {
-    if (imagesOK >= imageURLs.length) {
-        // all images are fully loaded an ready to use
-        truck = imgs[0];
-        overlay = imgs[1];
-        draw();
-    }
-};
-
-
-function draw() {
-
-    // clear the canvas
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
-
-    // save the context state
-    ctx.save();
-
-    // draw the overlay
-    ctx.drawImage(overlay, 0, 0);
-
-    // change composite mode to source-in
-    // any new drawing will only overwrite existing pixels
-    ctx.globalCompositeOperation = "source-in";
-
-    // draw a purple rectangle the size of the canvas
-    // Only the overlay will become purple
-    ctx.fillStyle = newColor;
-    ctx.fillRect(0, 0, canvas.width, canvas.height);
-
-    // change the composite mode to destination-atop
-    // any new drawing will not overwrite any existing pixels
-    ctx.globalCompositeOperation = "destination-atop";
-
-    // draw the full logo
-    // This will NOT overwrite any existing purple overlay pixels
+	var imagesAllLoaded = function () {
+	    if (imagesOK >= imageURLs.length) {
+	        // all images are fully loaded an ready to use
+	        truck = imgs[0];
+	        overlay = imgs[1];
+	        draw();
+	    }
+	};
 
 
-    // draw the truck
-    // This will NOT replace any existing pixels
-    // The purple overlay will not be overwritten
-    // The blue logo will not be overwritten
-    ctx.drawImage(truck, 0, 0);
+	function draw() {
 
-    // restore the context to it's original state
-    ctx.restore();
+	    // clear the canvas
+	    ctx.clearRect(0, 0, canvas.width, canvas.height);
 
-}
+	    // save the context state
+	    ctx.save();
 
-$(".black").click(function() {
-	whichHeadphone = 'black';
-	$(this).css("border-color", "#00bccc");
-	$(".white").css("border-color", "#ccc");
-	pushImages();
+	    // draw the overlay
+	    ctx.drawImage(overlay, 0, 0);
 
-});
+	    // change composite mode to source-in
+	    // any new drawing will only overwrite existing pixels
+	    ctx.globalCompositeOperation = "source-in";
 
-$(".white").click(function() {
-	whichHeadphone = 'white';
+	    // draw a purple rectangle the size of the canvas
+	    // Only the overlay will become purple
+	    ctx.fillStyle = newColor;
+	    ctx.fillRect(0, 0, canvas.width, canvas.height);
 
-	$(this).css("border-color", "#00bccc");
-	$(".black").css("border-color", "#000");
-	pushImages();
-});
+	    // change the composite mode to destination-atop
+	    // any new drawing will not overwrite any existing pixels
+	    ctx.globalCompositeOperation = "destination-atop";
 
-$(".blog_pre").mouseenter(function() {
-	var caption = this.getAttribute('data-caption');
-	$(".caption").text(caption);
-	$(".blog_lol").css("visibility", "hidden");
-	$(".caption_overlay").css({opacity: 0, visibility: "visible"}).animate({opacity: 1.0}, 200);
-	$(".blog_pre").not(this).each(function() {
-		$(this).children('img').css("opacity", "0.5");
+	    // draw the full logo
+	    // This will NOT overwrite any existing purple overlay pixels
+
+
+	    // draw the truck
+	    // This will NOT replace any existing pixels
+	    // The purple overlay will not be overwritten
+	    // The blue logo will not be overwritten
+	    ctx.drawImage(truck, 0, 0);
+
+	    // restore the context to it's original state
+	    ctx.restore();
+
+	}
+
+	$(".black").click(function() {
+		whichHeadphone = 'black';
+		$(this).css("border-color", "#00bccc");
+		$(".white").css("border-color", "#ccc");
+		pushImages();
+
 	});
-});
 
-$(".blog_pre").mouseleave(function() {
-	$(".caption_overlay").css("visibility", "hidden");
-	$(".blog_lol").css("visibility", "visible");
-	
-	$(".blog_pre").not(this).each(function() {
-		$(this).children('img').css("opacity", "1.0");
+	$(".white").click(function() {
+		whichHeadphone = 'white';
+
+		$(this).css("border-color", "#00bccc");
+		$(".black").css("border-color", "#000");
+		pushImages();
 	});
-});
-
 
 });
