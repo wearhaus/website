@@ -118,12 +118,48 @@ section {
 }
 /* line 75, ../../compass/sass/updater.scss */
 section.gray {
-  background-color: #f2f2f2;
   padding: 10em 10em 6em 10em;
+  margin-top: 0;
+  color: white;
+  position: relative;
 }
+
+
+section.gray a:link {
+  color: #ccc;
+}
+
+section.gray a:hover {
+  color: white;
+}
+
+#hero-bg {
+    position: absolute;
+    background: #E6E6E6 url('/static/img/EXT_8594.jpg');
+    background-size: cover;
+    background-position: center center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden !important;
+}
+#hero-bg:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #777777;
+  opacity: 0.75;
+}
+
 /* line 79, ../../compass/sass/updater.scss */
 section.white {
   background-color: white;
+  border: 0;
+  border-radius: 0;
 }
 @media screen and (max-width: 1099px) {
   /* line 72, ../../compass/sass/updater.scss */
@@ -141,7 +177,7 @@ section.white {
 }
 
 /* line 92, ../../compass/sass/updater.scss */
-button {
+button.download {
   font-size: 1.4em;
   padding: .3em 2em;
   color: white;
@@ -154,7 +190,7 @@ button {
   border-radius: 0.33333em;
 }
 /* line 101, ../../compass/sass/updater.scss */
-button p {
+button.download p {
   font-size: .6em;
 }
 
@@ -183,7 +219,7 @@ button p {
 .step img {
   width: 100%;
   height: auto;
-  box-shadow: 2px 2px 8px;
+  box-shadow: 2px 2px 18px rgba(0,0,0,0.17);
   margin: 0.5em 0;
 }
 

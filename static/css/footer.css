@@ -37,14 +37,14 @@
        }
 
        footer .footer-above {
-           background-color: #ccc;
-           padding: 150px 0px 100px 0px;
+           background-color: #404040;
+           padding: 50px 0px 20px 0px;
        }
        footer .footer-col {
-           margin-bottom: 50px;
+           margin-bottom: 30px;
        }
        footer .footer-below {
-           background-color: #ccc;
+           background-color: #404040;
            padding: 25px 0;
        }
 
@@ -78,21 +78,83 @@
       padding: 30px 40px 50px 40px;
     }
 
-    #footer-logos-mobile {
-      display: none;
-    }
+
+
+/* SOCIAL MEDIA SPRITE */
+
+#social-icons {
+    background: url('../img/wearhaus-social-media-sprite.png') no-repeat;
+    background-size: 1182px 413px;
+    width: 110px;
+    height: 103px;
+}
+
+.social-twitter {
+    background-position: -14px -157px !important;
+}
+a:hover .social-twitter {
+    background-position: -14px -290px !important;
+}
+
+.social-facebook {
+    background-position: -449px -157px !important;
+}
+a:hover .social-facebook {
+    background-position: -449px -290px !important;
+}
+
+.social-instagram {
+    background-position: -305px -157px !important;
+}
+a:hover .social-instagram {
+    background-position: -305px -290px !important;
+}
+
+.social-youtube {
+    background-position: -157px -157px !important;
+}
+a:hover .social-youtube {
+    background-position: -157px -290px !important;
+}
+
+.social-email {
+    background-position: -607px -157px !important;
+}
+a:hover .social-email {
+    background-position: -607px -290px !important;
+}
+
+.social-snap {
+    background-position: -766px -157px !important;
+}
+a:hover .social-snap {
+    background-position: -1063px -24px !important;
+    cursor: none;
+}
+
+
 
 /* smartphones */
-@media(min-width:768px) {
-
+@media(min-width:703px) {
+  
   .footer-above .container {
     width: 100%;
   }
 
+  #footer-logos a {
+    padding: 0.3em;
+  }
+
 }
 
+
 @media(max-width: 480px) { /* portrait layout */
-  
+
+  #footer-logos canvas {
+    transform: scale(0.4);
+    margin: -32px;
+  }
+
   footer a { /* resize links to other pages */
     font-size: 14px;
   }
@@ -109,7 +171,10 @@
   .footer-links-mobile {
     display: block;
     line-height: 30px;
-    text-align: left;
+  }
+
+  #footer-logos a {
+    padding: 0;
   }
 
   .mobile-links a {
@@ -122,14 +187,5 @@
 
   #footer-links {
     display: none;
-  }
-
-  #footer-logos {
-    display: none;
-  }
-
-  #footer-logos-mobile {
-    display: block;
-    padding-bottom: 20px;
   }
 }

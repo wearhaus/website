@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Wearhaus</title>
+    <title>{{ _("Wearhaus") }}</title>
 
     <!-- favicon -->
     <link rel="shortcut icon" href="../static/img/favicon.ico" type="image/x-icon">
@@ -34,68 +34,72 @@
     <section class="gray">
         <div class="flex-grid">
             <div class="flex-9">
-              <h2>Firmware Updater</h2>
-              <p>This is a tool that will allow you to download new firmware updates directly to your Wearhaus Arc. These updates refresh your Arc with new features and ensure that your headphones are working smoothly. Use the step-by-step directions below to get started!</p>
-              <div class="download flex-2" onclick="fbq('track', 'DownloadUpdater');">
-                <a class="show-for-mac" href="../static/downloads/WearhausUpdater.dmg"><button href="#">Download<p>Firmware v1.1</p></button></a>
-                <a class="show-for-ios" href="#"><button href="#">Coming Soon</button></a>
-                <a class="show-for-android" href="https://play.google.com/apps/testing/com.wearhaus.frontend"><button>Sign Up<p>for beta testing</p></button></a>
-                <a class="show-for-win" href="https://www.microsoft.com/store/apps/9nblggh67m44"><button>Download<p>on Windows Store</p></button></a>
-                <a class="show-for-winphone" href="#"><button>Download<p>on Windows Store</p></button></a>
+              <h2>{{ _("Firmware Updater") }}</h2>
+              <p>{{ _("This is a tool that will allow you to download new firmware updates directly to your Wearhaus Arc. These updates refresh your Arc with new features and ensure that your headphones are working smoothly. Use the step-by-step directions below to get started!") }}</p>
+              <div class="download flex-2">
+                <a class="show-for-mac" href="../static/downloads/WearhausUpdater.dmg">
+                  <button class="download" href="#">{{ _("Download") }}<p>Firmware v1.1</p></button></a>
+                <a class="show-for-ios" href="#">
+                  <button class="download" href="#">{{ _("Coming Soon") }}</button></a>
+                <a class="show-for-android" href="https://play.google.com/apps/testing/com.wearhaus.frontend">
+                  <button class="download">{{ _("Sign Up") }}<p>{{ _("for beta testing") }}</p></button></a>
+                <a class="show-for-win" href="https://www.microsoft.com/store/apps/9nblggh67m44">
+                  <button class="download">{{ _("Download") }}<p>on Windows Store</p></button></a>
+                <a class="show-for-winphone" href="#">
+                  <button class="download">{{ _("Download") }}<p>on Windows Store</p></button></a>
               </div>
-              <div class="download flex-10 show-for-mac" style="vertical-align: middle;">For Mac OS X 10.10.1 or later</div>
-              <div class="download flex-10 show-for-ios" style="vertical-align: middle;">For iOS 8.0 or later</div>
-              <div class="download flex-10 show-for-android" style="vertical-align: middle;">For Android 4.0 and up</div>
-              <div class="download flex-10 show-for-win" style="vertical-align: middle;">For Windows 10 or later</div>
-              <div class="download flex-10 show-for-winphone" style="vertical-align: middle;">For Windows Phone 8 and 8.1</div>
-              <p class="show-for-mac">Not using a Mac?</p>
-              <p class="show-for-ios">Not using iOS?</p>
-              <p class="show-for-android">Not using Android? </p>
-              <p class="show-for-win">Not using Windows?</p>
-              <p class="show-for-winphone">Not using Windows Phone? </p>
+              <div class="download flex-10 show-for-mac" style="vertical-align: middle;">{{ _("For Mac OS X 10.10.1 or later") }}</div>
+              <div class="download flex-10 show-for-ios" style="vertical-align: middle;">{{ _("For iOS 8.0 or later") }}</div>
+              <div class="download flex-10 show-for-android" style="vertical-align: middle;">{{ _("For Android 4.0 and up") }}</div>
+              <div class="download flex-10 show-for-win" style="vertical-align: middle;">{{ _("For Windows 10 or later") }}</div>
+              <div class="download flex-10 show-for-winphone" style="vertical-align: middle;">{{ _("For Windows Phone 8 and 8.1") }}</div>
+              <p class="show-for-mac">{{ _("Not using a Mac?") }}</p>
+              <p class="show-for-ios">{{ _("Not using iOS?") }}</p>
+              <p class="show-for-android">{{ _("Not using Android? ") }}</p>
+              <p class="show-for-win">{{ _("Not using Windows?") }}</p>
+              <p class="show-for-winphone">{{ _("Not using Windows Phone? ") }}</p>
               <a href="#" id="download-for-android"><i class="fa fa-android fa-lg"></i> Android</a>&nbsp;&nbsp;
               <a href="#" id="download-for-win"><i class="fa fa-windows fa-lg"></i> Windows</a>&nbsp;&nbsp;
               <a href="#" id="download-for-mac"><i class="fa fa-apple fa-lg"></i> OS X</a>&nbsp;&nbsp;
               <a href="#" id="download-for-ios"><i class="fa fa-apple fa-lg"></i> iOS</a>&nbsp;&nbsp;
               <p>Questions? Email <a href="mailto:support@wearhaus.com">support@wearhaus.com</a></p>
             </div>
-            <div class="flex-3" id="updater-image"><img src="../static/img/arc-updater-right.png" style="width: 130px; height: auto;"></div>
-          </div>
+            <div id="hero-bg"></div>
         </section>
 
         <section class="white">
           <div class="step flex-grid">
             <div class="flex-1">
-              <h2>Step 1</h2>
-              <span class="show-for-mac">Control click and Open</span>
-              <span class="show-for-ios">App will notify you of a firmware update</span>
-              <span class="show-for-android">App will notify you of a firmware update</span>
-              <span class="show-for-win">Connect Arc in Bluetooth Settings</span>
-              <span class="show-for-winphone">Go to Bluetooth Settings</span>
+              <h2>{{ _("Step 1") }}</h2>
+              <span class="show-for-mac">{{ _("Control click and Open") }}</span>
+              <span class="show-for-ios">{{ _("App will notify you of a firmware update") }}</span>
+              <span class="show-for-android">{{ _("App will notify you of a firmware update") }}</span>
+              <span class="show-for-win">{{ _("Connect Arc in Bluetooth Settings") }}</span>
+              <span class="show-for-winphone">{{ _("Go to Bluetooth Settings") }}</span>
               <img class="show-for-mac" src="../static/img/arc-updater-osx-screen_01.png">
               <img class="show-for-android" src="../static/img/arc-updater-android-screen_01.png">
               <img class="show-for-win" src="../static/img/arc-updater-win-screen_01.png">
               <img class="show-for-winphone" src="../static/img/arc-updater-winphone-screen_01.png">
             </div>
             <div class="step flex-1">
-              <h2>Step 2</h2>
-              <span class="show-for-mac">Connect Arc</span>
-              <span class="show-for-ios">Go to Settings</span>
-              <span class="show-for-android">Go to Settings</span>
-              <span class="show-for-win">Allow Access to Arc</span>
-              <span class="show-for-winphone">Connect Arc</span>
+              <h2>{{ _("Step 2") }}</h2>
+              <span class="show-for-mac">{{ _("Connect Arc") }}</span>
+              <span class="show-for-ios">{{ _("Go to Settings") }}</span>
+              <span class="show-for-android">{{ _("Go to Settings") }}</span>
+              <span class="show-for-win">{{ _("Allow Access to Arc") }}</span>
+              <span class="show-for-winphone">{{ _("Connect Arc") }}</span>
               <img class="show-for-mac" src="../static/img/arc-updater-osx-screen_02.png">
               <img class="show-for-android" src="../static/img/arc-updater-android-screen_02.png">
               <img class="show-for-win" src="../static/img/arc-updater-win-screen_02.png">
               <img class="show-for-winphone" src="../static/img/arc-updater-winphone-screen_02.png">
             </div>
             <div class="step flex-1">
-              <h2>Step 3</h2>
-              <span class="show-for-mac">Start Update</span>
-              <span class="show-for-ios">Start Update</span>
-              <span class="show-for-android">Start Update</span>
-              <span class="show-for-win">Start Update</span>
-              <span class="show-for-winphone">Start Update</span>
+              <h2>{{ _("Step 3") }}</h2>
+              <span class="show-for-mac">{{ _("Start Update") }}</span>
+              <span class="show-for-ios">{{ _("Start Update") }}</span>
+              <span class="show-for-android">{{ _("Start Update") }}</span>
+              <span class="show-for-win">{{ _("Start Update") }}</span>
+              <span class="show-for-winphone">{{ _("Start Update") }}</span>
               <img class="show-for-mac" src="../static/img/arc-updater-osx-screen_03.png">
               <img class="show-for-android" src="../static/img/arc-updater-android-screen_03.png">
               <img class="show-for-win" src="../static/img/arc-updater-win-screen_03.png">
