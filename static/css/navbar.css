@@ -114,9 +114,7 @@
         padding: 5px 15px 5px 15px;
         text-align: center;
         width: 180px;
-/*        height: 55px;*/
-        -webkit-clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
-        clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
+        border-radius: 1em;
     }
 
     #order_now {
