@@ -226,7 +226,7 @@
     section#main_info {
         margin: 15px 20px;
     }
-    #main_info .social {
+    #main_info .app {
         background-image: url('/static/img/Social-Sharing.jpg');
         background-size: contain;
     }
@@ -247,11 +247,11 @@
             background: rgba(64,64,64,0.40) url('../img/corner_touch-icon.png') no-repeat right;
         }
 
-    .light, .social {
+    .light, .app {
         margin-right: 2%;
     }
-        .social .box_title {
-            background: rgba(64,64,64,0.40) url('../img/corner_social-icon.png') no-repeat right;
+        .app .box_title {
+            background: rgba(64,64,64,0.40) url('../img/corner_app-icon.png') no-repeat right;
         }
 
     .headphone {
@@ -299,6 +299,7 @@
         background-color: rgba(64,64,64,0.40);
         color: white;
         font-size: 1.2em;
+        line-height: 0.8em;
     }
 
 
