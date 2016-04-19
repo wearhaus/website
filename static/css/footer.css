@@ -78,6 +78,62 @@
       padding: 30px 40px 50px 40px;
     }
 
+
+
+/* SOCIAL MEDIA SPRITE */
+
+#social-icons {
+    background: url('../img/wearhaus-social-media-sprite.png') no-repeat;
+    background-size: 1182px 413px;
+    width: 110px;
+    height: 103px;
+}
+
+.social-twitter {
+    background-position: -14px -157px !important;
+}
+a:hover .social-twitter {
+    background-position: -14px -290px !important;
+}
+
+.social-facebook {
+    background-position: -449px -157px !important;
+}
+a:hover .social-facebook {
+    background-position: -449px -290px !important;
+}
+
+.social-instagram {
+    background-position: -305px -157px !important;
+}
+a:hover .social-instagram {
+    background-position: -305px -290px !important;
+}
+
+.social-youtube {
+    background-position: -157px -157px !important;
+}
+a:hover .social-youtube {
+    background-position: -157px -290px !important;
+}
+
+.social-email {
+    background-position: -607px -157px !important;
+}
+a:hover .social-email {
+    background-position: -607px -290px !important;
+}
+
+.social-snap {
+    background-position: -766px -157px !important;
+}
+a:hover .social-snap {
+    background-position: -1063px -24px !important;
+    cursor: none;
+}
+
+
+
 /* smartphones */
 @media(min-width:703px) {
   
