@@ -37,7 +37,6 @@
                 <br>
                 <span id="title-sub">{{ _("WIRELESS AUDIO SHARING") }}</span>
             </div>
-            
         </header>
     <div class="main-container">
         <section id="featured-in">
@@ -63,18 +62,22 @@
             </div>
         </section>
 
-        <section id="main_blurb">
-            <div class="blurb_text">
-                <div class="company_title">{{ _("WIRELESS AUDIO SHARING") }}</div>
-                <div class="company_mission">{{ _("The Wearhaus Arc is the first pair of wireless headphones that allow you to sync up with multiple nearby friends and listen together. In addition to listening by yourself, now you can easily introduce your friends to the artists you love most, or discover new music through people around you.") }}</div>
-            </div>
-        </section>
-
         <!-- Video Section -->
-        <section id="main_blurb">
-            <div class="video_container">
-                <iframe width="560" height="315" src="//www.youtube.com/embed/B3aplA1j8HE?&modestbranding=1&showinfo=0&color=white" frameborder="0" allowfullscreen></iframe>
-            </div>
+        <section id="section-video">
+            <section class="section-image">
+                    <img src="../static/img/video-section-left.png">
+            </section>
+            <section class="section-text">
+                    <h1>{{ _("WIRELESS AUDIO SHARING") }}</h1>
+                    <p>{{ _("The Wearhaus Arc is the first pair of wireless headphones that allow you to sync up with multiple nearby friends and listen together. In addition to listening by yourself, now you can easily introduce your friends to the artists you love most, or discover new music through people around you.") }}</p>
+                    <a href="http://www.youtube.com/embed/B3aplA1j8HE?modestbranding=1;autohide=1&amp;showinfo=0&amp;controls=0&amp;autoplay=1" target="player">
+                        <button id="button-watch-demo">WATCH DEMO</button>
+                    </a>
+            </section>
+
+            <section class="video_container" style="display: none;">
+                <iframe width="560" height="315" src="//www.youtube.com/embed/B3aplA1j8HE?&modestbranding=1&showinfo=0&color=white" name="player" frameborder="0" allowfullscreen></iframe>
+            </section>
         </section>
         
         <!-- Sync Section -->

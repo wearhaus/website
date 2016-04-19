@@ -167,11 +167,14 @@
         height: auto;
     }
     .video_container {
-        position:relative;
+        position:absolute;
         padding-bottom:56.25%;
         padding-top:30px;
         height:auto;
         overflow:hidden;
+        z-index: 1;
+        width: 100%;
+        top: -50px;
     }
 
     .video_container iframe, .video_container object, .video_container embed {
@@ -350,6 +353,7 @@
     header {
         color: #fff;
         padding: 30px 0px 280px 0px;
+            height: 102vh;
     }
 
         header img {
@@ -459,10 +463,12 @@
     }
 
     .video-container { /* make YouTube embed video responsive */
-        height: 0;
         overflow: hidden;
         padding-bottom: 56.25%;
-        position: relative;
+        position: absolute;
+        z-index: 1;
+        width: 100%;
+        top: -50px;
     }
 
     .video-container iframe {
@@ -503,6 +509,42 @@
     div.blog_grid a:hover:after {
         opacity: 1;
     }
+
+
+.section-image, .section-text {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.section-image {
+    text-align: center;
+    width: 50%;
+    padding: 2em;
+}
+    .section-image img {
+        width: 100%;
+    }
+
+.section-text {
+    padding: 3em 10em 3em 3em;
+}
+    .section-text h1 {
+        line-height: 0.9em;
+        color: #00BCCC;
+        font-weight: 500;
+        margin-bottom: 0.2em;
+    }
+    .section-text p { 
+        font-size: 1.3em;
+        color: #939393;
+        margin-bottom: 1.5em;
+    }
+
+#section-video {
+    position: relative;
+    margin: 5em 0;
+}
+
 
 /* IDS */
 
@@ -734,6 +776,101 @@
 .overlay_blog {
     opacity: 0.1;
 }
+
+#button-watch-demo {
+    background-color: #404040;
+    border: 0;
+    font-family: "Lato", sans-serif;
+    color: white;
+    font-size: 1.3em;
+    padding: 0.6em 1.5em;
+    border-radius: 1.3em;
+}
+#button-watch-demo:before {
+    content: "";
+    background: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjwhRE9DVFlQRSBzdmcgIFBVQkxJQyAnLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4nICAnaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkJz48c3ZnIGhlaWdodD0iNTEycHgiIGlkPSJMYXllcl8xIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA1MTIgNTEyOyIgdmVyc2lvbj0iMS4xIiB2aWV3Qm94PSIwIDAgNTEyIDUxMiIgd2lkdGg9IjUxMnB4IiB4bWw6c3BhY2U9InByZXNlcnZlIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj48cGF0aCBkPSJNNDA1LjIsMjMyLjlMMTI2LjgsNjcuMmMtMy40LTItNi45LTMuMi0xMC45LTMuMmMtMTAuOSwwLTE5LjgsOS0xOS44LDIwSDk2djM0NGgwLjFjMCwxMSw4LjksMjAsMTkuOCwyMCAgYzQuMSwwLDcuNS0xLjQsMTEuMi0zLjRsMjc4LjEtMTY1LjVjNi42LTUuNSwxMC44LTEzLjgsMTAuOC0yMy4xQzQxNiwyNDYuNyw0MTEuOCwyMzguNSw0MDUuMiwyMzIuOXoiIGZpbGw9IiNmZmZmZmYiLz48L3N2Zz4=") no-repeat center 0.1em;
+    background-size: contain;
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    margin-right: 0.6em;
+}
+
+
+
+/* SOCIAL MEDIA SPRITE */
+
+#social-icons {
+    background: url('../img/wearhaus-social-media-sprite.png') no-repeat;
+    background-size: 1182px 413px;
+    width: 110px;
+    height: 103px;
+}
+
+.social-twitter {
+    background-position: -14px -157px !important;
+}
+a:hover .social-twitter {
+    background-position: -14px -290px !important;
+}
+
+.social-facebook {
+    background-position: -449px -157px !important;
+}
+a:hover .social-facebook {
+    background-position: -449px -290px !important;
+}
+
+.social-instagram {
+    background-position: -305px -157px !important;
+}
+a:hover .social-instagram {
+    background-position: -305px -290px !important;
+}
+
+.social-youtube {
+    background-position: -157px -157px !important;
+}
+a:hover .social-youtube {
+    background-position: -157px -290px !important;
+}
+
+.social-email {
+    background-position: -607px -157px !important;
+}
+a:hover .social-email {
+    background-position: -607px -290px !important;
+}
+
+.social-snap {
+    background-position: -766px -157px !important;
+}
+a:hover .social-snap {
+    background-position: -766px -290px !important;
+}
+/*.social-snap:after {
+    content: attr(data-username);
+    position: fixed;
+    display: none;
+    opacity: 0;
+    transition: opacity .2s;
+    background: url('../img/wearhaus-social-media-sprite.png') no-repeat -1063px -24px;
+    background-size: 1182px 413px;
+    width: 106px;
+    height: 100px;
+    z-index: 100;
+    bottom: 0px;
+    right: 0px;
+    /*left:;
+    top:;*/
+}
+.social-snap:hover {
+    display: block;
+    opacity: 1;
+}*/
+
+
+
 
 /* MEDIA QUERIES */
 
