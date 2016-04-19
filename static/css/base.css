@@ -1051,13 +1051,10 @@ a:hover .social-snap {
         }
 
         .girl_container {
-            width: 300px;
+            width: 100%;
             position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translateX(-50%) translateY(-50%);
-            margin: 0px;
-            margin-bottom: 100px;
+            margin: 4em auto;
+            padding: 0;
         }
 
         #fluff_container {
@@ -1194,7 +1191,7 @@ a:hover .social-snap {
             background-image: url(/static/img/gurl.jpg);
             background-size: cover;
             background-position: center left;
-            height: 100vh;
+            height: 150vh;
             position: relative;
         }
     }
