@@ -815,12 +815,6 @@
 
 
 /* MEDIA QUERIES */
-
-    @media(min-height:660px) {
-        #title {
-            height: 100vh;
-        }
-    }
     @media(max-width: 480px) { /* smartphone portrait */
         h1 {
             font-size: 40px !important;
