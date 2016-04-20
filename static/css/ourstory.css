@@ -23,6 +23,11 @@
 		margin-bottom: 20px;
 	}
 
+	header {
+		height: auto;
+		padding: 0;
+	}
+
 
 /* CLASSES */
 
@@ -157,6 +162,10 @@
 
 	#team-pic-grid {
 		width: 675px;
+	}
+
+	#title-our-story {
+	    height: 640px;
 	}
 
 }
