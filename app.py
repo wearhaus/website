@@ -4,7 +4,7 @@ import HTMLParser
 import gettext
 import locale
 
-from flask import Flask, render_template, request, jsonify, Response
+from flask import Flask, Response, jsonify, redirect, render_template, request
 
 app = Flask(__name__)
 lang_code = locale.getdefaultlocale()[0]
@@ -30,6 +30,7 @@ def main():
 
 @app.route('/ourstory')
 @app.route('/team')
+@app.route('/about')
 def ourstory():
     lang = gettext.translation('ourstory', './locale', languages=[lang_code])
     _ = lang.ugettext
@@ -42,6 +43,14 @@ def updater():
     lang = gettext.translation('updater', './locale', languages=[lang_code])
     _ = lang.ugettext
     return render_template('updater.html', _ = _)
+
+@app.route('/warranty')
+def warranty():
+    return redirect("http://store.wearhaus.com/pages/warranty")
+
+@app.route('/gettingstarted')
+def gettingstarted():
+    return redirect("https://www.youtube.com/watch?v=1A1OaNIA1_k")
 
 if __name__ == '__main__':
     app.debug = False
