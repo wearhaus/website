@@ -1,10 +1,4 @@
-/*!
- * Raymond Kim 2015
- *
- * footer.css 
- * Main website
- *
- */
+/* footer.css */
 
    a:hover, a:focus  {
       transition: color 0.2s ease;
@@ -24,7 +18,7 @@
        footer a {
            color: white;
            font-weight: 300;
-           font-size: 20px;
+           font-size: 16px;
            padding: 0px 8px 0px 8px;
            text-transform: none;
            white-space: nowrap;
@@ -45,7 +39,7 @@
        }
        footer .footer-below {
            background-color: #404040;
-           padding: 25px 0;
+           padding: 10px 0;
        }
 
     .footer-links-mobile {
@@ -71,11 +65,11 @@
     }   
 
     #footer-links {
-      line-height: 40px;
+      line-height: 20px;
     }
 
     #footer-logos {
-      padding: 30px 40px 50px 40px;
+      padding: 0 40px 20px 40px;
     }
 
 
@@ -151,8 +145,8 @@ a:hover .social-snap {
 @media(max-width: 480px) { /* portrait layout */
 
   #footer-logos canvas {
-    transform: scale(0.4);
-    margin: -32px;
+    transform: scale(0.6);
+    margin: -10px;
   }
 
   footer a { /* resize links to other pages */
