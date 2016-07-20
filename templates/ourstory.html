@@ -9,11 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Wearhaus</title>
-
-    <!-- favicon -->
-    <link rel="shortcut icon" href="../static/img/favicon.ico" type="image/x-icon">
-
+    <title>{{ _("Wearhaus - About") }}</title>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -22,6 +18,9 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
+    {% include 'includes.html' %}
+    <link href="../static/css/ourstory.css" rel="stylesheet">
+
 </head>
 
 <body id="page-top" class="index">
@@ -29,111 +28,104 @@
     {% include 'navbar.html' %}
 
     <!-- Header -->
-    <header id="title-our-story">
+    <header>
         <div class="container">
-            <div class="row" id="title-text">
-                <div class="col-md-6">
-                        <h3>Who We Are</h3>
-                        <p>Wearhaus Inc. is a Bay Area hardware startup founded in 2013 by ex-UC Berkeley students Richie Zeng and Nelson Zhang. Richie and Nelson met as engineering students but bonded over concerts and trips to the record store. They quickly realized how important music can be when it comes to meeting new people, but it’s not always an easy process.
-                        </p><br>
-                        <p>They soon developed the Wearhaus Arc -- highly customizable, Bluetooth headphones that deliver top-quality sound and allow the user to wirelessly sync music with multiple nearby friends. After graduating from PCH International's Highway1 hardware incubator, and completing a highly successful Kickstarter campaign, the Wearhaus journey is just beginning.
-                        </p>
-                </div>
+            <div class="col-md-7">
+                    <h3>{{ _("Who We Are") }}</h3>
+                    <p>{{ _("Wearhaus Inc. is a Bay Area hardware startup founded in 2013 by ex-UC Berkeley students Richie Zeng and Nelson Zhang. Richie and Nelson met as engineering students but bonded over concerts and trips to the record store. They quickly realized how important music can be when it comes to meeting new people, but it’s not always an easy process.") }}</p>
+                    <br>
+                    <p>{{ _("They soon developed the Wearhaus Arc -- highly customizable, Bluetooth headphones that deliver top-quality sound and allow the user to wirelessly sync music with multiple nearby friends. After graduating from PCH International's Highway1 hardware incubator, and completing a highly successful Kickstarter campaign, the Wearhaus journey is just beginning.") }}</p>
             </div>
+        </div>
+        <div class="row" id="title-our-story">
         </div>
     </header>
 
-    <section id="team_pic">
-        <img src="../static/img/team.jpg">
-    </section>
-
     <section class="about-section" id="team">
-        <h3>WEARHAUS TEAM</h3>
+        <h3>{{ _("WEARHAUS TEAM") }}</h3>
         <div id="team-pic-grid">
             <div class="team-pic-grid-inner">
                 <img src="../static/img/richie.jpg">
                 <div class="team-pic-grid-inner-text">
-                    <h6>Richie Zeng</h6>
-                    <p>Cofounder & CEO</p>
+                    <h6>{{ _("Richie Zeng") }}</h6>
+                    <p>{{ _("Cofounder & CEO") }}</p>
                 </div>
             </div>
             <div class="team-pic-grid-inner">
                 <img src="../static/img/nelson.jpg">
                 <div class="team-pic-grid-inner-text">
-                    <h6>Nelson Zhang</h6>
-                    <p>Cofounder & CTO</p>
+                    <h6>{{ _("Nelson Zhang") }}</h6>
+                    <p>{{ _("Cofounder & CTO") }}</p>
                 </div>
             </div>
             <div class="team-pic-grid-inner">
                 <img src="../static/img/ken.jpg">
                 <div class="team-pic-grid-inner-text">
-                    <h6>Ken Lauguico</h6>
-                    <p>Mobile Engineer (iOS)</p>
+                    <h6>{{ _("Ken Lauguico") }}</h6>
+                    <p>{{ _("Mobile Engineer (iOS)") }}</p>
                 </div>
             </div>
             <div class="team-pic-grid-inner">
                 <img src="../static/img/steven.jpg">
                 <div class="team-pic-grid-inner-text">
-                    <h6>Steven Hewitt</h6>
-                    <p>Mobile Engineer (Android)</p>
+                    <h6>{{ _("Steven Hewitt") }}</h6>
+                    <p>{{ _("Mobile Engineer (Android)") }}</p>
                 </div>
             </div>
             <div class="team-pic-grid-inner">
                 <img src="../static/img/dana.jpg">
                 <div class="team-pic-grid-inner-text">
-                    <h6>Dana Krangel</h6>
-                    <p>Marketing Manager</p>
+                    <h6>{{ _("Dana Krangel") }}</h6>
+                    <p>{{ _("Marketing Manager") }}</p>
                 </div>
             </div>
             <div class="team-pic-grid-inner">
                 <img src="../static/img/gracel.jpg">
                 <div class="team-pic-grid-inner-text">
-                    <h6>Gracel C.</h6>
-                    <p>Marketing Manager</p>
+                    <h6>{{ _("Gracel C.") }}</h6>
+                    <p>{{ _("Marketing Manager") }}</p>
                 </div>
             </div>
             <div class="team-pic-grid-inner">
                 <img src="../static/img/ross.jpg">
                 <div class="team-pic-grid-inner-text">
-                    <h6>Ross Davidson</h6>
-                    <p>Customer Service</p>
+                    <h6>{{ _("Ross Davidson") }}</h6>
+                    <p>{{ _("Customer Service") }}</p>
                 </div>
             </div>
             <div class="team-pic-grid-inner">
+                <img src="../static/img/nickki.jpg">
+                <div class="team-pic-grid-inner-text">
+                    <h6>{{ _("Nickki Nguyen") }}</h6>
+                    <p>{{ _("UI/UX Designer") }}</p>
+                </div>
+            </div>
+            <!--<div class="team-pic-grid-inner">
                 <img src="../static/img/sidd.jpg">
                 <div class="team-pic-grid-inner-text">
-                    <h6>Siddartho Bhattacharya</h6>
-                    <p>Software Engineer</p>
+                    <h6>{{ _("Siddartho Bhattacharya") }}</h6>
+                    <p>{{ _("Software Engineer") }}</p>
                 </div>
             </div>
             <div class="team-pic-grid-inner">
                 <img src="../static/img/ray.jpg">
                 <div class="team-pic-grid-inner-text">
-                    <h6>Ray Kim</h6>
-                    <p>Frontend Engineer Intern</p>
+                    <h6>{{ _("Ray Kim") }}</h6>
+                    <p>{{ _("Frontend Engineer Intern") }}</p>
                 </div>
             </div>
             <div class="team-pic-grid-inner">
                 <img src="../static/img/hari.jpg">
                 <div class="team-pic-grid-inner-text">
-                    <h6>Hari Subbaraj</h6>
-                    <p>Frontend Engineer Intern</p>
+                    <h6>{{ _("Hari Subbaraj") }}</h6>
+                    <p>{{ _("Frontend Engineer Intern") }}</p>
                 </div>
-            </div>
-<!--             <div class="team-pic-grid-inner">
-                <img src="">
-                <div class="team-pic-grid-inner-text">
-                    <h6>Eugenio Altieri</h6>
-                    <p>Product & Packaging Design</p>
-                </div>
-            </div> -->
+            </div>-->
         </div>
     </section>
 
     {% include 'footer.html' %}
-    {% include 'includes.html' %}
 
-		<link href="../static/css/ourstory.css" rel="stylesheet">
 
 </body>
 

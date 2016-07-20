@@ -9,10 +9,10 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="http://www.wearhaus.com"><img alt="Brand" src="../static/img/logo_white_transparent_high_res.png"></a>
+                <a class="navbar-brand" href="/"><img alt="Brand" src="../static/img/logo_white_transparent_high_res.png"></a>
                 <div id="navbar-order-now-link-mobile-container">
                     <a href="http://store.wearhaus.com" id="order_now_link_mobile">
-                        Order Now
+                        Reserve Now
                     </a>
                 </div>
             </div>
@@ -24,22 +24,22 @@
                         <a href="#page-top"></a>
                     </li>
                     <li class="page-scroll">
-                        <a href="/ourstory">Our Story</a>
+                        <a href="/ourstory"> {{ _("About") }}</a>
                     </li>
                     <li class="page-scroll">
-                        <a href="http://blog.wearhaus.com">Blog</a>
+                        <a href="http://blog.wearhaus.com">{{ _("Blog") }}</a>
                     </li>
                     <li class="page-scroll">
-                        <a href="" data-target="#mailingListModal" data-toggle="modal">Mailing List</a>
+                        <a href="http://jobs.wearhaus.com">{{ _("Jobs") }}</a>
                     </li>
                     <li class="page-scroll">
-                        <a href="https://wearhaus.zendesk.com/hc/en-us" target="_blank">Support</a>
+                        <a href="/updater">{{ _("Updater") }}</a>
                     </li>
                     <li class="page-scroll">
-                        <a href="http://wearhaus.com/updater">Updater</a>
+                        <a href="https://wearhaus.zendesk.com/hc/en-us" target="_blank">{{ _("Support") }}</a>
                     </li>
                     <li class="page-scroll" id="order_now">
-                        <a href="http://store.wearhaus.com" id="order_now_link">Order Now</a>
+                        <a href="http://store.wearhaus.com" id="order_now_link">{{ _("Reserve Now") }}</a>
                     </li>
                 </ul>
             </div>
@@ -80,7 +80,7 @@
                                 </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
                                <div style="position: absolute; left: -5000px;"><input type="text" name="b_cb896efdc02672d15109af76b_6a705d143f" tabindex="-1" value=""></div>
                                <div class="clear">
-                                    <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
+                                    <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button" onclick="fbq('track', 'SignUpMailingList');">
                                </div>
                            </div>
                         </form>

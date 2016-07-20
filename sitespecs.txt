@@ -1,0 +1,60 @@
+*Navbar*
+
+Navbar contained in own files, relies on js in custom.js to add opaque class depending on top pixel or not
+
+
+*Rectangle angles*
+
+Done using clipping masks on CSS, just copy the style to get the angles, modify degrees to see fit
+
+
+*Title image*
+
+image - contained in base.css as background image, to replace image find title/title-content background image in base.css
+
+styling - DO NOT CHANGE STYLING or everything will die
+
+
+*Mailing list*
+
+Taken off of mailchimp and modified, do not change angles or shit will hit the fan
+
+
+*Main info*
+
+g_block - the transparent black background
+
+images - images can be changed in base.css, look for the specific classes (touch, social, light) and the background images
+
+
+*Video*
+
+url - can just replace URL its whatever, keep extra attributes and DO NOT change the styling!
+
+
+*Color Picker*
+
+pls dont touch this. Objects drawn with canvas and colorpicker handled with javascript
+
+
+*Fluff Continer (side gurl)*
+
+image - change image in base.css (background-img)
+
+
+*Specs*
+
+images - located in html, can replace with whatever, CSS should handle size adjustment
+
+
+*Blog*
+
+grid - css is tricky here
+
+blog_img is the most predominant class here, it gives the grid layout in terms of size. So just calculate however many squares you want, deduct (100 - (# squares * 2))/4 and that's the percent you want as blog_img width!
+
+custom js handles hover over effects, which take the datacaption from blog-pre and handles a visible or hidden attribute on our caption overlay.
+
+
+
+
