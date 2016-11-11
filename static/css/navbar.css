@@ -18,6 +18,7 @@
         margin-bottom: 0px;
         padding: 10px 0;
         text-transform: uppercase;
+        transition: background-color 1s ease 0s;
     }
 
         .navbar a {
@@ -31,7 +32,6 @@
 
 .static {
     background-color: rgba(0,0,0,0.75);
-    transition: background-color 1s ease 0s;
 }
 
 .navbar-default,
