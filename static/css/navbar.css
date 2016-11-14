@@ -50,7 +50,11 @@
  }
 
 .navbar-brand { /* CSS for Wearhaus logo */
-    padding: 5px 15px;
+    padding: 10px 15px;
+}
+
+.navbar-brand > img {
+    height: 32px;
 }
 
 #mailingListModal .modal-body {
