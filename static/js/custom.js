@@ -172,11 +172,11 @@ $(document).ready(function() {
 	function pushImages() {
 		imageURLs = [];
 		if (whichHeadphone == 'black') {
-			imageURLs.push("http://i.imgur.com/OdZSSCY.png");
+			imageURLs.push("../static/img/canvas-black.png");
 		} else {
-			imageURLs.push("http://i.imgur.com/zt8S8x4.png");
+			imageURLs.push("../static/img/canvas-white.png");
 		}
-		imageURLs.push("http://i.imgur.com/GbeRAPi.png");
+		imageURLs.push("../static/img/canvas-lightring.png");
 		loadAllImages();
 	}
 
