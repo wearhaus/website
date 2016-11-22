@@ -619,17 +619,13 @@
 }
 
 #title-name {
-        padding: 0px 10px;
-        font-weight: 800;
-    }
+    padding: 0px 10px;
+    font-weight: 800;
+}
 
-    #title-sub {
-        padding: 0px 10px;
-        margin: -5px;
-        font-weight: 900;
-        font-size: 30px;
-        line-height: 35px;
-    }
+#title-name-thin {
+    font-weight: 400;
+}
 
 .color {
     height: auto;
