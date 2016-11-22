@@ -529,14 +529,14 @@
 .section-image {
     text-align: center;
     width: 50%;
-    padding: 2em;
+    padding: 1em 2em 0 2em;
 }
     .section-image img {
         width: 100%;
     }
 
 .section-text {
-    padding: 3em 12em 3em 6em;
+    padding: 2em 12em 0 6em;
 }
     .section-text h1 {
         line-height: 0.9em;
