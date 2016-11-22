@@ -228,7 +228,7 @@
     }
 
     section#main_info {
-        margin: 15px 20px;
+        margin: 20px;
     }
     #main_info .app {
         background-image: url('/static/img/Social-Sharing.jpg');
