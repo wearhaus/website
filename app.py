@@ -56,7 +56,7 @@ def gettingstarted():
 def android():
     return redirect("../static/files/WearhausArcAppVC8.apk")
 
-@app.route('/google24c31f1e96a5aa9d')
+@app.route('/google24c31f1e96a5aa9d.html')
 def google():
     return render_template('google24c31f1e96a5aa9d.html')
 
