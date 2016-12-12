@@ -27,28 +27,31 @@
     <meta property="twitter:description" content="Wirelessly sync up your headphones with friends and listen to music together."/>
     <meta property="twitter:image" content="http://www.wearhaus.com/static/img/mobile.jpg"/>
 
-		{% include 'includes.html' %}
+    {% include 'includes.html' %}
 </head>
 
 <body id="page-top" class="index">
     <div class="overflow">
     {% include 'navbar.html' %}
     <!-- Header -->
-        <header id="title">
-            <div class="title-content">
-                <span id="title-name">{{ _("WEARHAUS") }}</span>
-                <span id="title-name-thin">{{ _("ARC") }}</span>
-                <br>
-                <span>
-                    <a href="http://www.youtube.com/embed/09Axl1R7g1Y?modestbranding=1&amp;autohide=1&amp;showinfo=0&amp;rel=0&amp;controls=1&amp;autoplay=1" target="player">
-                        <button id="button-watch-demo">WATCH VIDEO</button>
-                    </a>
-                </span>
-            </div>
-            <section class="video_container" style="display: none;">
-                <iframe width="1920" height="1080" src="" name="player" frameborder="0" allowfullscreen></iframe>
-            </section>
-        </header>
+    <header id="title">
+        <video class="video" loop muted autoplay>
+            <source src="static/video/header.mp4" type="video/mp4" />
+        </video>
+        <div class="title-content">
+            <span id="title-name">{{ _("WEARHAUS") }}</span>
+            <span id="title-name-thin">{{ _("ARC") }}</span>
+            <br>
+            <span>
+                <a href="http://www.youtube.com/embed/09Axl1R7g1Y?modestbranding=1&amp;autohide=1&amp;showinfo=0&amp;rel=0&amp;controls=1&amp;autoplay=1" target="player">
+                    <button id="button-watch-demo">WATCH VIDEO</button>
+                </a>
+            </span>
+        </div>
+        <section class="video_container" style="display: none;">
+            <iframe width="1920" height="1080" src="" name="player" frameborder="0" allowfullscreen></iframe>
+        </section>
+    </header>
     <div class="main-container">
         <section id="featured-in">
             <div class="email_dir">Featured in</div>
@@ -73,7 +76,7 @@
             </div>
         </section>
 
-        <!-- Video Section -->
+        <!-- Sharing Section -->
         <section id="section-sharing">
             <section class="section-image">
                     <img src="../static/img/sharing-section-left.png">

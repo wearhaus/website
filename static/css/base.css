@@ -363,8 +363,9 @@
 
     header {
         color: #fff;
-        padding: 30px 0px 280px 0px;
+        padding: 0 0 280px 0;
         height: 89vh;
+        overflow: hidden;
     }
 
         header img {
@@ -597,6 +598,17 @@
     height: 0; 
     border-top: 100px solid gray; 
     border-right: 100px solid transparent;
+}
+
+.video_bg {
+    position: fixed;
+    top: 50%; left: 50%;
+    z-index: 1;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translate(-50%, -50%);
 }
 
 #touch {
@@ -1057,9 +1069,6 @@
             font-size: 32px;
         }
 
-        /*header {
-            height: 100vh;
-        }*/
         #blog { /* override section CSS since blog responds differently */
             height: 100%;
         }
