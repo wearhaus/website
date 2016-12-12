@@ -583,7 +583,8 @@
 #title:before {
     content: "";
     position: absolute;
-    background: #E6E6E6 url('/static/img/Main-Header.jpg');
+    /*background: #E6E6E6 url('/static/img/Main-Header.jpg');*/
+    background: white;
     background-size: cover;
     background-position: center top;
     top: 0;
