@@ -359,8 +359,9 @@
         color: #fff;
         padding: 0;
         width: 100vw;
-        height: 55vw;
+        height: 50vw;
         overflow: hidden;
+        position: relative;
     }
 
         header img {
@@ -614,12 +615,12 @@
     position: absolute;
     top: 0;
     left: 0;
-    bottom: 100px;
+    bottom: 0;
     right: 0;
     text-shadow: 0 0 40px black;
     margin: auto;
     width: 80%;
-    height: 20vh;
+    height: 30%;
     font-size: 4vw;
     letter-spacing: 4px;
 }
@@ -828,38 +829,16 @@
 
 
 /* MEDIA QUERIES */
-    @media(max-width: 480px) { /* smartphone portrait */
-        h1 {
-            font-size: 40px !important;
-        }
+    /* smartphones */
+    @media (max-width:767px) {
         #title {
-            height: 80vh;
-        }
-        #title:before {
-            height: 80vh;
+            background: #E6E6E6 url('/static/img/Main-Header.jpg');
+            background-size: cover;
+            padding-top: 60px;
         }
         .video_bg {
             display:none;
         }
-        iframe[name='player'] {
-            width: 100%;
-            top: 0;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            margin: auto;
-        }
-
-        .blurb_text {
-            padding: 0px;
-        }
-        #pick_container {
-            height: 850px;
-        }
-    }
- 
-    /* smartphones */
-    @media(max-width:767px) {
         #section-video {
             margin: 0;
         }
@@ -1033,7 +1012,7 @@
         }
 
         .title-content {
-            font-size: 5vw;
+            font-size: 6vw;
         }
 
         section #main_info {
@@ -1072,6 +1051,37 @@
             width: 100%;
         }
     }
+
+    @media(max-width: 480px) { /* smartphone portrait */
+        h1 {
+            font-size: 40px !important;
+        }
+        #title {
+            height: 65vw;
+        }
+        #title:before {
+            height: 65vw;
+        }
+        .title_content {
+            font-size: 1em;
+        }
+        iframe[name='player'] {
+            width: 100%;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+
+        .blurb_text {
+            padding: 0px;
+        }
+        #pick_container {
+            height: 850px;
+        }
+    }
+
     @media(max-width: 820px) {
         .phone {
             display: none;
