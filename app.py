@@ -37,7 +37,6 @@ def ourstory():
     _ = lang.ugettext
     return render_template('ourstory.html', _ = _)
 
-
 @app.route('/updater')
 @app.route('/update')
 def updater():
@@ -56,6 +55,14 @@ def gettingstarted():
 @app.route('/android')
 def android():
     return redirect("../static/files/WearhausArcAppVC8.apk")
+
+@app.route('/arc')
+def arc():
+    return redirect("/")
+
+@app.route('/reviewguide')
+def reviewguide():
+    return redirect("https://www.youtube.com/playlist?list=PLs0rLWE-xlJDbZy52RRdnhAf973QUFqxV")
 
 @app.route('/google24c31f1e96a5aa9d.html')
 def google():
