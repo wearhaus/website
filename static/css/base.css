@@ -112,7 +112,8 @@
     }
 
     .main-container {
-        background-color: #ffffff;
+        background-color: #f0f0f0;
+        padding-top: 2px; /* Exdtend the gray area on top */
     }
 
     #featured-in {
@@ -317,7 +318,7 @@
         float: left;
         width: 500px;
         height: 40px;
-        background-color: #eee;
+        background-color: #fff;
         border: none;
         padding-left: 40px;
         color: #fff;
@@ -332,7 +333,7 @@
         padding: 0px 20px;
         font-size: 18px;
         font-weight: 300;
-        background-color: #ddd;
+        background-color: #00bccc;
         color: #fff;
         border: none;
         border-radius: 5px;
@@ -627,7 +628,7 @@
 }
 
 .unslider-arrow.prev {
-    left: 110px;
+    left: 1.5vw;
     right: auto;
     -ms-transform: rotate(-180deg);
     transform: rotate(-180deg);
@@ -635,7 +636,7 @@
 
 .unslider-arrow.next {
     left: auto;
-    right: 100px;
+    right: 1.4vw;
 }
 
 #order-form h4 {
