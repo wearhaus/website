@@ -79,7 +79,7 @@
         <section id="section-order">
             <div class="row">
                 <div id="pictures" class="col-md-6">
-                    <div id="container" style="margin: auto; max-width: 300px;">
+                    <div id="container" style="margin: auto; max-width: 400px;">
                     <div class="slider">
                         <ul>
                             <li><img src="../static/img/product/wearhaus-black-2.jpg"></li>
@@ -93,7 +93,20 @@
                     </div>
                 </div>
                 <div id="order-form" class="col-md-6">
-                    Test
+                    <h3>{{ _("ORDER NOW") }}</h3>
+                    <h4>$199.99</h4>
+                    <div>
+                        <label for="name">Black</label>
+                        <input type="text" name="black" id="black-order" value="1">
+                        <label for="name">White</label>
+                        <input type="text" name="white" id="white-order" value="1">
+                    </div>
+                    <div>
+                        <a href="https://store.wearhaus.com/cart/997163061:1,997163065:1">
+                            <div id="order-submit"><p>PLACE ORDER</p></div>
+                        </a>
+                    </div>
+                    <img src="../static/img/whatsinthebox.png" width="250">
                 </div>
             </div>
         </section>

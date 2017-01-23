@@ -111,6 +111,10 @@
         height: 400px;
     }
 
+    .main-container {
+        background-color: #ffffff;
+    }
+
     #featured-in {
         text-align: center;
     }
@@ -554,7 +558,7 @@
 
 #section-order .slider {
     margin: auto;
-    width: 300px;
+    width: 100%;
 }
 
 .unslider-nav li {
@@ -591,7 +595,7 @@
 }
 
 
-#section-order img {
+.unslider img {
     width: 100%;
 }
 
@@ -633,6 +637,35 @@
     left: auto;
     right: 100px;
 }
+
+#order-form h4 {
+    color: #888;
+    font-weight: 400;
+}
+
+#order-submit {
+    background-color: #00bccc;
+    border-radius: 5px;
+    box-shadow: none;
+    display: inline-block;
+    margin: 10px 0 10px 0;
+    padding: 10px 40px 10px 40px;
+}
+
+#order-submit p {
+    color: white;
+    font-weight: 400;
+    margin: auto;
+    padding: 0;
+}
+
+    #order_submit:hover, #order_submit:focus,
+    #order_submit:hover, #order_submit:focus {
+        transition: color 0.3s ease;
+        background-color: #33C9D6; /* make background lighter on hover/focus */
+        color: white;
+    }
+
 
 #section-sharing {
     background-color: #f0f0f0;
