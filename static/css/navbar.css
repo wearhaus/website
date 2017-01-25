@@ -16,7 +16,7 @@
         font-family: "Lato", arial, sans-serif;
         font-weight: 700;
         margin-bottom: 0px;
-        padding: 10px 0;
+        padding-bottom: 10px;
         text-transform: uppercase;
         transition: background-color 1s ease 0s;
     }
@@ -29,6 +29,10 @@
         .navbar .navbar-nav {
             letter-spacing: 1px;
         }
+
+.navbar .container {
+    padding: 10px 0;
+}
 
 .static {
     background-color: rgba(0,0,0,0.75);
@@ -82,6 +86,25 @@
 
 #order_now_link_mobile {
     display: none;
+}
+
+.promonav {
+    background-color: #ff66cc;
+    margin: 0;
+    padding: 5px 0;
+}
+
+.promonav p {
+    color: white;
+    font-size: 12pt;
+    font-weight: 300;
+    text-align: center;
+    text-transform: none;
+    margin: 0 auto;
+}
+
+.promonav p strong {
+    font-weight: 400;
 }
 
 @media(max-width: 767px) {
