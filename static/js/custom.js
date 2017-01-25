@@ -3,6 +3,10 @@ $(document).ready(function() {
 	var tablet_offset = '-479px';
 	var desktop_offset = '-670px';
 
+	function scrollToAnchor(anchor) {
+	    var aTag = $("a[name='"+ anchor +"']");
+			$('html,body').animate({scrollTop: aTag.offset().top},'slow');
+	};
  	
 	$(function(){
 	    var bCanPreview = true; // can preview
