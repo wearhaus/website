@@ -341,7 +341,7 @@
     }
 
     h1 {
-        font-size: 96px;
+        font-size: 72px;
         font-weight: 900;
         margin-top: 0px;
     }
@@ -635,17 +635,38 @@
     right: 1.4vw;
 }
 
+#section-order h1 {
+    color: #00bccc;
+    font-weight: 800;
+    font-size: 36pt;
+}
+
 #section-order h4 {
-    color: #888;
+    color: #666;
     font-weight: 400;
+    font-size: 18pt;
+}
+
+#section-order #black-counter {
+    float: left;
+    margin-right: 10px;
+}
+
+#section-order #white-counter {
+    float: left;
+}
+
+#section-order .input-group {
+    width: 120px;
 }
 
 #order-submit {
     background-color: #00bccc;
     border-radius: 5px;
     box-shadow: none;
+    cursor: pointer;
     display: inline-block;
-    margin: 10px 0 10px 0;
+    margin: 20px 0 10px 0;
     padding: 10px 40px 10px 40px;
 }
 
@@ -654,14 +675,14 @@
     font-weight: 400;
     margin: auto;
     padding: 0;
+    user-select: none;
 }
 
-    #order_submit:hover, #order_submit:focus,
-    #order_submit:hover, #order_submit:focus {
-        transition: color 0.3s ease;
-        background-color: #33C9D6; /* make background lighter on hover/focus */
-        color: white;
-    }
+#order_submit:hover, #order_submit:focus {
+    transition: color 0.3s ease;
+    background-color: #33C9D6; /* make background lighter on hover/focus */
+    color: white;
+}
 
 
 #section-sharing {
