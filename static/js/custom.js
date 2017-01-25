@@ -350,4 +350,26 @@ $(document).ready(function() {
 		}
     });
 
+
+    /* Grab URL Parameters */
+    var params = {};
+
+	if (location.search) {
+	    var parts = location.search.substring(1).split('&');
+
+	    for (var i = 0; i < parts.length; i++) {
+	        var nv = parts[i].split('=');
+	        if (!nv[0]) continue;
+	        params[nv[0]] = nv[1] || true;
+	    }
+	}
+
+	/* If promo code is in the parameters, display promo banner */
+	if (params.promo != null) {
+		$(".promonav").html("<p>Valentine's Day special! Use promo code <strong>"+ params.promo + "</strong> at checkout to save $100 when you buy two Wearhaus Arcs.</p>");
+	} else {
+		$(".promonav").html("<p>Valentine's Day special! Use promo code <strong>VDAY2017</strong> at checkout to save $100 when you buy two Wearhaus Arcs.</p>");
+
+	}
+
 });
