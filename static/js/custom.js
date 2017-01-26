@@ -3,12 +3,6 @@ $(document).ready(function() {
 	var tablet_offset = '-479px';
 	var desktop_offset = '-670px';
 
-	function scrollToAnchor(anchor) {
-	    var aTag = $("a[name='"+ anchor +"']");
-			$('html,body').animate({scrollTop: aTag.offset().top},'slow');
-	};
-
-
     /* Grab URL Parameters */
     var params = {};
 
@@ -30,6 +24,18 @@ $(document).ready(function() {
 
 	}
 
+	/* Scrolling Animation */
+	var $root = $('html, body');
+
+	function scrollToOrder() {
+		$root.animate({
+			scrollTop: $("#order").offset().top
+		}, 500);
+		return false;
+	};
+
+	$(".promonav").click(scrollToOrder);
+	$("#order_now_link").click(scrollToOrder);
 
 	/* Color Picker */
 	$(function(){
