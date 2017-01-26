@@ -29,10 +29,14 @@ $(document).ready(function() {
 
 	function scrollToOrder() {
 		$root.animate({
-			scrollTop: $("#order").offset().top
+			scrollTop: $("#order").offset().top - 150
 		}, 500);
 		return false;
 	};
+
+	if (window.location.hash == "#order") {
+		scrollToOrder();
+	}
 
 	$(".promonav").click(scrollToOrder);
 	$("#order_now_link").click(scrollToOrder);
