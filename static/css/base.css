@@ -64,16 +64,6 @@
         transform: translateX(-50%) translateY(-50.5%);
     }
 
-    .blog_lol {
-        opacity: 0.8;
-        width: 96%;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translateX(-50%) translateY(-50.5%);
-
-    }
-
     .blog_pre {
         width: 22%;
         float: left;
@@ -81,17 +71,9 @@
         margin: 0 1% 1% 1%;
     }
 
-    .blog {
-        width: 40%;
-        height: 0;
-        padding-bottom: 40%;
-        float: left;
-        position: relative;
+    .blog_img {
+        width: 100%;
     }
-
-        .blog_img {
-            width: 100%;
-        }
 
     .posts {
         width: 96%;
@@ -170,9 +152,6 @@
         font-weight: 300;
     }
 
-    #main_blurb {
-        height: auto;
-    }
     .video_container {
         position:absolute;
         padding-bottom:56.25%;
@@ -191,10 +170,7 @@
         width:100%;
         height:100%;
     }
-    .blurb_text {
-        text-align: center;
-        padding: 50px 150px;
-    }
+
     .phone {
         display: inline-block;
         position: relative;
@@ -203,13 +179,6 @@
     #phone_mock {
         vertical-align: inherit;
         height: 500px;
-    }
-
-    .company_title {
-        font-size: 20px;
-        font-weight: 700;
-        letter-spacing: 1.5px;
-        margin-bottom: 10px;
     }
     .email_dir {
         font-size: 16px;
@@ -518,13 +487,6 @@
         opacity: 1;
     }
 
-
-.section-image, .section-text {
-    display: table-cell;
-    vertical-align: middle;
-}
-
-
 #section-sharing {
     background-color: #f0f0f0;
     margin: 1em 0;
@@ -688,23 +650,10 @@
 
 /* IDS */
 
-#app {
-    background: black url('/static/img/mobile.jpg') no-repeat;
-    background-size: cover;
-}
-
 #blog {
     margin: 0;
     padding: 5em 0;
     background-color: #f0f0f0;
-}
-
-#color {
-    background-size: cover;
-}
-
-#sync {
-    background-size: cover;
 }
 
 #title:before {
@@ -719,13 +668,6 @@
     height: 88%;
     opacity: 0.85;
     z-index: -1;
-}
-
-#title:before #topright {
-    width: 0; 
-    height: 0; 
-    border-top: 100px solid gray; 
-    border-right: 100px solid transparent;
 }
 
 .video_bg {
@@ -928,10 +870,6 @@
     top: 0;
 }
 
-.overlay_blog {
-    opacity: 0.1;
-}
-
 #button-watch-demo {
     background-color: #00bccc;
     border: 0;
@@ -976,13 +914,6 @@
             #section-video section {
                 display: block;
             }
-            .section-image {
-                width: 100%;
-                padding: 2em;
-            }
-            .section-text {
-                padding: 2em;
-            }
 
         .video_container {
             background-color: black;
@@ -1017,18 +948,6 @@
             transform: translateX(-50%) translateY(-50.5%);
         }
 
-        .blog_lol {
-            opacity: 0;
-        }
-
-        .blog_bg {
-            width: 98%;
-            position: absolute;
-            top: 50.5%;
-            left: 50%;
-            transform: translateX(-50%) translateY(-50.5%);
-        }
-
         .blog_pre {
             display: block;
             width: 48%;
@@ -1037,21 +956,9 @@
             margin: 1%;
         }
 
-        .blog {
-            width: 50%;
-            height: 0;
-            padding-bottom: 50%;
-            float: left;
-            position: relative;
-        }
-
             .blog_grid a:after {
                 width: 100% !important;
             }
-
-        .blog_hide {
-            display: none;
-        }
 
         .posts {
             width: 100%;
@@ -1061,10 +968,6 @@
 
         .g_block {
             display: block;
-        }
-
-        .blurb_text {
-            padding: 20px 50px;
         }
 
         .circle {
@@ -1241,9 +1144,6 @@
             margin: auto;
         }
 
-        .blurb_text {
-            padding: 0px;
-        }
         #pick_container {
             height: 850px;
         }
@@ -1301,22 +1201,3 @@
             position: relative;
         }
     }
-
-
-
-    
-/*.overlay {
-    width: 100px;
-}
-.carousel .slide{
-    float: right;
-    width: auto;
-    overflow: hidden;
-    margin: 0;
-}
-.carousel-inner {
-    margin: 0;
-}
-.aa {
-    display: inline-block;
-}*/
