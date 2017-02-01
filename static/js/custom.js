@@ -377,11 +377,14 @@ $(document).ready(function() {
     	var white = parseInt($(".white-counter").val())
 
     	var checkout = "https://store.wearhaus.com/cart/"
-    	if (black > 0) {
-    		checkout += "997163061:" + black
-    	}
-    	if (white > 0) {
-    		checkout += ",997163065:" + white
+		if (black > 0) {
+			checkout += "997163061:" + black;
+		}
+		if (black > 0 && white > 0) {
+			checkout += ",";
+		}
+		if (white > 0) {
+			checkout += "997163065:" + white;
 		}
 		if (!(black == 0 && white == 0)) {
 			window.location = checkout;
