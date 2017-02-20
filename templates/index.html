@@ -273,27 +273,6 @@
             </div>
         </section>
 
-        <!-- Blog Section -->
-        <section id="blog">
-            <div class="blog_container">
-                <div class="posts blog_grid">
-                    <a class="blog_pre" href="http://blog.wearhaus.com">
-                        <img class="blog_img" src="../static/img/blog_background_generic.jpg">
-                        <img class="img_hack" src="../static/img/wearhaus-blog-overlay.png">
-                    </a>
-                    <a class="blog_pre" href={{ featured_posts.posts[0].url }} id="blog_a_1" data-caption="{{ featured_posts.posts[0].title }}">
-                        <img class="blog_img" src={{ featured_posts.posts[0].thumbnail_images.medium.url }} id="blog_img_1">
-                    </a>
-                    <a class="blog_pre" href={{ featured_posts.posts[1].url }} id="blog_a_2" data-caption="{{ featured_posts.posts[1].title }}">
-                        <img class="blog_img" src={{ featured_posts.posts[1].thumbnail_images.medium.url }} id="blog_img_2">
-                    </a>
-                    <a class="blog_pre" href={{ featured_posts.posts[2].url }} id="blog_a_3" data-caption="{{ featured_posts.posts[2].title }}">
-                        <img class="blog_img" src={{ featured_posts.posts[2].thumbnail_images.medium.url }} id="blog_img_3">
-                    </a>
-                </div>
-            </div>
-        </section>
-            
     </div>
     {% include 'footer.html' %}
 
