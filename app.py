@@ -1,7 +1,7 @@
 import gettext
 import locale
 
-from flask import Flask, redirect, render_template
+from flask import Flask, redirect, render_template, send_from_directory
 
 app = Flask(__name__)
 lang_code = locale.getdefaultlocale()[0]
@@ -51,6 +51,10 @@ def reviewguide():
 @app.route('/google24c31f1e96a5aa9d.html')
 def google():
     return render_template('google24c31f1e96a5aa9d.html')
+
+@app.route('/favicon.ico')
+def favicon():
+    return send_from_directory('static', 'favicon.ico')
 
 if __name__ == '__main__':
     app.debug = False
