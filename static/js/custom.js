@@ -18,10 +18,10 @@ $(document).ready(function() {
 
 	/* If promo code is in the parameters, display promo banner */
 	if (params.promo != null) {
-		$(".promonav").html("<p>Valentine's Day special! Use promo code <strong>"+ params.promo + "</strong> at checkout to save $100 when you buy two Wearhaus Arcs.</p>");
+		$(".promonav").css("display", "block");
+		$(".promonav").html("<p>Use promo code <strong>"+ params.promo + "</strong> at checkout to save 20% off your order!</p>");
 	} else {
-		$(".promonav").html("<p>Valentine's Day special! Use promo code <strong>VDAY2017</strong> at checkout to save $100 when you buy two Wearhaus Arcs.</p>");
-
+		$(".promonav").css("display", "none");
 	}
 
 	/* Scrolling Animation */
