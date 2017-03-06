@@ -1,0 +1,142 @@
+body {
+	background-color: #222;
+}
+
+h2 {
+	color: #0bcccc;
+	font-weight: 600;
+}
+
+p {
+	color: white;
+}
+
+section#light {
+	margin: 0 0 0 0;
+	padding: 0;
+}
+
+#light-description {
+	font-size: 1.4vw;
+	padding: 40px;
+}
+
+#light-description ul {
+    margin: 2em 0;
+    list-style: none;
+}
+
+#light-description li:before { 
+    content: "";
+    border-color: transparent #00bccc;
+    border-style: solid;
+    border-width: 0.35em 0 0.35em 0.45em;
+    display: block;
+    height: 0;
+    width: 0;
+    left: -1em;
+    top: 1em;
+    position: relative;
+}
+
+#light-description {
+	font-size: 1em;
+	font-weight: 400;
+}
+
+#light-headphones {
+	padding: 0;
+}
+
+#color-window {
+	height: 450px;
+}
+
+#color-window img {
+	bottom: 0;
+	display: block;
+	left: 0;
+	margin: 0 auto;
+	max-width: 400px;
+	position: absolute;
+	right: 0;
+	width: 60%;
+}
+
+#light-picker {
+	height: 500px;
+	padding-top: 40px;
+}
+
+#light-picker p {
+	color: white;
+	font-size: 20px;
+	font-weight: 700px;
+	text-align: center;
+}
+
+#light-picker .phone {
+	display: block;
+	margin: 40px auto 0 auto;
+	width: 80%;
+}
+
+#light-picker #phone_mock {
+	width: 100%;
+}
+
+#light-picker .phone .color {
+	height: auto;
+	left: 0;
+	position: absolute;
+	right: 0;
+	top: 100px;
+	width: auto;
+}
+
+#light-picker .phone .color #picker {
+	height: 140px;
+	margin: 20px 0 0 56px;
+}
+
+section#info {
+	background: white;
+}
+
+#press-logos {
+	margin: 20px 0;
+}
+
+.press-logo {
+	float: left;
+	width: 16.6666666%;
+}
+
+.press-logo img {
+	-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+	filter: grayscale(100%);
+	margin: 0 auto;
+	max-height: 80px;
+	min-height: 20px;
+	width: 80%;
+}
+
+@media (max-width: 768px) {
+	.press-logo {
+		margin-top: 20px;
+		width: 33.33333%;
+	}
+}
+
+#press-quotes{
+	margin-top: 40px;
+}
+
+.press-slide p {
+	color: grey;
+	text-align: center;
+}
+
+section#press .unslider-arrow {
+	display: none;
+}
