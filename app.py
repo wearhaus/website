@@ -28,6 +28,12 @@ def updater():
     _ = lang.ugettext
     return render_template('updater.html', _ = _)
 
+@app.route('/light')
+def light():
+    lang = gettext.translation('updater', './locale', languages=[lang_code])
+    _ = lang.ugettext
+    return render_template('light.html', _ = _)
+
 @app.route('/warranty')
 def warranty():
     return redirect("http://store.wearhaus.com/pages/warranty")
