@@ -43,7 +43,7 @@ def gettingstarted():
     return redirect("https://www.youtube.com/watch?v=1A1OaNIA1_k")
 
 @app.route('/intro')
-def gettingstarted():
+def intro():
     return redirect("https://www.youtube.com/watch?v=SedBXaFskJQ")
 
 @app.route('/android')
