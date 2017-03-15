@@ -42,6 +42,10 @@ def warranty():
 def gettingstarted():
     return redirect("https://www.youtube.com/watch?v=1A1OaNIA1_k")
 
+@app.route('/intro')
+def gettingstarted():
+    return redirect("https://www.youtube.com/watch?v=SedBXaFskJQ")
+
 @app.route('/android')
 def android():
     return redirect("../static/files/WearhausArcAppVC8.apk")
