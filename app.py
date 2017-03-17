@@ -74,5 +74,5 @@ def before_request():
         return redirect(url, code=code)
 
 if __name__ == '__main__':
-    app.debug = False
+    app.debug = True
     app.run()
