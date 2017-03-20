@@ -43,84 +43,119 @@
     <!-- End Google Tag Manager (noscript) -->
 
     <div class="overflow">
-    {% include 'navbar.html' %}
-    <!-- Header -->
-    <header id="title">
-        <div class="title-content">
-            <span id="title-name">{{ _("WEARHAUS") }}</span>
-            <span id="title-name-thin">{{ _("ARC") }}</span>
-            <br>
-            <span>
-                <a href="http://www.youtube.com/embed/09Axl1R7g1Y?modestbranding=1&amp;autohide=1&amp;showinfo=0&amp;rel=0&amp;controls=1&amp;autoplay=1" target="player">
-                    <button id="button-watch-demo">WATCH VIDEO</button>
-                </a>
-            </span>
+
+
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/"><p>WEARHAUS</p></a>
+                <div id="navbar-order-now-link-mobile-container">
+                    <a href="/#order" id="order_now_link_mobile">
+                        Buy Now
+                    </a>
+                </div>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="/about"> {{ _("About") }}</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="http://blog.wearhaus.com">{{ _("Blog") }}</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="/updater">{{ _("Updater") }}</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="https://wearhaus.zendesk.com/hc/en-us" target="_blank">{{ _("Support") }}</a>
+                    </li>
+                    <li class="page-scroll" id="order_now">
+                        <a href="/#order" id="order_now_link">{{ _("Buy Now") }}</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
         </div>
-        <section class="video_container" style="display: none;">
-            <iframe width="1920" height="1080" src="" name="player" frameborder="0" allowfullscreen></iframe>
-        </section>
-    </header>
-    <div class="main-container">
+        <!-- /.container-fluid -->
+    </nav>
 
-        <!-- Color picker Section -->
-        <section id="light">
-            <div class="row">
-                <div class="col-md-4 col-md-push-4" id="light-headphones">
-                    <div id="color-window">
-                        <img src="../static/img/product/side/black_side_cyan.png">
-                    </div>
-                </div>
-                <div class="col-md-3 col-md-push-4" id="light-picker">
-                    <p>Customize your colors on the fly with the Wearhaus mobile app</p>
-                    <div class="phone">
-                        <img id="phone_mock" src="../static/img/iphone_black_color_noring.png">
-                        <div class="color">
-                        <!-- colorpicker element -->
-                            <canvas id="picker" var="5"></canvas>
-                            <div class="controls">
-                                <div class="color-preview">
-                                </div>
-                            </div>
+
+
+        <!-- Header -->
+        <header id="title">
+            <div class="title-content">
+                <span id="title-name">{{ _("WEARHAUS") }} &middot; {{ _("ARC") }}</span>
+            </div>
+            <section class="video_container" style="display: none;">
+                <iframe width="1920" height="1080" src="" name="player" frameborder="0" allowfullscreen></iframe>
+            </section>
+        </header>
+
+        <!-- Features -->
+        <section id="features">
+            <div class="row" id="boxes">
+                <div class="col-md-4">
+                    <div class="feature-container">
+                        <div class="feature-image">
+                            <img src="../static/img/features/light.jpg">
                         </div>
+                        <h3>CUSTOMIZABLE LIGHT</h3>
+                        <p>The Arc's built in microphone means you'll never miss a phone call while</p>
                     </div>
                 </div>
-                <div class="col-md-4 col-md-pull-7" id="light-description">
-                    <h2>{{ _("LIGHT UP AND LISTEN") }}</h2>
-                    <ul>
-                        <li><p>Over 50 million color combinations</p></li>
-                        <li><p>Switch between one color or multiple</p></li>
-                        <li><p>Pulse to the beat of your music</p></li>
-                        <li><p>Match your colors to album artwork</p></li>
-                    </ul>
+                <div class="col-md-4">
+                    <div class="feature-container">
+                        <div class="feature-image">
+                            <img src="../static/img/features/cushion.jpg">
+                        </div>
+                        <h3>CUSTOMIZABLE LIGHT</h3>
+                        <p>The Arc's built in microphone means you'll never miss a phone call while</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-container">
+                        <div class="feature-image">
+                            <img src="../static/img/features/touch.jpg">
+                        </div>
+                        <h3>CUSTOMIZABLE LIGHT</h3>
+                        <p>The Arc's built in microphone means you'll never miss a phone call while</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row" id="waves">
+                <div class="col-md-4">
+                    
+                </div>
+                <div class="col-md-4">
+                    <img src="../static/img/product/black-front-purple.png" height=100% width=100%>
+                </div>
+                <div class="col-md-4">
+                    
                 </div>
             </div>
         </section>
 
-        <section id="info">
-            <div id="pictures" class="col-md-5 col-md-offset-1">
-                <div id="container" style="margin: auto; max-width: 400px;">
-                    <div class="slider">
-                        <ul>
-                            <li><img src="../static/img/product/wearhaus-black-2.jpg"></li>
-                            <li><img src="../static/img/product/wearhaus-white-2.jpg"></li>
-                            <li><img src="../static/img/product/wearhaus-black-1.jpg"></li>
-                            <li><img src="../static/img/product/wearhaus-white-1.jpg"></li>
-                            <li><img src="../static/img/product/wearhaus-black-4.jpg"></li>
-                            <li><img src="../static/img/product/wearhaus-white-4.jpg"></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <h3>Wireless Audio Sharing</h3>
-                <p></p>
-                <h3>Touch Controls</h3>
-                <p></p>
-                <h3>Mobile App</h3>
-                <p></p>
+
+        <section id="details">
+            <div id="details-container">
             </div>
         </section>
-        
+
+
         <section id="press">
             <div class="row" id="press-logos">
                 <div class="col-md-10 col-md-offset-1">
@@ -174,27 +209,6 @@
             </div>
         </section>
 
-        <!-- Sync Section -->
-        <section id="main_info">
-            <div class="box light">
-                <div class="box_title">{{ _("WIRELESS AUDIO SHARING") }}</div>
-                <div class="g_block">
-                    <div class="block_text">{{ _("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.") }}</div>
-                </div>
-            </div>
-            <div class="box app">
-                <div class="box_title">{{ _("MOBILE APP") }}</div>
-                <div class="g_block">
-                    <div class="block_text">{{ _("The Arc comes with a companion mobile app, creating a seamless listening experience. You can spin up a station for your friends to join or tune in to other stations. The app also allows you to update your Arc with new features and ensure that your headphones are working smoothly.") }}</div>
-                </div>
-            </div>
-            <div class="box touch">
-                <div class="box_title">{{ _("TOUCH CONTROLS") }}</div>
-                <div class="g_block">
-                    <div class="block_text">{{ _("A touch-sensitive panel on the right ear cup allows you to easily control playback, volume, skipping songs and more all with a simple swipe of your finger.") }}</div>
-                </div>
-            </div>
-        </section>
 
         <!-- technical specifications -->
         <section id="specs">
@@ -288,7 +302,6 @@
             <canvas id="canvas" width=400 height=500 style="display:none;"></canvas>
         </div>
 
-    </div>
     {% include 'footer.html' %}
 
     </div> <!-- .overflow -->
@@ -305,12 +318,6 @@
             });
         });
     </script>
-
-    <!-- Wearhaus Zendesk Widget script -->
-    <script>
-        /*<![CDATA[*/window.zEmbed||function(e,t){var n,o,d,i,s,a=[],r=document.createElement("iframe");window.zEmbed=function(){a.push(arguments)},window.zE=window.zE||window.zEmbed,r.src="javascript:false",r.title="",r.role="presentation",(r.frameElement||r).style.cssText="display: none",d=document.getElementsByTagName("script"),d=d[d.length-1],d.parentNode.insertBefore(r,d),i=r.contentWindow,s=i.document;try{o=s}catch(c){n=document.domain,r.src='javascript:var d=document.open();d.domain="'+n+'";void(0);',o=s}o.open()._l=function(){var o=this.createElement("script");n&&(this.domain=n),o.id="js-iframe-async",o.src=e,this.t=+new Date,this.zendeskHost=t,this.zEQueue=a,this.body.appendChild(o)},o.write('<body onload="document._l();">'),o.close()}("https://assets.zendesk.com/embeddable_framework/main.js","wearhaus.zendesk.com");/*]]>*/
-    </script>
-    <!-- End of wearhaus Zendesk Widget script -->
 
 </body>
 </html>
