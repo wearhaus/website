@@ -184,23 +184,62 @@ section#press {
 
 @media (max-width: 480px) {
 	#press-logos {
-		width: 80%;
+		width: 90%;
 	}
 
 	.press-logo {
-		width: 100%;
+		width: 45%;
+		margin-left: 2.5%;
+		margin-right: 2.5%;
 	}
 }
 
-#press-quotes{
-	margin-top: 40px;
+
+section#reviews {
+	background-image: url(/static/img/reviews-bg.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
-.press-slide p {
-	color: grey;
-	text-align: center;
+section#reviews #review-quotes{
+	margin: 100px 0;
 }
 
-section#press .unslider-arrow {
+.review-slider {
+	background: rgba(0, 0, 0, 0.5);
+}
+
+.review-slide h3 {
+	color: white;
+	font-style: italic;
+	font-weight: 900;
+	padding: 0 20px;
+}
+
+.review-slide p {
+	color: white;
+	font-size: 1em;
+	opacity: 1;
+	padding: 0 20px;
+}
+
+section#reviews img {
+	margin-bottom: 5px;
+	padding: 0 20px;
+	width: 30%;
+}
+
+section#reviews img:after {
+	color: white;
+	content:"via Amazon";
+	font-size: .8em;
+}
+
+section#reviews .unslider-arrow {
 	display: none;
+}
+
+section#reviews .unslider-nav ol li {
+	border-color: #fff;
 }

@@ -228,29 +228,29 @@
 
 
         <section id="reviews">
-            <div class="row" id="press-quotes">
-                <div class="col-md-6 col-md-offset-3">
-                    <div class="press-slider">
+            <div class="row" id="review-quotes">
+                <div class="col-md-5 col-md-offset-1">
+                    <div class="review-slider">
                         <ul>
-                            <li><div class="press-slide">
-                                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</p>
-                                <p>-CNet</p>
+                            <li><div class="review-slide">
+                                <h3>"GREAT SET OF CANS!"</h3>
+                                <img src="../static/img/five-stars.png">
+                                <p>All in all I would say that even though this is a company new to the audio business that they came out with a decent pair of cans. At home I use a DAC/amp combo but these are great on the go especially if you have something like an iPhone 7. The sound is crisp enough to my liking, and if you don't like the built in DAC you can always play through the AUX cable and still share.</p>
                             </div></li>
-                            <li><div class="press-slide">
-                                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</p>
-                                <p>-CNet</p>
+                            <li><div class="review-slide">
+                                <h3>"GREAT SET OF CANS!"</h3>
+                                <img src="../static/img/five-stars.png">
+                                <p>All in all I would say that even though this is a company new to the audio business that they came out with a decent pair of cans. At home I use a DAC/amp combo but these are great on the go especially if you have something like an iPhone 7. The sound is crisp enough to my liking, and if you don't like the built in DAC you can always play through the AUX cable and still share.</p>
                             </div></li>
-                            <li><div class="press-slide">
-                                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</p>
-                                <p>-CNet</p>
+                            <li><div class="review-slide">
+                                <h3>"GREAT SET OF CANS!"</h3>
+                                <img src="../static/img/five-stars.png">
+                                <p>All in all I would say that even though this is a company new to the audio business that they came out with a decent pair of cans. At home I use a DAC/amp combo but these are great on the go especially if you have something like an iPhone 7. The sound is crisp enough to my liking, and if you don't like the built in DAC you can always play through the AUX cable and still share.</p>
                             </div></li>
-                            <li><div class="press-slide">
-                                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</p>
-                                <p>-CNet</p>
-                            </div></li>
-                            <li><div class="press-slide">
-                                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</p>
-                                <p>-CNet</p>
+                            <li><div class="review-slide">
+                                <h3>"GREAT SET OF CANS!"</h3>
+                                <img src="../static/img/five-stars.png">
+                                <p>All in all I would say that even though this is a company new to the audio business that they came out with a decent pair of cans. At home I use a DAC/amp combo but these are great on the go especially if you have something like an iPhone 7. The sound is crisp enough to my liking, and if you don't like the built in DAC you can always play through the AUX cable and still share.</p>
                             </div></li>
                         </ul>
                     </div>
@@ -258,32 +258,6 @@
             </div>
         </section>
 
-        <!-- technical specifications -->
-        <section id="specs">
-            <div class="spec_container">
-                <div class="title">{{ _("TECHNICAL SPECIFICATIONS") }}</div>
-                <div class="content">{{ _("Perfectly Tuned Sound") }}<ul>
-                    <li>{{ _("40mm neodymium dual diaphragm drivers") }}</li>
-                    <li>{{ _("20 - 20kHz frequency response") }}</li>
-                    <li>{{ _("108 dB @ 1kHz sensitivity") }}</li>
-                    <li>{{ _("28.5 Ω impedance") }}</li>
-                    </ul>{{ _("Cutting Edge Bluetooth Technology") }}<ul>
-                    <li>{{ _("Bluetooth 4.0 AptX codec") }}</li>
-                    <li>{{ _("30m maximum Bluetooth syncing range") }}</li>
-                    <li>{{ _("Up to 16 hours of battery life (1200 mAh)") }}</li>
-                    </ul>{{ _("Superior Design") }}<ul>
-                    <li>{{ _("Anodized aluminum accents") }}</li>
-                    <li>{{ _("Noise isolating memory foam cushion") }}</li>
-                    <li>{{ _("High quality faux leather") }}</li>
-                    <li>{{ _("300g weight") }}</li>
-                    </ul>
-                </div>
-                <div class="images">
-                    <img class="freq" src="../static/img/freq.png">
-                    <img class="dim" src="../static/img/Headphone-Dim.png">
-                </div>
-            </div>
-        </section>
 
         <section id="section-order">
             <div class="row" id="order">
@@ -360,7 +334,7 @@
     <script>
         jQuery(document).ready(function($) {
             $('.slider').unslider();
-            $('.press-slider').unslider({
+            $('.review-slider').unslider({
                 autoplay: true,
                 infinite: true
             });
