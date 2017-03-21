@@ -19,6 +19,15 @@ nav li {
 	color: #333;
 }
 
+.static {
+	background-color: white;
+}
+
+.navbar-default .navbar-nav>li>a {
+	color: black;
+}
+
+
 header#title {
 	background-image: url(/static/img/ross_bg.jpg);
 	background-position: center;
