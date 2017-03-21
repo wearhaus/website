@@ -29,8 +29,8 @@
             letter-spacing: 1px;
         }
 
-.navbar .container {
-    padding: 10px 10px;
+.navbar .navcontainer {
+    padding: 10px 40px;
 }
 
 .static {
