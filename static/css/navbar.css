@@ -12,29 +12,29 @@
 
 
 .navbar {
-    background-color: transparent; /* make background translucent */
-    font-family: "Lato", arial, sans-serif;
-    font-weight: 700;
-    margin-bottom: 0px;
-    text-transform: uppercase;
-    transition: background-color 1s ease 0s;
-}
+        background-color: transparent; /* make background translucent */
+        font-family: "Lato", arial, sans-serif;
+        font-weight: 700;
+        margin-bottom: 0px;
+        text-transform: uppercase;
+        transition: background-color 1s ease 0s;
+    }
 
-.navbar a {
-    font-weight: 500;
-    text-transform: uppercase;
-}
+        .navbar a {
+            font-weight: 500;
+            text-transform: uppercase;
+        }
 
-.navbar .navbar-nav {
-    letter-spacing: 1px;
-}
+        .navbar .navbar-nav {
+            letter-spacing: 1px;
+        }
 
 .navbar .container {
     padding: 10px 10px;
 }
 
 .static {
-    background-color: white;
+    background-color: rgba(0,0,0,0.75);
 }
 
 .navbar-default,
@@ -43,7 +43,7 @@
 }
 
 .navbar-default .navbar-nav>li>a {
-    color: black;
+    color: white;
 }
 
 .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
