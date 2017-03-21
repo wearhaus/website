@@ -1186,7 +1186,7 @@
     /* tablets portrait/landscape */
     @media(max-width:1099px) {
         h3 {
-            font-size: 32px !important;
+            font-size: 32px;
         }
 
         p {
