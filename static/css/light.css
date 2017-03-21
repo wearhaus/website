@@ -7,6 +7,15 @@ h2 {
 	font-weight: 600;
 }
 
+.navbar .navbar-nav {
+  display: inline-block;
+  float: none;
+  vertical-align: top;
+}
+
+.navbar .navbar-collapse {
+  text-align: center;
+}
 
 .navbar-brand p {
 	color: #333;
@@ -27,6 +36,23 @@ nav li {
 	color: black;
 }
 
+#order-now-link {
+    background-color: black;
+    border-radius: 5px;
+    color: white;
+    padding: 10px 15px 10px 15px;
+    width: 180px;
+}
+
+#order-now-link:hover, #order-now-link:focus,
+#order-now-link-mobile:hover, #order-now-link-mobile:focus {
+    transition: background-color 0.3s ease;
+    background-color: #444; /* make background lighter on hover/focus */
+}
+
+#order-now-link-mobile {
+    display: none;
+}
 
 header#title {
 	background-image: url(/static/img/ross_bg.jpg);
