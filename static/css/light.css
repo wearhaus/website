@@ -7,6 +7,17 @@ h2 {
 	font-weight: 600;
 }
 
+a.anchor {
+    display: block;
+    position: relative;
+    top: -100px;
+    visibility: hidden;
+}
+
+nav#main-nav {
+	background-color: white !important;
+}
+
 .navbar .navbar-nav {
   display: inline-block;
   float: none;
@@ -17,11 +28,15 @@ h2 {
   text-align: center;
 }
 
-.navbar-brand p {
-	color: #333;
+.navbar-brand {
+	height: 40px;
+}
+
+.navbar-brand span {
+	color: black;
 	font-size: 24px;
 	font-weight: 700;
-	letter-spacing: .25em;
+	margin: 0;
 }
 
 nav li {
@@ -34,12 +49,33 @@ nav li {
 
 .navbar-default .navbar-nav>li>a {
 	color: black;
+	letter-spacing: 0;
+}
+
+.nav>li>a {
+	border-color: black;
+	border-style: solid;
+	border-width: 0 2px 0 0;
+	padding: 0 10px;
+	margin: 10px 0;
+}
+
+#nav-options>li>a {
+    -ms-transform: skewX(-10deg); /* IE 9 */
+    -webkit-transform: skewX(-10deg); /* Safari */
+    transform: skewX(-10deg);
+}
+
+#order-now {
+    margin: 0;
+    padding-top: 0;
 }
 
 #order-now-link {
     background-color: black;
     border-radius: 5px;
     color: white;
+    margin: 0;
     padding: 10px 15px 10px 15px;
     width: 180px;
 }
@@ -54,11 +90,13 @@ nav li {
     display: none;
 }
 
+
 header#title {
 	background-image: url(/static/img/ross_bg.jpg);
 	background-position: center;
 	background-size: cover;
-	height: 95vh;
+	height: 80vh;
+	margin-top: 60px;
 	width: 100vw;
 }
 
@@ -68,7 +106,7 @@ header#title {
 }
 
 
-section#features {
+section#section-features {
 	background-color: black;
 	background-image: url(/static/img/3d_waves.jpg);
 	background-position: top;
@@ -84,7 +122,7 @@ section#features {
 }
 
 @media (max-width: 992px) {
-	section#features {
+	section#section-features {
 		background-position: bottom;
 		background-size: 200%;
 	    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 97%);
@@ -103,14 +141,14 @@ section#features {
 	width: 100%;
 }
 
-section#features h3 {
+section#section-features h3 {
 	color: white;
 	font-size: 1.2em;
 	font-weight: 700;
 	margin-bottom: 5px;
 }
 
-section#features p {
+section#section-features p {
 	color: white;
 	font-size: 1em;
 }
@@ -128,7 +166,7 @@ section#features p {
 	}
 }
 
-section#details {
+section#section-details {
 	background-image: url(/static/img/ross-roof-bg.jpg);
 	background-position: bottom;
 	background-repeat: no-repeat;
@@ -138,26 +176,26 @@ section#details {
 	padding-top: 150px;
 }
 
-section#details h3 {
+section#section-details h3 {
 	font-size: 1.4em;
 	font-weight: 600;
 }
 
-section#details ul { 
+section#section-details ul { 
 	padding-left: 20px;
 }
 
-section#details #take-control {
+section#section-details #take-control {
 	padding-left: 50px;
 	padding-top: 100px;
 }
 
-section#details #perfectly-tuned-sound {
+section#section-details #perfectly-tuned-sound {
 	padding-top: 100px;
 }
 
 
-section#press {
+section#section-press {
 	background-color: white;
 }
 
@@ -231,14 +269,14 @@ section#press {
 }
 
 
-section#reviews {
+section#section-reviews {
 	background-image: url(/static/img/reviews-bg.jpg);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
 }
 
-section#reviews #review-quotes{
+section#section-reviews #review-quotes{
 	margin: 100px 0;
 }
 
@@ -248,8 +286,9 @@ section#reviews #review-quotes{
 
 .review-slide h3 {
 	color: white;
+	font-family: 'Oswald', sans-serif;
 	font-style: italic;
-	font-weight: 900;
+	font-weight: 700;
 	padding: 0 20px;
 }
 
@@ -260,57 +299,57 @@ section#reviews #review-quotes{
 	padding: 0 20px;
 }
 
-section#reviews img {
+section#section-reviews img {
 	margin-bottom: 5px;
 	padding: 0 20px;
 	width: 30%;
 }
 
-section#reviews img:after {
+section#section-reviews img:after {
 	color: white;
 	content:"via Amazon";
 	font-size: .8em;
 }
 
-section#reviews .unslider-arrow {
+section#section-reviews .unslider-arrow {
 	display: none;
 }
 
-section#reviews .unslider-nav ol li {
+section#section-reviews .unslider-nav ol li {
 	border-color: #fff;
 }
 
 
-section#retailers {
+section#section-retailers {
 	background: #ddd;
 	padding: 40px 80px;
 }
 
-section#retailers #retailer-cta {
+section#section-retailers #retailer-cta {
 	border-color: black;
 	border-width: 0 0 0 4px;
 	border-style: solid;
 }
 
-section#retailers p {
+section#section-retailers p {
 	font-size: 1em;
 	margin: 0 0 0 10px;
 	padding: 0;
 }
 
-section#retailers p strong {
-	font-size: 1.4em;
+section#section-retailers p strong {
+	font-size: 1.45em;
 	font-weight: 700;
 }
 
-section#retailers .retailer-logo {
+section#section-retailers .retailer-logo {
 	align-items: center;
 	display: flex;
 	height: 60px;
 	justify-content: center;	
 }
 
-section#retailers img {
+section#section-retailers img {
 	display: block;
 	-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
 	opacity: .5;
@@ -323,7 +362,32 @@ section#retailers img {
 	vertical-align: middle;
 }
 
-section#retailers img:hover {
+section#section-retailers img:hover {
 	cursor: pointer;
 	opacity: .8;
+}
+
+section#section-order img {
+	margin: 40px auto;
+}
+
+section#section-order h1 {
+	color: black;
+	font-family: 'Oswald', sans-serif;
+	font-size: 4em;
+	font-style: italic;
+	font-weight: 400;
+	margin: 0;
+}
+
+section#section-order p {
+	color: black;
+	font-weight: 400;
+	margin: 0;
+}
+
+section#section-order #order-form div {
+	background-color: black;
+	height: 80px;
+	margin: 20px 0;
 }

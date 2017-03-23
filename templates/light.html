@@ -47,8 +47,8 @@
 
 
     <!-- Navigation -->
-    <nav class="navbar navbar-default navbar-fixed-top">
-        <div class="container">
+    <nav class="navbar navbar-default navbar-fixed-top" id="main-nav">
+        <div class="navcontainer">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -57,9 +57,9 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="/"><p>WEARHAUS</p></a>
+                <a class="navbar-brand" href="/"><span>WEARHAUS</span></a>
                 <div id="navbar-order-now-link-mobile-container">
-                    <a href="/#order" id="order-now-link-mobile">
+                    <a href="#order" id="order-now-link-mobile">
                         Buy Now
                     </a>
                 </div>
@@ -67,26 +67,29 @@
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
+                <ul class="nav navbar-nav" id="nav-options">
                     <li class="hidden">
                         <a href="#page-top"></a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="/about"> {{ _("About") }}</a>
                     </li>
                     <li class="page-scroll">
                         <a href="http://blog.wearhaus.com">{{ _("Blog") }}</a>
                     </li>
                     <li class="page-scroll">
-                        <a href="/updater">{{ _("Updater") }}</a>
+                        <a href="/updater">{{ _("Firmware") }}</a>
                     </li>
                     <li class="page-scroll">
-                        <a href="https://wearhaus.zendesk.com/hc/en-us" target="_blank">{{ _("Support") }}</a>
+                        <a href="#features">{{ _("Features") }}</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#reviews">{{ _("Reviews") }}</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#retailers" style="border: none;">{{ _("Retailers") }}</a>
                     </li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
-                    <li class="page-scroll" id="order_now">
-                        <a href="/#order" id="order-now-link">{{ _("Buy Now") }}</a>
+                    <li class="page-scroll" id="order-now">
+                        <a href="#order" id="order-now-link">{{ _("Buy Now") }}</a>
                     </li>
                 </ul>
 
@@ -100,6 +103,7 @@
 
         <!-- Header -->
         <header id="title">
+            <a class="anchor" id="top"></a>
             <div class="title-content">
                 <span id="title-name">{{ _("WEARHAUS") }} &middot; {{ _("ARC") }}</span>
             </div>
@@ -109,7 +113,8 @@
         </header>
 
         <!-- Features -->
-        <section id="features">
+        <section id="section-features">
+            <a class="anchor" id="features"></a>
             <div class="row" id="boxes">
                 <div class="col-md-4">
                     <div class="feature-container">
@@ -159,7 +164,8 @@
         </section>
 
 
-        <section id="details">
+        <section id="section-details">
+            <a class="anchor" id="details"></a>
             <div class="row">
                 <div class="col-md-5 col-md-offset-2">
                     <img src="../static/img/iphone-headphone-color.png" width=100%>
@@ -206,7 +212,8 @@
         </section>
 
 
-        <section id="press">
+        <section id="section-press">
+            <a class="anchor" id="press"></a>
             <div class="row" id="press-logos">
                 <div class="press-logo">
                     <a href="https://www.buzzfeed.com/sarahhan/coolest-things-on-amazon-launchpad-january"><img src="../static/img/press/buzzfeed.png"></a>
@@ -230,7 +237,8 @@
         </section>
 
 
-        <section id="reviews">
+        <section id="section-reviews">
+            <a class="anchor" id="reviews"></a>
             <div class="row" id="review-quotes">
                 <div class="col-md-5 col-md-offset-1">
                     <div class="review-slider">
@@ -262,7 +270,8 @@
         </section>
 
 
-        <section id="retailers">
+        <section id="section-retailers">
+            <a class="anchor" id="retailers"></a>
             <div class="row">
                 <div class="col-md-5" id="retailer-cta">
                     <p>FIND THE WEARHAUS ARC AT THESE</p>
@@ -282,69 +291,27 @@
 
 
         <section id="section-order">
-            <div class="row" id="order">
-                <div id="pictures" class="col-md-5 col-md-offset-1">
-                    <div id="container" style="margin: auto; max-width: 400px;">
-                    <div class="slider">
-                        <ul>
-                            <li><img src="../static/img/product/wearhaus-black-2.jpg"></li>
-                            <li><img src="../static/img/product/wearhaus-white-2.jpg"></li>
-                            <li><img src="../static/img/product/wearhaus-black-1.jpg"></li>
-                            <li><img src="../static/img/product/wearhaus-white-1.jpg"></li>
-                            <li><img src="../static/img/product/wearhaus-black-4.jpg"></li>
-                            <li><img src="../static/img/product/wearhaus-white-4.jpg"></li>
-                        </ul>
-                    </div>
-                    </div>
+            <a class="anchor" id="order"></a>
+            <div class="row">
+                <div id="pictures" class="col-md-6">
+                    <img src="../static/img/product/wearhaus-black-2.jpg">
                 </div>
                 <div class="col-md-6" id="order-form">
-                    <h1>{{ _("ORDER NOW") }}</h1>
-                    <h4>$199.99</h4>
-                    <div class="row" id="counters">
-                        <div id="black-counter">
-                            <label for="black">Black</label>
-                            <div class="input-group">
-                                <span class="input-group-btn">
-                                    <button type="button" class="btn btn-default btn-number" disabled="disabled" data-type="minus" data-field="black">
-                                        <span class="glyphicon glyphicon-minus"></span>
-                                    </button>
-                                </span>
-                                <input type="text" name="black" class="form-control input-number black-counter" value="0" min="0" max="99">
-                                <span class="input-group-btn">
-                                    <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="black">
-                                        <span class="glyphicon glyphicon-plus"></span>
-                                    </button>
-                                </span>
-                            </div>
+                    <p>AVAILABLE IN BLACK OR WHITE</p>
+                    <h1>{{ _("WEARHAUS ARC") }}</h1>
+                    <h1>$199.99</h1>
+                    <div class="row" id="order-form">
+                        <div class="col-sm-3">
+                            <div id="black-color">Black</div>
                         </div>
-                        <div id="white-counter">
-                            <label for="white">White</label>
-                            <div class="input-group">
-                                <span class="input-group-btn">
-                                    <button type="button" class="btn btn-default btn-number" disabled="disabled" data-type="minus" data-field="white">
-                                        <span class="glyphicon glyphicon-minus"></span>
-                                    </button>
-                                </span>
-                                <input type="text" name="white" class="form-control input-number white-counter" value="0" min="0" max="99">
-                                <span class="input-group-btn">
-                                    <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="white">
-                                        <span class="glyphicon glyphicon-plus"></span>
-                                    </button>
-                                </span>
-                            </div>
+                        <div class="col-sm-3">
+                            <div id="white-color">White</div>
                         </div>
+                        <div class="col-sm-6" id="add-to-cart">Add to cart</div>
                     </div>
-                    <div>
-                        <div id="order-submit"><p>CHECKOUT</p></div>
-                    </div>
-                    <img src="../static/img/whatsinthebox.png" width="300">
                 </div>
             </div>
         </section>
-
-        <div class="headphone" style="display:none;">
-            <canvas id="canvas" width=400 height=500 style="display:none;"></canvas>
-        </div>
 
     {% include 'footer.html' %}
 
@@ -355,8 +322,17 @@
 
     <script>
         jQuery(document).ready(function($) {
-            $('.slider').unslider();
-            $('.review-slider').unslider({
+            $("#black-slider").unslider({
+                autoplay: true,
+                infinite: true,
+                delay: 3000
+            });
+            $("#white-slider").unslider({
+                autoplay: true,
+                infinite: true,
+                delay: 3000
+            });
+            $(".review-slider").unslider({
                 autoplay: true,
                 infinite: true,
                 delay: 10000

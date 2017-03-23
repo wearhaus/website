@@ -119,6 +119,10 @@ a:hover .social-snap {
     cursor: none;
 }
 
+#social-icons {
+  transform: scale(0.6);
+  margin: -20px;
+}
 
 
 /* smartphones */
