@@ -294,21 +294,20 @@
             <a class="anchor" id="order"></a>
             <div class="row">
                 <div id="pictures" class="col-md-6">
-                    <img src="../static/img/product/wearhaus-black-2.jpg">
+                    <img id="black-photo" src="../static/img/product/black-front-multi.jpg">
+                    <img id="white-photo" style="display:none;" src="../static/img/product/white-front-multi.jpg">
                 </div>
                 <div class="col-md-6" id="order-form">
                     <p>AVAILABLE IN BLACK OR WHITE</p>
                     <h1>{{ _("WEARHAUS ARC") }}</h1>
                     <h1>$199.99</h1>
-                    <div class="row" id="order-form">
-                        <div class="col-sm-3">
-                            <div id="black-color">Black</div>
-                        </div>
-                        <div class="col-sm-3">
-                            <div id="white-color">White</div>
-                        </div>
-                        <div class="col-sm-6" id="add-to-cart">Add to cart</div>
+                    <div class="row">
+                        <div class="order-button" id="black-color">Black</div>
+                        <div class="order-button" id="white-color">White</div>
+                        <a href="https://store.wearhaus.com/cart/997163061:1"><div class="order-button" id="add-to-cart">Add to cart >></div></a>
                     </div>
+                    <h3>Product Description</h3>
+                    <p id="product-description">All in all I would say that even though this is a company new to the audio business that they came out with a decent pair of cans. At home I use a DAC/amp combo but these are great on the go especially if you have something like an iPhone 7.</p>
                 </div>
             </div>
         </section>
@@ -322,21 +321,26 @@
 
     <script>
         jQuery(document).ready(function($) {
-            $("#black-slider").unslider({
-                autoplay: true,
-                infinite: true,
-                delay: 3000
-            });
-            $("#white-slider").unslider({
-                autoplay: true,
-                infinite: true,
-                delay: 3000
-            });
             $(".review-slider").unslider({
                 autoplay: true,
                 infinite: true,
                 delay: 10000
             });
+            $("#black-color").click(function() {
+                $("#black-color").addClass("selected");
+                $("#white-color").removeClass("selected");
+                $("#black-photo").css("display", "block");
+                $("#white-photo").css("display", "none");
+                $("#order-form a").attr("href", "https://store.wearhaus.com/cart/997163061:1");
+            });
+            $("#white-color").click(function() {
+                $("#white-color").addClass("selected");
+                $("#black-color").removeClass("selected");
+                $("#white-photo").css("display", "block");
+                $("#black-photo").css("display", "none");
+                $("#order-form a").attr("href", "https://store.wearhaus.com/cart/997163065:1");
+            });
+
         });
     </script>
 
