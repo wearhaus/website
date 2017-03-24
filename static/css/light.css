@@ -381,6 +381,11 @@ section#section-retailers img:hover {
 	opacity: .8;
 }
 
+
+section#section-order {
+	padding-top: 100px;
+}
+
 section#section-order img {
 	float: right;
 	margin-right: 20px;
@@ -467,4 +472,17 @@ section#section-gallery img.img-fluid {
 	padding-bottom: 15px;
 	padding-top: 15px;
 	width: 100%;
+}
+
+
+footer.text-center {
+	background-color: black;
+}
+
+footer .footer-above {
+	background: none;
+}
+
+footer .footer-below {
+	background: none;
 }
