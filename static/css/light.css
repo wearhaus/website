@@ -456,3 +456,15 @@ section#section-order #order-form p#product-description {
 	font-weight: 300;
 	margin-top: 10px;
 }
+
+
+section#section-gallery {
+	background-color: #ffffff;
+	padding: 15px 10%;
+}
+
+section#section-gallery img.img-fluid {
+	padding-bottom: 15px;
+	padding-top: 15px;
+	width: 100%;
+}

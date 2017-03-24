@@ -301,6 +301,33 @@
             </div>
         </section>
 
+
+        <section id="section-gallery">
+            <a class="anchor" id="gallery"></a>
+                <div class="row">
+                    <a href="../static/img/gallery/cafe1.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4">
+                        <img src="../static/img/gallery/cafe1-thumb.jpg" class="img-fluid">
+                    </a>
+                    <a href="../static/img/gallery/apartment1.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4">
+                        <img src="../static/img/gallery/apartment1-thumb.jpg" class="img-fluid">
+                    </a>
+                    <a href="../static/img/gallery/subway1.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4">
+                        <img src="../static/img/gallery/subway1-thumb.jpg" class="img-fluid">
+                    </a>
+                </div>
+                <div class="row">
+                    <a href="../static/img/gallery/city1.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4">
+                        <img src="../static/img/gallery/city1-thumb.jpg" class="img-fluid">
+                    </a>
+                    <a href="../static/img/gallery/city2.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4">
+                        <img src="../static/img/gallery/city2-thumb.jpg" class="img-fluid">
+                    </a>
+                    <a href="../static/img/gallery/airplane1.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4">
+                        <img src="../static/img/gallery/airplane1-thumb.jpg" class="img-fluid">
+                    </a>
+            </div>
+        </section>
+
     {% include 'footer.html' %}
 
     </div> <!-- .overflow -->
@@ -330,6 +357,15 @@
                 $("#order-form a").attr("href", "https://store.wearhaus.com/cart/997163065:1");
             });
 
+        });
+
+
+        /* Lightbox Initialization */
+        $(document).on('click', '[data-toggle="lightbox"]', function(event) {
+            event.preventDefault();
+            $(this).ekkoLightbox({
+                alwaysShowClose: true,
+            });
         });
     </script>
 
