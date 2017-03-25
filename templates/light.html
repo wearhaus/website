@@ -301,14 +301,18 @@
                     <p>FIND THE WEARHAUS ARC AT THESE</p>
                     <p><strong>AUTHORIZED RETAILERS</strong></p>
                 </div>
-                <div class="col-md-2 retailer-logo">
-                    <a href="https://www.amazon.com/dp/B00WBSSVDW"><img src="../static/img/retailers/amazon.png"></a>
-                </div>
-                <div class="col-md-2 retailer-logo">
-                    <a href="http://www.frys.com/product/9072737"><img src="../static/img/retailers/frys.png"></a>
-                </div>
-                <div class="col-md-2 retailer-logo">
-                    <a href="https://www.newegg.com/Product/Product.aspx?Item=9SIAD215AJ5121"><img src="../static/img/retailers/newegg.png"></a>
+                <div class="col-md-7">
+                    <div class="row">
+                        <div class="col-sm-4 retailer-logo">
+                            <a href="https://www.amazon.com/dp/B00WBSSVDW"><img src="../static/img/retailers/amazon.png"></a>
+                        </div>
+                        <div class="col-sm-4 retailer-logo">
+                            <a href="http://www.frys.com/product/9072737"><img src="../static/img/retailers/frys.png"></a>
+                        </div>
+                        <div class="col-sm-4 retailer-logo">
+                            <a href="https://www.newegg.com/Product/Product.aspx?Item=9SIAD215AJ5121"><img src="../static/img/retailers/newegg.png"></a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -326,12 +330,14 @@
                     <h1>{{ _("WEARHAUS ARC") }}</h1>
                     <h1>$199.99</h1>
                     <div class="row">
-                        <div class="order-button" id="black-color">Black</div>
-                        <div class="order-button" id="white-color">White</div>
+                        <div id="color-buttons">
+                            <div class="order-button" id="black-color">Black</div>
+                            <div class="order-button" id="white-color">White</div>
+                        </div>
                         <a href="https://store.wearhaus.com/cart/997163061:1"><div class="order-button" id="add-to-cart">Add to cart >></div></a>
                     </div>
                     <h3>Product Description</h3>
-                    <p id="product-description">The Wearhaus Arc is the  rst pair of wireless headphones that allow you to sync up with mul ple friends and listen together. In addi on to listening on your own, now you can easily introduce your friends to the ar sts you love most, or discover new music through people around you.</p>
+                    <p id="product-description">The Wearhaus Arc is the first pair of wireless headphones that allow you to sync up with multiple friends and listen together. In addition to listening on your own, now you can easily introduce your friends to the artists you love most, or discover new music through people around you.</p>
                 </div>
             </div>
         </section>
@@ -376,7 +382,7 @@
                 arrows: false,
                 autoplay: true,
                 infinite: true,
-                delay: 5000
+                delay: 1000
             });
             $(".review-slider").unslider({
                 autoplay: true,
