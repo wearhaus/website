@@ -62,13 +62,47 @@ section#section-details	{
 	padding-top: 150px;
 }
 
+section#section-details	img {
+	display: block;
+}
+
 section#section-details	img#frequency-response-graph {
-	margin-top: 20px;
-	width: 100%;
+	margin: 20px auto 0 auto;
+	width: 90%;
 }
 
 section#section-details	img#headphone-dim {
-	display: block;
 	margin: 40px auto 0 auto;
 	width: 70%;
+}
+
+@media (max-width: 991px) {
+	section#section-details	{
+		background-color: #ccc;
+		background-image: none;
+		padding-left: 15%;
+		padding-right: 15%;
+	}
+}
+@media (max-width: 767px) {
+	section#section-details	{
+		padding-left: 10%;
+		padding-right: 10%;
+	}
+	section#section-details	img#frequency-response-graph {
+		display: block;
+		width: 100%;
+	}
+	section#section-details	img#headphone-dim {
+		width: 80%;
+	}
+}
+@media (max-width: 479px) {
+	section#section-details h3 {
+	    font-size: 2.2em;
+	}
+	section#section-details	{
+		padding-left: 0;
+		padding-right: 0;
+	}
 }
