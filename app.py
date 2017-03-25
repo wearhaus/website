@@ -31,6 +31,7 @@ def updater():
     return render_template('updater.html', _ = _)
 
 @app.route('/light')
+@app.route('/lightup')
 def light():
     lang = gettext.translation('updater', './locale', languages=[lang_code])
     _ = lang.ugettext
