@@ -201,7 +201,7 @@ header#title .unslider-nav {
 
 section#section-features {
 	background-color: black;
-	background-image: url(/static/img/3d_waves.jpg);
+	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/static/img/3d_waves.jpg);
 	background-position: top;
 	background-repeat: no-repeat;
 	background-size: cover;
