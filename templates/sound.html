@@ -149,7 +149,7 @@
                 <div class="col-md-4">
                     <div class="feature-container">
                         <div class="feature-image">
-                            <img src="../static/img/features/light.jpg">
+                            <img src="../static/img/features/light2.jpg">
                         </div>
                         <h3>CUSTOMIZABLE LIGHT RING</h3>
                         <p>Customize your lights to any color in the color spectrum. Pulse with the music and match album artwork. Control them using touch controls or the mobile app.</p>
@@ -158,7 +158,7 @@
                 <div class="col-md-4">
                     <div class="feature-container">
                         <div class="feature-image">
-                            <img src="../static/img/features/cushion.jpg">
+                            <img src="../static/img/features/sound2.jpg">
                         </div>
                         <h3>HIGH FIDELITY SOUND</h3>
                         <p>Hifi is more than just a buzzword here. The Wearhaus Arc delivers clean and crisp highs, with plenty of rich bass to go around.</p>
@@ -167,7 +167,7 @@
                 <div class="col-md-4">
                     <div class="feature-container">
                         <div class="feature-image">
-                            <img src="../static/img/features/touch.jpg">
+                            <img src="../static/img/features/touch2.jpg">
                         </div>
                         <h3>TOUCH CONTROLS</h3>
                         <p>A touch-senstive panel on the right earcup allows you to easily control playback, volume, and more all with a simple swipe of your finger.</p>
@@ -176,21 +176,20 @@
             </div>
             <div class="row" id="waves">
                 <div class="col-md-6 col-md-push-3">
-                    <img src="../static/img/product/black-front-purple.png" height=100% width=100%>
+                    <img src="../static/img/product/black-front-purple.png" width=90%>
                 </div>
-                <div class="col-md-3 col-md-pull-6">
-                    <div id="waves-float-right">
-                        <h3>BATTERY LIFE</h3>
-                        <p>Long lasting 16 hour battery life</p>
-                        <h3>MOBILE APP</h3>
-                        <p>Easy to use iOS and Android apps</p>
-                    </div>
+                <div class="col-md-3 col-md-pull-6" id="black-side-multi">
+                    <img src="../static/img/product/black-side-multi.png" width=61%>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-3" id="feature-list">
                     <h3>BUILT IN MICROPHONE</h3>
                     <p>High fidelity wireless mic built-in</p>
                     <h3>WIRED LISTENING</h3>
                     <p>Gold-plated 3.5mm audio cable included</p>
+                    <h3>BATTERY LIFE</h3>
+                    <p>Long lasting 16 hour battery life</p>
+                    <h3>MOBILE APP</h3>
+                    <p>Easy to use iOS and Android apps</p>
                 </div>
             </div>
         </section>
@@ -198,22 +197,8 @@
 
         <section id="section-details">
             <a class="anchor" id="details"></a>
-            <div class="row">
-                <div class="col-md-5 col-md-offset-1">
-                    <img src="../static/img/iphone-headphone-color.png" width=100%>
-                </div>
-                <div class="col-md-5" id="take-control">
-                    <h3>TAKE CONTROL</h3>
-                    <ul>
-                        <li>Rise above the norm with our full featured app controlled headphones</li>
-                        <li>Customize your lights to any color in the color spectrum</li>
-                        <li>Pulse with the music and match album artwork</li>
-                        <li>Control colors using touch controls or the mobile app</li>
-                    </ul>
-                </div>
-            </div>
             <div class="row" id="perfectly-tuned-sound">
-                <div class="col-md-5 col-md-offset-1">
+                <div class="col-md-6">
                 <h3>PERFECTLY TUNED SOUND</h3>
                     <ul>
                         <li>40mm neodymium dual diaphragm drivers</li>
@@ -234,6 +219,9 @@
                         <li>High quality faux leather</li>
                         <li>300g weight</li>
                     </ul>
+                    <h4 style="text-align: center;">Frequency Response Graph</h4>
+                    <img id="frequency-response-graph" src="../static/img/freq2.png">
+                    <img id="headphone-dim" src="../static/img/headphone-dim-2.png">
                 </div>
             </div>
         </section>
@@ -375,6 +363,7 @@
 
     {% include 'includes.html' %}
     <link href="../static/css/light.css" rel="stylesheet">
+    <link href="../static/css/sound.css" rel="stylesheet">
 
     <script>
         jQuery(document).ready(function($) {
