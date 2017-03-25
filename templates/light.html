@@ -104,12 +104,42 @@
         <!-- Header -->
         <header id="title">
             <a class="anchor" id="top"></a>
-            <div class="title-content">
-                <span id="title-name">{{ _("WEARHAUS") }} &middot; {{ _("ARC") }}</span>
+            <div id="title-slider">
+                <ul>
+                    <li>
+                        <div class="title-content" id="light-up">
+                            <div class="header-text-box">
+                                <h2 class="tagline">Light up and listen</h2>
+                                <h1 class="product-name">Wearhaus <strong>&middot;</strong> Arc</h1>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="title-content" id="audiophile-approved">
+                            <div class="header-text-box">
+                                <h2 class="tagline">Audiophile approved</h2>
+                                <h1 class="product-name">Wearhaus <strong>&middot;</strong> Arc</h1>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="title-content" id="touch-controls">
+                            <div class="header-text-box">
+                                <h2 class="tagline">Touch controls</h2>
+                                <h1 class="product-name">Wearhaus <strong>&middot;</strong> Arc</h1>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="title-content" id="wireless-audio-sharing">
+                            <div class="header-text-box">
+                                <h2 class="tagline">Wireless audio sharing</h2>
+                                <h1 class="product-name">Wearhaus <strong>&middot;</strong> Arc</h1>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
             </div>
-            <section class="video_container" style="display: none;">
-                <iframe width="1920" height="1080" src="" name="player" frameborder="0" allowfullscreen></iframe>
-            </section>
         </header>
 
         <!-- Features -->
@@ -149,7 +179,7 @@
                     <img src="../static/img/product/black-front-purple.png" height=100% width=100%>
                 </div>
                 <div class="col-md-3 col-md-pull-6">
-                    <div>
+                    <div id="waves-float-right">
                         <h3>BATTERY LIFE</h3>
                         <p>Long lasting 16 hour battery life</p>
                         <h3>MOBILE APP</h3>
@@ -216,19 +246,19 @@
                     <a href="https://www.buzzfeed.com/sarahhan/coolest-things-on-amazon-launchpad-january"><img src="../static/img/press/buzzfeed.png"></a>
                 </div>
                 <div class="press-logo">
+                    <a href="http://www.macworld.com/article/3156034/headphones/12-of-the-most-exciting-headphones-we-listened-to-at-ces.html#slide6"><img src="../static/img/press/macworld.png"></a>
+                </div>
+                <div class="press-logo">
                     <a href="https://www.cnet.com/videos/wearhaus-arc-headphones-let-you-listen-with-friends/"><img src="../static/img/press/cnet.png"></a>
                 </div>
                 <div class="press-logo">
-                    <a href="http://www.macworld.com/article/3156034/headphones/12-of-the-most-exciting-headphones-we-listened-to-at-ces.html#slide6"><img src="../static/img/press/macworld.png"></a>
+                    <a href="http://www.today.com/video/wearhaus-arc-headphones-tip-n-split-calculator-great-gadgets-for-spring-904689219973"><img src="../static/img/press/today.png"></a>
                 </div>
                 <div class="press-logo">
                     <a href="http://www.mensjournal.com/gear/articles/ces-2017-4-start-up-gadgets-that-put-big-brands-to-shame-w459364"><img src="../static/img/press/mensjournal.png"></a>
                 </div>
                 <div class="press-logo">
                     <a href="https://www.youtube.com/watch?v=b-ZACvrlddM"><img src="../static/img/press/unboxtherapy.png"></a>
-                </div>
-                <div class="press-logo">
-                    <a href="https://techcrunch.com/2014/11/12/the-wearhaus-arc-connects-headphone-wearers-in-wireless-concert/"><img src="../static/img/press/techcrunch.png"></a>
                 </div>
             </div>
         </section>
@@ -342,6 +372,12 @@
 
     <script>
         jQuery(document).ready(function($) {
+            $("#title-slider").unslider({
+                arrows: false,
+                autoplay: true,
+                infinite: true,
+                delay: 5000
+            });
             $(".review-slider").unslider({
                 autoplay: true,
                 infinite: true,

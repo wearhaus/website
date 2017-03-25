@@ -92,17 +92,77 @@ nav li {
 
 
 header#title {
-	background-image: url(/static/img/ross_bg.jpg);
-	background-position: center;
-	background-size: cover;
 	height: 80vh;
 	margin-top: 60px;
 	width: 100vw;
 }
 
-#title-name {
-	font-size: 2vw;
+#title-slider {
+	background-color: transparent;
+	height: 80vh;
+	margin: 0;
+	padding: 0;
+	width: 100vw;
+}
+
+header#title .title-content {
+	background-position: center;
+	background-size: cover;
+	height: 80vh;
+	position: relative;
+	width: 100vw;
+}
+
+header#title #light-up {
+	background-image: url(/static/img/backgrounds/ross-bg.jpg);
+}
+
+header#title #audiophile-approved {
+	background-image: url(/static/img/backgrounds/audiophile-bg.jpg);
+}
+
+header#title #touch-controls {
+	background-image: url(/static/img/backgrounds/touch-bg.jpg);
+}
+
+header#title #wireless-audio-sharing {
+	background-image: url(/static/img/backgrounds/apartment-bg.jpg);
+}
+
+header#title .unslider-nav {
+}
+
+.header-text-box {
+	bottom: 40px;
+	left: 0;
+	margin: 0 auto;
+	position: absolute;
+	right: 0;
+}
+
+.tagline {
+	color: white;
+	font-family: 'Oswald', sans-serif;
+	font-size: .7em;
+	font-style: italic;
 	font-weight: 400;
+	text-align: center;
+    text-shadow: 0 0 40px black;
+	text-transform: uppercase;
+}
+
+.product-name {
+	color: white;
+	font-size: .4em;
+	font-weight: 300;
+	letter-spacing: 5px;
+	text-align: center;
+    text-shadow: 0 0 40px black;
+	text-transform: uppercase;
+}
+
+.product-name strong {
+	font-size: 1em;
 }
 
 
@@ -168,7 +228,12 @@ section#section-features p {
 
 @media (min-width: 992px) {
 	#waves .col-md-3 {
+		padding-top: 100px;
 		width: 30%;
+	}
+
+	#waves #waves-float-right {
+		float: right;
 	}
 
 	#waves .col-md-6 {
@@ -186,7 +251,7 @@ section#section-features p {
 
 
 section#section-details {
-	background-image: url(/static/img/ross-roof-bg.jpg);
+	background-image: url(/static/img/backgrounds/ross-roof-bg.jpg);
 	background-position: bottom;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -258,7 +323,7 @@ section#section-press {
 	opacity: .5;
 	margin: 0 auto;
 	max-height: 60px;
-	max-width: 90%;
+	max-width: 70%;
 	min-width: 40px;
 	min-height: 10px;
 	transition: opacity 0.5s;
@@ -301,7 +366,7 @@ section#section-press {
 
 
 section#section-reviews {
-	background-image: url(/static/img/reviews-bg.jpg);
+	background-image: url(/static/img/backgrounds/reviews-bg.jpg);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
