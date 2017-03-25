@@ -37,6 +37,12 @@ def light():
     _ = lang.ugettext
     return render_template('light.html', _ = _)
 
+@app.route('/premiumheadphones')
+def premiumheadphones():
+    lang = gettext.translation('updater', './locale', languages=[lang_code])
+    _ = lang.ugettext
+    return render_template('sound.html', _ = _)
+
 @app.route('/warranty')
 def warranty():
     return redirect("http://store.wearhaus.com/pages/warranty")
