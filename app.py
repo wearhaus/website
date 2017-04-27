@@ -80,5 +80,5 @@ if 'DYNO' in os.environ: # only trigger SSLify if the app is running on Heroku
     sslify = SSLify(app)
 
 if __name__ == '__main__':
-    app.debug = True
+    app.debug = False
     app.run()
