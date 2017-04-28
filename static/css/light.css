@@ -30,13 +30,20 @@ nav#main-nav {
 
 .navbar-brand {
 	height: 40px;
+	padding: 5px 15px;
 }
 
 .navbar-brand span {
 	color: black;
-	font-size: 24px;
+	font-size: 30px;
 	font-weight: 700;
+	line-height: 30px;
 	margin: 0;
+}
+
+.navbar-brand img {
+	display: none;
+	height: 30px;
 }
 
 nav li {
@@ -67,6 +74,7 @@ nav li {
 }
 
 .navbar-toggle {
+	border-color: black !important;
 	margin: 0;
 }
 
@@ -75,23 +83,30 @@ nav li {
     padding-top: 0;
 }
 
-#order-now-link {
+.order-now-link {
     background-color: black;
     border-radius: 5px;
     color: white;
+    display: block;
     margin: 0;
     padding: 10px 15px 10px 15px;
+    text-align: center;
     width: 180px;
 }
 
-#order-now-link:hover, #order-now-link:focus,
-#order-now-link-mobile:hover, #order-now-link-mobile:focus {
-    transition: background-color 0.3s ease;
-    background-color: #444; /* make background lighter on hover/focus */
+.order-now-link:hover, .order-now-link:focus {
+	background-color: #444;
+	color: white;
+	transition: background-color 0.3s ease;
 }
 
-#order-now-link-mobile {
+.desktop {
+    display: block;
+}
+
+.mobile {
     display: none;
+    margin: 0 auto;
 }
 
 @media (max-width: 991px) {
@@ -101,12 +116,20 @@ nav li {
 	.navbar-collapse {
 		width: 100%
 	}
+	.navbar-brand span {
+		display: none;
+	}
+	.navbar-brand img {
+		display: block;
+	}
 	#nav-options>li>a {
 		border: none;
 	}
-	#order-now-link {
+	.desktop {
+		display: none !important;
+	}
+	.mobile {
 		display: block;
-		margin: 0 auto;
 	}
 }
 
