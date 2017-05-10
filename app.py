@@ -12,7 +12,7 @@ lang_code = locale.getdefaultlocale()[0]
 def main():
     lang = gettext.translation('index', './locale', languages=[lang_code])
     _ = lang.ugettext
-    return render_template('index.html', _ = _)
+    return render_template('light.html', _ = _)
 
 
 @app.route('/ourstory')
