@@ -60,6 +60,7 @@ def android():
     return redirect("../static/files/WearhausArcAppVC8.apk")
 
 @app.route('/arc')
+@app.route('/wearhaus-arc')
 def arc():
     return redirect("/")
 
