@@ -3,7 +3,45 @@ $(document).ready(function() {
 	var tablet_offset = '-479px';
 	var desktop_offset = '-670px';
 
- 	
+    /* Grab URL Parameters */
+    var params = {};
+
+	if (location.search) {
+	    var parts = location.search.substring(1).split('&');
+
+	    for (var i = 0; i < parts.length; i++) {
+	        var nv = parts[i].split('=');
+	        if (!nv[0]) continue;
+	        params[nv[0]] = nv[1] || true;
+	    }
+	}
+
+	/* If promo code is in the parameters, display promo banner */
+	if (params.promo != null) {
+		$(".promonav").css("display", "block");
+		$(".promonav").html("<p>Use promo code <strong>"+ params.promo + "</strong> at checkout to save 20% off your order!</p>");
+	} else {
+		$(".promonav").css("display", "none");
+	}
+
+	/* Scrolling Animation */
+	var $root = $('html, body');
+
+	function scrollToOrder() {
+		$root.animate({
+			scrollTop: $("#order").offset().top - 150
+		}, 500);
+		return false;
+	};
+
+	if (window.location.hash == "#order") {
+		scrollToOrder();
+	}
+
+	$(".promonav").click(scrollToOrder);
+	$("#order_now_link").click(scrollToOrder);
+
+	/* Color Picker */
 	$(function(){
 	    var bCanPreview = true; // can preview
 
@@ -260,4 +298,96 @@ $(document).ready(function() {
 		pushImages();
 	});
 
+	/* Order Form Counter */
+	$('.btn-number').click(function(e) {
+	    e.preventDefault();
+	    
+	    fieldName = $(this).attr('data-field');
+	    type      = $(this).attr('data-type');
+	    var input = $("input[name='"+fieldName+"']");
+	    var currentVal = parseInt(input.val());
+	    if (!isNaN(currentVal)) {
+	        if(type == 'minus') {
+	            
+	            if(currentVal > input.attr('min')) {
+	                input.val(currentVal - 1).change();
+	            } 
+	            if(parseInt(input.val()) == input.attr('min')) {
+	                $(this).attr('disabled', true);
+	            }
+
+	        } else if(type == 'plus') {
+
+	            if(currentVal < input.attr('max')) {
+	                input.val(currentVal + 1).change();
+	            }
+	            if(parseInt(input.val()) == input.attr('max')) {
+	                $(this).attr('disabled', true);
+	            }
+
+	        }
+	    } else {
+	        input.val(0);
+	    }
+	});
+
+	$('.input-number').focusin(function(){
+		$(this).data('oldValue', $(this).val());
+	});
+
+	$('.input-number').change(function() {
+	    
+	    minValue =  parseInt($(this).attr('min'));
+	    maxValue =  parseInt($(this).attr('max'));
+	    valueCurrent = parseInt($(this).val());
+	    
+	    name = $(this).attr('name');
+	    if(valueCurrent >= minValue) {
+	        $(".btn-number[data-type='minus'][data-field='"+name+"']").removeAttr('disabled')
+	    } else {
+	        alert('Sorry, the minimum value was reached');
+	        $(this).val($(this).data('oldValue'));
+	    }
+	    if(valueCurrent <= maxValue) {
+	        $(".btn-number[data-type='plus'][data-field='"+name+"']").removeAttr('disabled')
+	    } else {
+	        alert('Sorry, the maximum value was reached');
+	        $(this).val($(this).data('oldValue'));
+	    }
+	});
+
+	$(".input-number").keydown(function (e) {
+        // Allow: backspace, delete, tab, escape, enter and .
+        if ($.inArray(e.keyCode, [46, 8, 9, 27, 13, 190]) !== -1 ||
+             // Allow: Ctrl+A
+            (e.keyCode == 65 && e.ctrlKey === true) || 
+             // Allow: home, end, left, right
+            (e.keyCode >= 35 && e.keyCode <= 39)) {
+                 // let it happen, don't do anything
+                 return;
+        }
+        // Ensure that it is a number and stop the keypress
+        if ((e.shiftKey || (e.keyCode < 48 || e.keyCode > 57)) && (e.keyCode < 96 || e.keyCode > 105)) {
+            e.preventDefault();
+        }
+    });
+
+    $("#order-submit").click(function () {
+    	var black = parseInt($(".black-counter").val())
+    	var white = parseInt($(".white-counter").val())
+
+    	var checkout = "https://store.wearhaus.com/cart/"
+		if (black > 0) {
+			checkout += "997163061:" + black;
+		}
+		if (black > 0 && white > 0) {
+			checkout += ",";
+		}
+		if (white > 0) {
+			checkout += "997163065:" + white;
+		}
+		if (!(black == 0 && white == 0)) {
+			window.location = checkout;
+		}
+    });
 });

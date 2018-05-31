@@ -16,7 +16,6 @@
         font-family: "Lato", arial, sans-serif;
         font-weight: 700;
         margin-bottom: 0px;
-        padding: 10px 0;
         text-transform: uppercase;
         transition: background-color 1s ease 0s;
     }
@@ -29,6 +28,10 @@
         .navbar .navbar-nav {
             letter-spacing: 1px;
         }
+
+.navbar .navcontainer {
+    padding: 10px 40px;
+}
 
 .static {
     background-color: rgba(0,0,0,0.75);
@@ -57,10 +60,6 @@
     height: 32px;
 }
 
-#mailingListModal .modal-body {
-    height: 420px; 
-}
-
 #order_now {
     margin: 0 15px 0 15px;
     padding-top: 5px;
@@ -84,13 +83,33 @@
     display: none;
 }
 
+.promonav {
+    background-color: #00bccc;
+    display: none;
+    margin: 0;
+    padding: 5px 0;
+}
+
+.promonav p {
+    color: white;
+    font-size: 12pt;
+    font-weight: 300;
+    text-align: center;
+    text-transform: none;
+    margin: 0 auto;
+}
+
+.promonav p strong {
+    font-weight: 400;
+}
+
 @media(max-width: 767px) {
     .navbar-nav {
-    margin: 0px;
-    width: 100%;
+        margin: 0px;
+        width: 100%;
     }
     .navbar {
-    background-color: rgba(0,0,0,0.5);
+        background-color: #333;
     }
     .navbar-nav>ul {
         padding: 0px;

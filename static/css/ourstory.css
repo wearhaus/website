@@ -77,15 +77,16 @@
 		.team-pic-grid-inner-text h6 {
 			color: white;
 			font-size: 24px;
-			font-weight: 500;
+			font-weight: 700;
 			margin-bottom: 0px;
 			text-transform: none;
 		}
 
 		.team-pic-grid-inner-text p {
 			color: white;
-			font-weight: 300;
+			font-weight: 400;
 			font-size: 14px;
+			margin: 0;
 		}
 
 /* IDS */

@@ -1,0 +1,108 @@
+/* FEATURES */
+
+section#section-features {
+	background-image: url(/static/img/backgrounds/black-crystal-bg.jpg);
+	background-position: center;
+	background-size: cover;
+
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+	-webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+}
+
+section#section-features #waves {
+	margin-bottom: 20px;
+	margin-top: 60px;
+
+}
+
+section#section-features #waves h3 {
+	font-size: 1.2em;
+	font-weight: 700;
+}
+
+section#section-features #waves p {
+	font-size: 1.1em;
+}
+
+section#section-features #waves img {
+	display: block;
+	margin: 0 auto;
+}
+
+section#section-features #waves #feature-list {
+	padding-left: 40px;
+}
+
+@media (min-width: 992px) {
+	#waves .col-md-3 {
+    padding-top: 0;
+	}
+}
+
+@media (max-width: 991px) {
+	section#section-features {
+	    clip-path: polygon(0 0, 100% 0, 100% 97%, 0 100%);
+		-webkit-clip-path: polygon(0 0, 100% 0, 100% 97%, 0 100%);
+	}
+	#waves #black-side-multi {
+		display: none;
+	}
+}
+
+
+/* DETAILS */
+
+section#section-details	{
+	background-image: url(/static/img/backgrounds/studio-bg.jpg);
+	background-position: top;
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin-top: -100px;
+	padding: 0 5% 100px 5%;
+	padding-top: 150px;
+}
+
+section#section-details	img {
+	display: block;
+}
+
+section#section-details	img#frequency-response-graph {
+	margin: 20px auto 0 auto;
+	width: 90%;
+}
+
+section#section-details	img#headphone-dim {
+	margin: 40px auto 0 auto;
+	width: 70%;
+}
+
+@media (max-width: 991px) {
+	section#section-details	{
+		background-color: #ccc;
+		background-image: none;
+		padding-left: 15%;
+		padding-right: 15%;
+	}
+}
+@media (max-width: 767px) {
+	section#section-details	{
+		padding-left: 10%;
+		padding-right: 10%;
+	}
+	section#section-details	img#frequency-response-graph {
+		display: block;
+		width: 100%;
+	}
+	section#section-details	img#headphone-dim {
+		width: 80%;
+	}
+}
+@media (max-width: 479px) {
+	section#section-details h3 {
+	    font-size: 2.2em;
+	}
+	section#section-details	{
+		padding-left: 0;
+		padding-right: 0;
+	}
+}
